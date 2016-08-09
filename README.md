@@ -6,5 +6,5 @@ The documentation for [CastleCSS](https://github.com/CastleCSS/castlecss)
 
 
 ## How to install
-- Download or clone the package
+- Download or clone this package
 - Look in the dist/ folder or build if yourself with GruntJS in your terminal: ```npm install``` + ```grunt```
