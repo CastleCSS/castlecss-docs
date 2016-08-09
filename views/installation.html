@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Installation - CastleCSS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" />
+
+	<link rel="stylesheet" href="css/styles.min.css" />
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css " />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
+	<script src="../js/nunjucks.min.js" type="text/javascript"></script>
+	<script src="../js/templates.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+	<div id="wrapper" class="wrapper">
+
+		<div class="g full-height">
+
+			<!-- Side -->
+			<div class="b0_12 b4_08 b5_06 b6_04">
+				{% include "inc/menu.html" %}
+			</div>
+			<!-- End side -->
+
+			<!-- Main -->
+			<div class="b0_12 b4_14 b4_push_01">
+				
+				<div class="p-3x">
+					
+					<div class="block">
+						<h1>Installation</h1>
+						<p class="intro">A modular, updatable, easy to use SCSS Framework</p>
+						<p>CastleCSS is built with easy updating in mind.<br />
+							You can download the Full package and make adjustments as long as you don't update the dependencies (core, buttons, notifications, etc).</p>
+							<p>When you d&oacute; adjust the dependencies, you will lose all adjustments with an update.</p>
+							<p>There are a few ways to install:
+								<ul>
+									<li>Install via <a href="www.npmjs.com/">NPM</a></li>
+									<li><a href="https://www.npmjs.com/package/require">Require</a> it in your own NPMJS package</li>
+									<li>Download it below</li>
+								</ul>
+							</p>
+						</div>
+						<div class="block">
+							<h2>Setup</h2>
+							<p>Your project should have a setup similair to this (included in the Full package):<br />
+								With this you make sure your own variables overwrite the castle-core variables and your setup is still updatable.
+							</p>
+								<code class="code-structure">
+									| Your project/<br />
+									|<br />
+									|-- scss/ <br />
+									|  |-- /*	Custom project specific files here */<br />
+									|  |-- Main.scss<br />
+									|  |<br />
+									|-- node_modules/<br />
+									|  |  <br />
+									|  |   /*	CastleCSS files included automatically here */<br />
+									|  |   castlecss-core/<br />
+									|  |   castlecss-buttons/<br />
+									|  |   castlecss-etc ;)/<br />
+								</code>
+								<br />
+								<p>Your main.scss should have a setup similair to this (included in the Full package):</p>
+								<pre class="brush: sass;">
+									/* 	core variable files */
+									@import "node_modules/castlecss-core/sass/variables";
+									/* 	Your own variables so they overwrite the core */
+									@import "variables";
+									/* 	rest of core files */
+									@import "node_modules/castlecss-core/sass/main";
+
+									/* 	Include your own files below this line
+									--------------------------------------
+									*/
+								</pre>
+							</div>
+							<div class="block">
+								<h2>Starting your project</h2>
+								<p>CastleCSS uses GruntJS to build projects.</p>
+
+								<p>If you haven't used Grunt before, be sure to check out the <a href="http://gruntjs.com/getting-started" target="_blank">Getting Started</a> guide.</p>
+
+								<p>Start the project for the first time by going to your project folder in your terminal.</p>
+								<ul>
+									<li>Run <code>npm install</code> to install all files</li>
+									<li>Run <code>grunt</code> to start running the project. If will automatically watch for changes in your SCSS and compile it to CSS</li>
+									<li>Or use <code>grunt create_css</code> to create your CSS manually</li>
+								</ul>
+							</div>
+							<div class="block">
+								<div class="g">
+									<div id="starter" class="b0_12">
+										<div class="block block-invert p-3x pt-2x">
+											<h2>Full package</h2>
+											<p>
+												<div>
+													<a class="github-button" href="https://github.com/castlecss/castlecss" aria-label="Watch castlecss/castlecss-core on GitHub">Watch</a>
+													<a class="github-button" href="https://github.com/castlecss/castlecss" aria-label="Star castlecss/castlecss-core on GitHub">Star</a>
+													<a class="github-button" href="https://github.com/castlecss/castlecss/archive/master.zip" aria-label="Download castlecss/castlecss on GitHub">Download</a>
+												</div>
+											</p>
+											<h3>Installation</h3>
+											<p>
+												<code>npm install castlecss</code><br />
+											</p>
+											<h3>Updating</h3>
+											<p class="alert">
+												<strong>NOTE:</strong> Only update the dependencies so you don't overwrite your own SCSS files. If you do update the Full package you'll overwrite everything. <br/>
+												We recommend downloading the full package and updating the dependencies like:
+											</p>
+											<p>
+												<code>npm update castlecss-core</code><br />
+												<code>npm update castlecss-buttons</code><br />
+												<code>npm update castlecss-notifications</code><br />
+											</p>
+											<h3>What's included?</h3>
+											<p>
+												<ul>
+													<li><strong>Example project setup</strong></li>
+													<li><strong>Gruntfile and task</strong></li>
+													<li><strong>castlecss-core</strong></li>
+													<li><strong>castlecss-buttons</strong></li>
+													<li><strong>castlecss-notifications</strong></li>
+												</ul>							
+											</p>
+										</div>
+									</div>
+									<div id="core" class="b0_12">
+										<div class="block block-invert p-3x pt-2x">
+											<h2>Core only</h2>
+											<h3>Installation</h3>
+											<p>
+												<code>npm install castlecss-core</code>
+											</p>
+											<h3>Updating</h3>
+											<p>
+												<code>npm update castlecss-core</code><br />
+											</p>
+											<p>
+												<div>
+													<a class="github-button" href="https://github.com/castlecss/castlecss-core" aria-label="Watch castlecss/castlecss-core on GitHub">Watch</a>
+													<a class="github-button" href="https://github.com/castlecss/castlecss-core" aria-label="Star castlecss/castlecss-core on GitHub">Star</a>
+													<a class="github-button" href="https://github.com/castlecss/castlecss-core/archive/master.zip" aria-label="Download castlecss/castlecss-core on GitHub">Download</a>
+												</div>
+											</p>
+											<h3>What's included?</h3>
+											<p>
+												<ul>
+													<li><strong>Main:</strong> include all your other SCSS files</li>
+													<li><strong>Reset:</strong> Set browser defaults to zero/none so nothing weird happends in different browsers</li>
+													<li><strong><a href="variables.html">Variables</a>:</strong> Variables for the grid, fonts, utility, etc</li>
+													<li><strong>defaults:</strong> Set default web settings</li>
+													<li><strong><a href="mixins.html">Mixins</a>:</strong> Small but handy collection of mixins to use</li>
+													<li><strong><a href="utility.html">Utility</a>:</strong> Genereral utility classes</li>
+													<li><strong><a href="utility_spacers.html">Utility spacers</a>:</strong> Margin and padding utility classes</li>
+													<li><strong><a href="grid.html">Grid</a>:</strong> Flexbox scss grid with floating fallback</li>
+													<li><strong>Static files:</strong> Classes that are static throughout the site</li>
+												</ul>
+											</p>
+										</div>
+									</div>
+									<div id="buttons" class="b0_12">
+										<div class="block block-invert p-3x pt-2x">
+											<h2>Buttons only</h2>
+											<h3>Installation</h3>
+											<p>
+												<code>npm install castlecss-buttons</code>
+											</p>
+											<h3>Updating</h3>
+											<p>
+												<code>npm update castlecss-buttons</code><br />
+											</p>
+											<p>
+												<div>
+													<a class="github-button" href="https://github.com/castlecss/castlecss-buttons" aria-label="Watch castlecss/castlecss-buttons on GitHub">Watch</a>
+													<a class="github-button" href="https://github.com/castlecss/castlecss-buttons" aria-label="Star castlecss/castlecss-buttons on GitHub">Star</a>
+													<a class="github-button" href="https://github.com/castlecss/castlecss-buttons/archive/master.zip" aria-label="Download castlecss/castlecss-buttons on GitHub">Download</a>
+												</div>
+											</p>
+											<h3>What's included?</h3>
+											<p>
+												<ul>
+													<li><strong>Buttons.scss</strong> Basic buttons for your site</li>
+												</ul>
+											</p>
+										</div>
+									</div>
+									<div id="buttons" class="b0_12">
+										<div class="block block-invert p-3x pt-2x">
+											<h2>Notifications only</h2>
+											<h3>Installation</h3>
+											<p>
+												<code>npm install castlecss-notifications</code>
+											</p>
+											<h3>Updating</h3>
+											<p>
+												<code>npm update castlecss-notifications</code><br />
+											</p>
+											<p>
+												<div>
+													<a class="github-button" href="https://github.com/castlecss/castlecss-notifications" aria-label="Watch castlecss/castlecss-notifications on GitHub">Watch</a>
+													<a class="github-button" href="https://github.com/castlecss/castlecss-notifications" aria-label="Star castlecss/castlecss-notifications on GitHub">Star</a>
+													<a class="github-button" href="https://github.com/castlecss/castlecss-notifications/archive/master.zip" aria-label="Download castlecss/castlecss-notifications on GitHub">Download</a>
+												</div>
+											</p>
+											<h3>What's included?</h3>
+											<p>
+												<ul>
+													<li><strong>notifications.scss</strong> Notifications and alerts</li>
+												</ul>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+						<!-- Scripts for footer -->
+						<footer id="footer"></footer>
+						{% include "inc/footer.html" %}
+
+
+					</body>
+
+					</html>

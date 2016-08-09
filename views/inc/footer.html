@@ -1,0 +1,23 @@
+<!-- Scripts for documentation -->
+<footer id="footer">
+	
+</footer>
+<script>
+	$(function () {
+		navOpen();
+	});
+	function navOpen() {
+		$('.nav-label, .open-documentation').on('click', function(e) {
+			$('.nav-container').toggleClass('nav-container-active');
+			e.preventDefault();
+		});
+	}
+
+</script>
+
+<script src="../js/shCore.js"></script>
+<script src="../js/shBrushXml.js"></script>
+<script src="../js/shBrushSass.js"></script>
+<script src="../js/shBrushJScript.js"></script>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>

@@ -1,0 +1,18 @@
+.doc-mainvisual {
+	display: flex;
+	width: 100%; height: calc(100vh - 72px);
+	align-items: center;
+	justify-content: center;
+
+	> * {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: $b4) {
+	.doc-mainvisual {
+		height: calc(100vh);
+	}
+
+}

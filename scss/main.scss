@@ -1,0 +1,22 @@
+/* 	core variable files */
+@import "node_modules/castlecss-core/sass/variables"; 
+/* 	Your own variables */
+@import "variables"; 
+
+/* 	rest of core files */
+@import "node_modules/castlecss-core/sass/main"; 
+@import "node_modules/castlecss-buttons/sass/main"; 
+@import "node_modules/castlecss-notifications/sass/main"; 
+
+/* 	Your own variables */
+@import "base/defaults"; 
+
+/* Docs styling */
+@import "layout/docs_code"; 
+@import "layout/docs_menu"; 
+@import "layout/docs_mainvisual"; 
+
+/* 	Include your own files below this line
+	-------------------------------------- 
+*/
+@import "base/fonts"; 

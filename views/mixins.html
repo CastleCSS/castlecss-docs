@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Mixins - CastleCSS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" />
+
+	<link rel="stylesheet" href="css/styles.min.css" />
+	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css " />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+	<div id="wrapper" class="wrapper">
+
+		<div class="g full-height">
+
+			<!-- Side -->
+			<div class="b0_12 b4_08 b5_06 b6_04">
+				{% include "inc/menu.html" %}
+			</div>
+			<!-- End side -->
+
+			<!-- Main -->
+			<div class="b0_12 b4_14 b4_push_01">
+				
+				<div class="p-3x">
+					
+					<div class="block">
+						<h1>Mixins</h1>
+						<p class="intro">A handy collection of SCSS tools</p>
+						<p>Use these mixins with <code>@include {mixin-name}</code></p>
+					</div>
+					<div class="block">
+						<h3>Ellipsis</h3>
+						<p>Shorten a line with ...</p>
+						<pre class="brush: sass;">
+							@mixin ellipsis(){
+							  overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+							}
+						</pre>
+						<h3>Ulreset</h3>
+						<p>Reset your ul's and ol's</p>
+						<pre class="brush: sass;">
+							@mixin ulreset() {
+							  margin: 0; padding: 0; list-style: none;
+							}
+						</pre>
+						<h3>Opacity</h3>
+						<p>Opacity with fallback for older browsers</p>
+						<pre class="brush: sass;">
+							@mixin opacity($params) {
+								filter: alpha(opacity=$params);
+								-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$params)";
+								opacity: $params * 0.01;
+							}
+						</pre>
+						<h3>Transform mixin</h3>
+						<p>Enable multiple transforms with fallback through autoprefixer.</p>
+						<pre class="brush: sass;">
+							@mixin transform($transforms) {
+								transform: $transforms;
+							}
+							@mixin rotate ($deg) {
+							  @include transform(rotate(#{$deg}deg));
+							}
+							@mixin scale($scale) {
+								 @include transform(scale($scale));
+							}
+							@mixin translate ($x, $y) {
+							   @include transform(translate($x, $y));
+							}
+							@mixin translateX ($x) {
+								@include transform(translateX($x));
+							}
+							@mixin translateY ($y) {
+								@include transform(translateY($y));
+							}
+							@mixin skew ($x, $y) {
+							   @include transform(skew(#{$x}deg, #{$y}deg));
+							}
+						</pre>
+
+					</div>
+					
+					<!-- Scripts for footer -->
+					{% include "inc/footer.html" %}
+
+
+				</body>
+
+				</html>

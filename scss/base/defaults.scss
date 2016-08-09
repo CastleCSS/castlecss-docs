@@ -1,0 +1,22 @@
+// default table
+html {
+	overflow-y: scroll;
+}
+a {
+	color: $theme02;
+}
+table {
+	border-top: 1px solid $color03;
+}
+tr > * { 
+	padding: 1rem 1.5rem;
+	vertical-align: top;
+	text-align: left;
+	border-bottom: 1px solid $color03; 
+}
+.block {
+	margin-bottom: $margin-default * 3;
+}
+.block-invert {
+	border: 1px solid $color03;
+}
