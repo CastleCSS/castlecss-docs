@@ -1,7 +1,7 @@
 {
-  "name": "castlecss-documentation",
+  "name": "castlecss-docs",
   "version": "0.1.1",
-  "description": "CastleCSS is a modulular, mobile first, upgradable SCSS framework",
+  "description": "Documentation for CastleCSS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -28,6 +28,10 @@
     "castlecss-core": "^1.7.3",
     "castlecss-notifications": "^0.3.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CastleCSS/castlecss-docs.git"
+  },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "cssnano": "^3.7.3",
@@ -40,5 +44,7 @@
     "nunjucks": "^2.4.2",
     "pixrem": "^3.0.0"
   },
-  "readme": "ERROR: No README data found!"
+  "bugs": {
+    "url": "https://github.com/CastleCSS/castlecss-docs/issues"
+  }
 }
