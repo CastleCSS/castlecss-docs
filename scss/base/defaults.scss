@@ -16,7 +16,8 @@ tr > * {
 }
 .block {
 	margin-bottom: $margin-default * 3;
-}
-.block-invert {
-	border: 1px solid $color03;
+
+	.block-invert {
+		border: 1px solid $color03;
+	}
 }
