@@ -25,7 +25,7 @@
   "homepage": "https://www.castlecss.com",
   "dependencies": {
     "castlecss-buttons": "^0.4.1",
-    "castlecss-core": "1.8.0-4",
+    "castlecss-core": "^1.8.1",
     "castlecss-notifications": "^0.3.0"
   },
   "repository": {
