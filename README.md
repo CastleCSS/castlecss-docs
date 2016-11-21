@@ -2,8 +2,7 @@
 ![CastleCSS logo @CastleCss.com](https://www.doordarius.nl/castlecss-logo-250.png)
 
 ## CastleCSS Framework
-The documentation for [CastleCSS](https://github.com/CastleCSS/castlecss)
-
+Sourcecode for www.castlecss.com and the documentation for [CastleCSS](https://github.com/CastleCSS/castlecss)
 
 ## How to install
 - Download or clone this package
