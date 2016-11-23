@@ -1,6 +1,6 @@
 {
   "name": "castlecss-docs",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Documentation for CastleCSS",
   "main": "index.js",
   "scripts": {
