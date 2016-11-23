@@ -27,108 +27,95 @@
 
 			<!-- Main -->
 			<div class="b0_12 b4_14 b4_push_01">
-				
+
 				<div class="p-3x">
-					
+
 					<div class="block">
 						<h1>Installation</h1>
 						<p class="intro">A modular, updatable, easy to use SCSS Framework</p>
 						<p>CastleCSS is built with easy updating in mind.<br />
-							You can download the Full package and make adjustments as long as you don't update the dependencies (core, buttons, notifications, etc).</p>
+							You can do anything as long as you don't edit the dependencies (core, buttons, notifications, etc).</p>
 							<p>When you do adjust the dependencies, you will lose all adjustments with an update.</p>
-							<p>There are a few ways to install:
-								<ul>
-									<li>Install via <a href="www.npmjs.com/">npm</a></li>
-									<li><a href="https://www.npmjs.com/package/require">Require</a> it in your own npm package</li>
-									<li>Download it below</li>
-								</ul>
+						</div>
+						<div class="block block-invert p-3x pt-2x">
+							<h2>Boilerplate</h2>
+							<p>
+								The <strong>easiest way</strong> to start is with the CastleCSS Boilerplate
+								CastleCSS is a modular, updatable and easy to use HTML and SCSS framework. Use this Boilerplate to get started with your project right away!
+								<div>
+									<a class="github-button" href="https://github.com/castlecss/castlecss-boilerplate" aria-label="Watch castlecss/castlecss-boilerplate on GitHub">Watch</a>
+									<a class="github-button" href="https://github.com/castlecss/castlecss-boilerplate" aria-label="Star castlecss/castlecss-boilerplate on GitHub">Star</a>
+								</div>
 							</p>
+							<h3>What's included?</h3>
+							<ul>
+								<li>A simple and mobile-friendly HTML5 template to kickstart your website</li>
+								<li>Configuration for Grunt, to easily compile and minify your Sass files</li>
+								<li><a href="https://github.com/CastleCSS/castlecss-core" target="_blank">castlecss-core</a></li>
+								<li><a href="https://github.com/CastleCSS/castlecss-buttons" target="_blank">castlecss-buttons</a></li>
+								<li><a href="https://github.com/CastleCSS/castlecss-notifications" target="_blank">castlecss-notifications</a></li>
+							</ul>
+							<h3>
+								Installation
+							</h3>
+							<div>
+								<a class="github-button" href="https://github.com/castlecss/castlecss-boilerplate/archive/master.zip" aria-label="Download castlecss/castlecss-boilerplate on GitHub">Download</a>
+							</div>
+
 						</div>
 						<div class="block">
-							<h2>Setup</h2>
-							<p>Your project should have a setup similair to this (included in the Full package):<br />
-								With this you make sure your own variables overwrite the castle-core variables and your setup is still updatable.
+							<h2>Structure</h2>
+							<p>The basis structure for your website should look similar like this (included in the boilerplate):<br />
 							</p>
 								<code class="code-structure">
-									| Your project/<br />
+									| Project directory/<br />
 									|<br />
-									|-- scss/ <br />
-									|  |-- /*	Custom project specific files here */<br />
-									|  |-- Main.scss<br />
-									|  |<br />
 									|-- node_modules/<br />
-									|  |  <br />
-									|  |   /*	CastleCSS files included automatically here */<br />
-									|  |   castlecss-core/<br />
-									|  |   castlecss-buttons/<br />
-									|  |   castlecss-etc ;)/<br />
+									| | -- castlecss-core/<br />
+									| | --castlecss-buttons/<br />
+									| | --castlecss-notifications/<br />
+									| |<br />
+									|-- scss/<br />
+									| |-- main.scss<br />
+									| |-- variables.scss<br />
+									| |<br />
+									|-- img/<br />
+									|-- dist/<br />
+									| |-- styles.min.css<br />
+									| |-- styles.min.map<br />
+									| |<br />
+									|-- index.html<br />
+									|-- Gruntfile.js<br />
+									|-- package.json<br />
 								</code>
 								<br />
-								<p>Your main.scss should have a setup similair to this (included in the Full package):</p>
+								<h2>Main.scss</h2>
+								<p>Your main.scss should have a setup similair to this (included in the boilerplate):</p>
 								<pre class="brush: sass;">
-									/* 	core variable files */
+									/*  CastleCSS Core variables */
 									@import "node_modules/castlecss-core/sass/variables";
-									/* 	Your own variables so they overwrite the core */
+
+									/*  Your variables */
 									@import "variables";
-									/* 	rest of core files */
+
+									/*  Remaining Core files and other CastleCSS modules */
 									@import "node_modules/castlecss-core/sass/main";
+									@import "node_modules/castlecss-buttons/sass/main";
+									@import "node_modules/castlecss-notifications/sass/main";
 
-									/* 	Include your own files below this line
-									--------------------------------------
-									*/
+									/* Include your own files below this line
+									   -------------------------------------- */
+
+
+
+									/* --------------------------------------
+									   Include your own files above this line */
+
+									@import "node_modules/castlecss-core/sass/base/utility";
+									@import "node_modules/castlecss-core/sass/base/utility_spacers";
 								</pre>
-							</div>
-							<div class="block">
-								<h2>Starting your project</h2>
-								<p>CastleCSS uses GruntJS to build projects.</p>
 
-								<p>If you haven't used Grunt before, be sure to check out the <a href="http://gruntjs.com/getting-started" target="_blank">Getting Started</a> guide.</p>
 
-								<p>Start the project for the first time by going to your project folder in your terminal.</p>
-								<ul>
-									<li>Run <code>npm install</code> to install all files</li>
-									<li>Run <code>grunt</code> to start running the project. If will automatically watch for changes in your SCSS and compile it to CSS</li>
-									<li>Or use <code>grunt create_css</code> to create your CSS manually</li>
-								</ul>
-							</div>
-							<div class="block">
-								<div class="g">
-									<div id="starter" class="b0_12">
-										<div class="block block-invert p-3x pt-2x">
-											<h2>Full package</h2>
-											<p>
-												<div>
-													<a class="github-button" href="https://github.com/castlecss/castlecss" aria-label="Watch castlecss/castlecss-core on GitHub">Watch</a>
-													<a class="github-button" href="https://github.com/castlecss/castlecss" aria-label="Star castlecss/castlecss-core on GitHub">Star</a>
-													<a class="github-button" href="https://github.com/castlecss/castlecss/archive/master.zip" aria-label="Download castlecss/castlecss on GitHub">Download</a>
-												</div>
-											</p>
-											<h3>Installation</h3>
-											<p>
-												<code>npm install castlecss</code><br />
-											</p>
-											<h3>Updating</h3>
-											<p class="alert">
-												<strong>NOTE:</strong> Only update the dependencies so you don't overwrite your own SCSS files. If you do update the Full package you'll overwrite everything. <br/>
-												We recommend downloading the full package and updating the dependencies like:
-											</p>
-											<p>
-												<code>npm update castlecss-core</code><br />
-												<code>npm update castlecss-buttons</code><br />
-												<code>npm update castlecss-notifications</code><br />
-											</p>
-											<h3>What's included?</h3>
-											<p>
-												<ul>
-													<li><strong>Example project setup</strong></li>
-													<li><strong>Gruntfile and task</strong></li>
-													<li><strong>castlecss-core</strong></li>
-													<li><strong>castlecss-buttons</strong></li>
-													<li><strong>castlecss-notifications</strong></li>
-												</ul>							
-											</p>
-										</div>
-									</div>
 									<div id="core" class="b0_12">
 										<div class="block block-invert p-3x pt-2x">
 											<h2>Core only</h2>
