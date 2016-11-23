@@ -1,7 +1,7 @@
 {
   "name": "castlecss-docs",
   "version": "0.2.0",
-  "description": "Documentation for CastleCSS",
+  "description": "Documentation website for CastleCSS",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
