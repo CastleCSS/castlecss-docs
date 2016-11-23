@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Buttons - CastleCSS</title>
+	<title>Variables - CastleCSS</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" />
 
 	<link rel="stylesheet" href="css/styles.min.css" />
@@ -71,41 +71,85 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 			<!-- Main -->
 			<div class="b0_12 b4_14 b4_push_01">
-				
+
 				<div class="p-3x">
-					
+
 					<div class="block">
-						<h1>Buttons</h1>
-						<p class="intro">Get your visitors clicking</p>
-						<p class="alert">
-							Note: You need castlecss-buttons or the full package of CastleCSS for this.
+						<h1>Variables</h1>
+						<p class="intro">Tweak your castles defaults</p>
+						<p class="alert mb">
+							This is the variable file example for castlecss-core LOWER then 2.0, need 2.x? <a href="variables.html">Click here</a>
 						</p>
-						<p>Feel free to use these buttons to get you started. Create your own buttons.scss to overwrite the standard buttons or edit your <a href="variables.html">variables document</a> for different colors/styles.</p>
-					</div>
-					<div class="block p" style="background: #eee;">
-						<p><a href="#" class="btn">Button</a></p>
-						<p><a href="#" class="btn-theme01">Buttton theme01</a></p>
-						<p><a href="#" class="btn-theme02">Buttton theme02</a></p>
-						<p><a href="#" class="btn-theme03">Buttton theme03</a></p>
-						<p><a href="#" class="btn-theme04">Buttton theme04</a></p>
-						<p><a href="#" class="btn-theme05">Buttton theme05</a></p>
-						<p><a href="#" class="btn btn-full">Buttton full width</a></p>
-						<p>(Every theme-color possible)</p>
-					<pre class="brush: xml;">
-						<a href="#" class="btn"></a>
-						<a href="#" class="btn-theme01"></a>
-						<a href="#" class="btn-theme02"></a>
-						<a href="#" class="btn-theme03"></a>
-						<a href="#" class="btn-theme04"></a>
-						<a href="#" class="btn-theme05"></a>
-						<a href="#" class="btn btn-full"></a>
-					</pre>
-					</div>
+						<p class="alert">
+							Note: Never overwrite the castlecss-core variables, but instead create your own document and overwrite the variables there. We have already included said document in the <a href="https://github.com/CastleCSS/castlecss-boilerplate" target="_blank">boilerplate</a>.
+						</p>
+						<p>Below you can find the default settings of a CastleCSS website.</p>
 					<div class="block">
-						
+						<pre class="brush: sass">
+							/* 	Variables
+								Add or replace variables in your OWN variables file
+							*/
+
+							/*
+								Base colors
+								Color 01 and 02 reservered for white and black
+							*/
+							$color01:  	#fff;
+							$color02:  	#000;
+
+							/*	Theme colors */
+							$theme01: 	#1B94BF;	// Knight blue
+							$theme02: 	#093142; 	// Royal blue
+							$theme03:	#12637F;	// Falcon blue
+							$theme04:	#FFC200;	// Royal yellow
+							$theme05:	#FFFFFF;	// Destroyer white
+
+							$alert:		#FFD700;
+							$negative:	#FF7878;
+							$positive:	#29C85D;
+							$disabled:	#CDCDC1;
+
+							/* Breakpoints */
+							$b1: 320px;
+							$b2: 480px;
+							$b3: 768px;
+							$b4: 1024px;
+							$b5: 1280px;
+							$b6: 1600px;
+
+							/* Container sizes */
+							$container: 100%;
+							$container-b1: 100%;
+							$container-b2: 100%;
+							$container-b3: 744px;
+							$container-b4: 996px;
+							$container-b5: 1224px;
+							$container-b6: 1400px;
+
+							/* Grid */
+							$flexbox-grid:	 true;
+							$grid-gutter:	 12px;
+							$grid-gutter-b1: 12px;
+							$grid-gutter-b2: 12px;
+							$grid-gutter-b3: 12px;
+							$grid-gutter-b4: 12px;
+							$grid-gutter-b5: 12px;
+							$grid-gutter-b6: 12px;
+
+							/* Default margin, padding, gutter */
+							$padding-default: 	12px;
+							$margin-default: 	12px;
+
+							/* Standard border-radius */
+							$radius:	5px;
+
+							/* Fonts */
+							$font-pri: Arial, Helvetica, sans-serif;
+							$font-sec: Arial, Helvetica, sans-serif;
+							$font-size-default: 1.6rem;
+							$line-height-default: 1.5;
+						</pre>
 					</div>
-
-
 
 					<!-- Scripts for footer -->
 					<!-- Scripts for documentation -->
