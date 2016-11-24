@@ -1,6 +1,6 @@
 {
   "name": "castlecss-docs",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Documentation website for CastleCSS",
   "main": "index.js",
   "scripts": {
@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
+    "concat": "0.0.1-security",
     "cssnano": "^3.7.3",
     "grunt": "^1.0.1",
     "grunt-contrib-watch": "~1.0.0",
@@ -42,7 +43,8 @@
     "grunt-sass": "^1.0.0",
     "jit-grunt": "^0.10.0",
     "nunjucks": "^2.4.2",
-    "pixrem": "^3.0.0"
+    "pixrem": "^3.0.0",
+    "uglify": "^0.1.5"
   },
   "bugs": {
     "url": "https://github.com/CastleCSS/castlecss-docs/issues"

@@ -37,7 +37,7 @@ module.exports = function(grunt) {
 						atrules: true
 					}),
 					// add vendor prefixes
-					require('autoprefixer')({ browsers: 'iOS >= 7, last 2 versions, ie > 7' }), 
+					require('autoprefixer')({ browsers: 'iOS >= 7, last 2 versions, ie > 7' }),
 					// minify the result
 					require('cssnano')()
 					]
@@ -84,15 +84,15 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-nunjucks-2-html');
 
 /*
-*	Grunt tasks	
+*	Grunt tasks
 *	Run with grunt or grunt <command> in terminal
 */
 grunt.registerTask('default', 'run');
 grunt.registerTask('run',
 	[
 	'nunjucks',
-	'sass', 
-	'postcss', 
+	'sass',
+	'postcss',
 	'watch'
 	]
 	);
