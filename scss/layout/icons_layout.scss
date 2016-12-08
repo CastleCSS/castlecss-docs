@@ -1,0 +1,28 @@
+.icon {
+	display: inline-block;
+	margin-bottom: $margin-default;
+	width: 7.5rem; height: 7.5rem;
+	font-size: 2.4rem; 
+	line-height: 7.5rem;
+	background: $color03;
+}
+
+.icon-social {
+	display: inline-block;
+	margin-bottom: $margin-default;
+	width: 5.5rem; height: 5.5rem;
+	border-radius: 50%; border: 1px solid $theme02;
+	font-size: 2.4rem; line-height: 4.5rem;
+	color: $theme02;
+	background: $color01;
+	transition: all .2s ease-out;
+
+	> * {
+		vertical-align: middle;
+	}
+
+	&:hover {
+		border: 1px solid $theme01;
+		color: $theme01;
+	}
+}

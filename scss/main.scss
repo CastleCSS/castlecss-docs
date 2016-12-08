@@ -7,19 +7,24 @@
 @import "node_modules/castlecss-core/sass/main";
 @import "node_modules/castlecss-buttons/sass/main";
 @import "node_modules/castlecss-notifications/sass/main";
+@import "node_modules/castlecss-icons/sass/main";
 
 /* 	Your own variables */
 @import "base/defaults";
 
 /* Docs styling */
-@import "plugins/font-awesome";
+//@import "plugins/font-awesome";
 
 @import "layout/docs_layout";
 @import "layout/docs_code";
 @import "layout/docs_menu";
 @import "layout/docs_mainvisual";
 
+/* Icons styling */
+@import "layout/icons_layout";
+
 /* 	Include your own files below this line
 	--------------------------------------
 */
 @import "base/fonts";
+
