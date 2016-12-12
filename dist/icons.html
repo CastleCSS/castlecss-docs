@@ -10,14 +10,59 @@
 	</head>
 
 	<body>
-	{% include "inc/analytics.html" %}
+	<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N85PTX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N85PTX');</script>
 	<div id="wrapper" class="wrapper">
 
 		<div class="g full-height">
 
 			<!-- Side -->
 			<div class="b0_12 b4_08 b5_06 b6_04">
-				{% include "inc/menu.html" %}
+				<!-- End Google Tag Manager -->
+<header id="header" class="nav-container p-3x">
+	<div class="nav-label">menu</div>
+	<a class="nav-logo" href="index.html"><img src="img/logo-castlecss.png"></a>
+	<ul class="doc-menu list-unstyled">
+		<li><a href="about.html">About CastleCSS</a></li>
+		<li>
+			<a href="installation.html">Installation</a>
+		</li>
+		<li><a href="variables.html">Variables</a></li>
+		<li>
+			<a href="grid.html">Breakpoints &amp; Grid</a>
+			<ul class="list-unstyled">
+				<li>
+					<a href="grid.html#basicexamples">The basics</a>
+				</li>
+				<li>
+					<a href="grid.html#breakpoints">Breakpoints</a>
+				</li>
+				<li>
+					<a href="grid.html#basicexamples">Basic grid examples</a>
+				</li>
+				<li>
+					<a href="grid.html#gutters">Gutters</a>
+				</li>
+				<li>
+					<a href="grid.html#directionalignment">Direction and alignment</a>
+				</li>
+			</ul>
+		</li>
+		<li><a href="utility.html">Utility classes</a></li>
+		<li><a href="utility_spacers.html">Utility spacers</a></li>
+		<li><a href="icons.html">Icons</a></li>
+		<li><a href="buttons.html">Buttons</a></li>
+		<li><a href="notifications.html">Notifications / alerts</a></li>
+		<li><a href="mixins.html">Mixins</a></li>
+	</ul>
+</header>
+
 			</div>
 			<!-- End side -->
 
@@ -221,6 +266,29 @@
 		</div>
 	</div>
 	<!-- Scripts for footer -->
-	{% include "inc/footer.html" %}
+	<!-- Scripts for documentation -->
+<footer id="footer">
+
+</footer>
+<script>
+	$(function () {
+		navOpen();
+	});
+	function navOpen() {
+		$('.nav-label, .open-documentation').on('click', function(e) {
+			$('.nav-container').toggleClass('nav-container-active');
+			e.preventDefault();
+		});
+	}
+
+</script>
+
+<script src="js/shCore.js"></script>
+<script src="js/shBrushXml.js"></script>
+<script src="js/shBrushSass.js"></script>
+<script src="js/shBrushJScript.js"></script>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
 	</body>
 </html>
