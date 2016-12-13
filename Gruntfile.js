@@ -64,6 +64,8 @@ module.exports = function(grunt) {
 				render: {
 					options: {
 						paths: ['views'],
+						trimBlock: true,
+						lstripBlocks: true,
 						data: grunt.file.readJSON('templates-data.json')
 					},
 					files: [
