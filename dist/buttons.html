@@ -1,19 +1,19 @@
+
+
+
 <!DOCTYPE html>
 <html>
 
-<head>
-	<title>Buttons - CastleCSS</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" />
+	<head>
+		<title>Buttons - CastleCSS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" />
+		<link rel="stylesheet" href="css/styles.min.css" />
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
+	</head>
 
-	<link rel="stylesheet" href="css/styles.min.css" />
-	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css " />
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
-
-</head>
-
-<body>
+	<body>
+	
 	<!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N85PTX"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -22,7 +22,8 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-N85PTX');</script>
-	<div id="wrapper" class="wrapper">
+	
+	<div id="wrapper" class="wrapper ">
 
 		<div class="g full-height">
 
@@ -32,108 +33,130 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <header id="header" class="nav-container p-3x">
 	<div class="nav-label">menu</div>
 	<a class="nav-logo" href="index.html"><img src="img/logo-castlecss.png"></a>
+	
 	<ul class="doc-menu list-unstyled">
-		<li><a href="about.html">About CastleCSS</a></li>
-		<li>
-			<a href="installation.html">Installation</a>
-		</li>
-		<li><a href="variables.html">Variables</a></li>
-		<li>
-			<a href="grid.html">Breakpoints &amp; Grid</a>
+	
+	  <li><a href="/about.html" >About CastleCSS</a>
+		
+	  </li>
+	
+	  <li><a href="/installation.html" >Installation</a>
+		
+	  </li>
+	
+	  <li><a href="/variables.html" >Variables</a>
+		
+	  </li>
+	
+	  <li><a href="/grid.html" >Breakpoints &amp; Grid</a>
+		
 			<ul class="list-unstyled">
-				<li>
-					<a href="grid.html#basicexamples">The basics</a>
-				</li>
-				<li>
-					<a href="grid.html#breakpoints">Breakpoints</a>
-				</li>
-				<li>
-					<a href="grid.html#basicexamples">Basic grid examples</a>
-				</li>
-				<li>
-					<a href="grid.html#gutters">Gutters</a>
-				</li>
-				<li>
-					<a href="grid.html#directionalignment">Direction and alignment</a>
-				</li>
+			
+				<li><a href="grid.html#basicexamples">The basics</a>
+			
+				<li><a href="grid.html#breakpoints">Breakpoints</a>
+			
+				<li><a href="grid.html#basicexamples">Basic grid examples</a>
+			
+				<li><a href="grid.html#gutters">Gutters</a>
+			
+				<li><a href="grid.html#directionalignment">Direction and alignment</a>
+			
 			</ul>
-		</li>
-		<li><a href="utility.html">Utility classes</a></li>
-		<li><a href="utility_spacers.html">Utility spacers</a></li>
-		<li><a href="icons.html">Icons</a></li>
-		<li><a href="buttons.html">Buttons</a></li>
-		<li><a href="notifications.html">Notifications / alerts</a></li>
-		<li><a href="mixins.html">Mixins</a></li>
+		
+	  </li>
+	
+	  <li><a href="/utility.html" >Utility classes</a>
+		
+	  </li>
+	
+	  <li><a href="/utility_spacers.html" >Utility spacers</a>
+		
+	  </li>
+	
+	  <li><a href="/icons.html" >Icons</a>
+		
+	  </li>
+	
+	  <li><a href="/buttons.html" class="active">Buttons</a>
+		
+	  </li>
+	
+	  <li><a href="/notifications.html" >Notifications / alerts</a>
+		
+	  </li>
+	
+	  <li><a href="/mixins.html" >Mixins</a>
+		
+	  </li>
+	
 	</ul>
+
+
+	
+
 </header>
 
 			</div>
 			<!-- End side -->
 
-			<!-- Main -->
-			<div class="b0_12 b4_14 b4_push_01">
-				
-				<div class="p-3x">
-					
-					<div class="block">
-						<h1>Buttons</h1>
-						<p class="intro">Get your visitors clicking</p>
-						<p class="alert">
-							Note: You need castlecss-buttons or the full package of CastleCSS for this.
-						</p>
-						<p>Feel free to use these buttons to get you started. Create your own buttons.scss to overwrite the standard buttons or edit your <a href="variables.html">variables document</a> for different colors/styles.</p>
-					</div>
-					<div class="block p" style="background: #eee;">
-						<p><a href="#" class="btn">Button</a></p>
-						<p><a href="#" class="btn-theme01">Buttton theme01</a></p>
-						<p><a href="#" class="btn-theme02">Buttton theme02</a></p>
-						<p><a href="#" class="btn-theme03">Buttton theme03</a></p>
-						<p><a href="#" class="btn-theme04">Buttton theme04</a></p>
-						<p><a href="#" class="btn-theme05">Buttton theme05</a></p>
-						<p><a href="#" class="btn btn-full">Buttton full width</a></p>
-						<p>(Every theme-color possible)</p>
-					<pre class="brush: xml;">
-						<a href="#" class="btn"></a>
-						<a href="#" class="btn-theme01"></a>
-						<a href="#" class="btn-theme02"></a>
-						<a href="#" class="btn-theme03"></a>
-						<a href="#" class="btn-theme04"></a>
-						<a href="#" class="btn-theme05"></a>
-						<a href="#" class="btn btn-full"></a>
-					</pre>
-					</div>
-					<div class="block">
-						
-					</div>
 
+	<!-- Main -->
+	<div class="b0_12 b4_14 b4_push_01">
+		<div class="p-3x">
+			<div class="block">
+				<h1>Buttons</h1>
+				<p class="intro">Get your visitors clicking</p>
+				<p class="alert">
+					Note: You need castlecss-buttons or the full package of CastleCSS for this.
+				</p>
+				<p>Feel free to use these buttons to get you started. Create your own buttons.scss to overwrite the standard buttons or edit your <a href="variables.html">variables document</a> for different colors/styles.</p>
+			</div>
+			<div class="block p" style="background: #eee;">
+				<p><a href="#" class="btn">Button</a></p>
+				<p><a href="#" class="btn-theme01">Buttton theme01</a></p>
+				<p><a href="#" class="btn-theme02">Buttton theme02</a></p>
+				<p><a href="#" class="btn-theme03">Buttton theme03</a></p>
+				<p><a href="#" class="btn-theme04">Buttton theme04</a></p>
+				<p><a href="#" class="btn-theme05">Buttton theme05</a></p>
+				<p><a href="#" class="btn btn-full">Buttton full width</a></p>
+				<p>(Every theme-color possible)</p>
+				<pre class="brush: xml;">
+					<a href="#" class="btn"></a>
+					<a href="#" class="btn-theme01"></a>
+					<a href="#" class="btn-theme02"></a>
+					<a href="#" class="btn-theme03"></a>
+					<a href="#" class="btn-theme04"></a>
+					<a href="#" class="btn-theme05"></a>
+					<a href="#" class="btn btn-full"></a>
+				</pre>
+			</div>
+		</div>
+	</div>
+	<!-- End main -->
 
+		<!-- Scripts for documentation -->
+		<footer id="footer">
 
-					<!-- Scripts for footer -->
-					<!-- Scripts for documentation -->
-<footer id="footer">
+		</footer>
+		<script>
+			$(function () {
+				navOpen();
+			});
+			function navOpen() {
+				$('.nav-label, .open-documentation').on('click', function(e) {
+					$('.nav-container').toggleClass('nav-container-active');
+					e.preventDefault();
+				});
+			}
 
-</footer>
-<script>
-	$(function () {
-		navOpen();
-	});
-	function navOpen() {
-		$('.nav-label, .open-documentation').on('click', function(e) {
-			$('.nav-container').toggleClass('nav-container-active');
-			e.preventDefault();
-		});
-	}
+		</script>
 
-</script>
-
-<script src="js/shCore.js"></script>
-<script src="js/shBrushXml.js"></script>
-<script src="js/shBrushSass.js"></script>
-<script src="js/shBrushJScript.js"></script>
-<script type="text/javascript">SyntaxHighlighter.all();</script>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-
-
-				</body>
-
-				</html>
+		<script src="js/shCore.js"></script>
+		<script src="js/shBrushXml.js"></script>
+		<script src="js/shBrushSass.js"></script>
+		<script src="js/shBrushJScript.js"></script>
+		<script type="text/javascript">SyntaxHighlighter.all();</script>
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+	</body>
+</html>

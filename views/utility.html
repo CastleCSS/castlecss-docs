@@ -1,251 +1,223 @@
-<!DOCTYPE html>
-<html>
+{% set currentPageId = 'utility' %}
+{% set pageTitle = 'Utility classes - CastleCSS' %}
 
-<head>
-	<title>Utility classes - CastleCSS</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" />
+{% include "inc/header.html" %}
 
-	<link rel="stylesheet" href="css/styles.min.css" />
-	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css " />
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
-
-</head>
-
-<body>
-	{% include "inc/analytics.html" %}
-	<div id="wrapper" class="wrapper">
-
-		<div class="g full-height">
-
-			<!-- Side -->
-			<div class="b0_12 b4_08 b5_06 b6_04">
-				{% include "inc/menu.html" %}
+	<!-- Main -->
+	<div class="b0_12 b4_14 b4_push_01">
+		<div class="p-3x">
+			<div class="block">
+				<h1>Utility classes</h1>
+				<p class="intro">Manipulate your HTML the easy way</p>
+				<p>We included some utility classes to make your life easier, also see <a href="utility_spacers.html">utility_spacers.scss</a>
+				</p>
 			</div>
-			<!-- End side -->
+			<div class="block">
+				<h2>Text-alignment, variable per breakpoint</h2>
+				<table class="specs">
+					<tr>
+						<th>Class</th>
+						<th>Value</th>
+					</tr>
+					<tr>
+						<td><code>ta-left</code></td>
+						<td>text-align: left</td>
+					</tr>
+					<tr>
+						<td><code>ta-right</code></td>
+						<td>text-align: right</td>
+					</tr>
+					<tr>
+						<td><code>ta-center</code></td>
+						<td>text-align: center</td>
+					</tr>
+					<tr>
+						<td><code>ta-left-b{breakpoint}</code></td>
+						<td>text-align: left for that breakpoint and higher</td>
+					</tr>
+					<tr>
+						<td><code>ta-right-b{breakpoint}</code></td>
+						<td>text-align: right for that breakpoint and higher</td>
+					</tr>
+					<tr>
+						<td><code>ta-center-b{breakpoint}</code></td>
+						<td>text-align: center for that breakpoint and higher</td>
+					</tr>
+				</table>
+				<h4>Text-alignment examples</h4>
+				<code class="code-multi ta-center">
+					Align center
+				</code>
+				<pre class="brush: sass;">
+					<code class="ta-center"></code>
+				</pre>
+				<code class="code-multi ta-center ta-left-b3">
+					Align center, left breakpoint 3+
+				</code>
+				<pre class="brush: sass;">
+					<code class="a-center ta-left-b3"></code>
+				</pre>
+				<code class="code-multi ta-right-b5">
+					Align right breakpoint b5+
+				</code>
+				<pre class="brush: sass;">
+					<code class="ta-right-b5"></code>
+				</pre>
+			</div>
+			<div class="block">
+				<h2>Floating and clearing, variable per breakpoint</h2>
+				<table class="specs">
+					<tr>
+						<th>Class</th>
+						<th>Value</th>
+					</tr>
+					<tr>
+						<td><code>fl</code></td>
+						<td>float: left</td>
+					</tr>
+					<tr>
+						<td><code>fr</code></td>
+						<td>float: right</td>
+					</tr>
+					<tr>
+						<td><code>fn</code></td>
+						<td>float: none</td>
+					</tr>
+					<tr>
+						<td><code>fl-b{breakpoint}</code></td>
+						<td>float: left for that breakpoint and higher</td>
+					</tr>
+					<tr>
+						<td><code>fr-b{breakpoint}</code></td>
+						<td>float: right for that breakpoint and higher</td>
+					</tr>
+					<tr>
+						<td><code>fn-b{breakpoint}</code></td>
+						<td>float: none for that breakpoint and higher</td>
+					</tr>
+				</table>
+				<table class="specs">
+					<tr>
+						<th>Class</th>
+						<th>Value</th>
+					</tr>
+					<tr>
+						<td><code>cl</code></td>
+						<td>clear: left</td>
+					</tr>
+					<tr>
+						<td><code>cr</code></td>
+						<td>clear: right</td>
+					</tr>
+					<tr>
+						<td><code>cb</code></td>
+						<td>clear: both</td>
+					</tr>
+					<tr>
+						<td><code>cn</code></td>
+						<td>clear: none</td>
+					</tr>
+					<tr>
+						<td><code>cl-b{breakpoint}</code></td>
+						<td>clear: left for that breakpoint and higher</td>
+					</tr>
+					<tr>
+						<td><code>cr-b{breakpoint}</code></td>
+						<td>clear: right for that breakpoint and higher</td>
+					</tr>
+					<tr>
+						<td><code>cb-b{breakpoint}</code></td>
+						<td>clear: both for that breakpoint and higher</td>
+					</tr>
+					<tr>
+						<td><code>cn-b{breakpoint}</code></td>
+						<td>clear: none for that breakpoint and higher</td>
+					</tr>
+				</table>					
+			</div>
+			<div class="block">
+				<h2>Clearfix</h2>
+				<p>Placing the <code>cf</code> class on a container will clear the floating elements within.</p>
+				<table class="specs">
+					<tr>
+						<th>Class</th>
+						<th>Value</th>
+					</tr>
+					<tr>
+						<td><code>cf</code></td>
+						<td>.cf:before, .cf:after, ul.fields > li:before, ul.fields > li:after {content:"";display:table;}<br />.cf:after, .g:after, ul.fields > li:after {clear:both;}</td>
+					</tr>
+				</table>
+			</div>
+			<div class="block">
+				<h2>Border radius</h2>
+				<table class="specs">
+					<tr>
+						<th>Class</th>
+						<th>Value</th>
+					</tr>
+					<tr>
+						<td><code>radius</code></td>
+						<td>border-radius: $radius;</td>
+					</tr>
+				</table>
+			</div>
+			<div class="block">
+				<h2>Hide/show</h2>
+				<table class="specs">
+					<tr>
+						<th>Class</th>
+						<th>Value</th>
+					</tr>
+					<tr>
+						<td><code>hide</code></td>
+						<td>display: none;</td>
+					</tr>
+					<tr>
+						<td><code>show</code></td>
+						<td>display: block;</td>
+					</tr>
+				</table>
+			</div>
+			<div class="block">
+				<h2>Image-alignment</h2>
+				<p>Wrap your image in a <code>figure</code> element with these classes to float your images within chunks of text.</p>	
+				<table class="specs">
+					<tr>
+						<th>Class</th>
+						<th>Value</th>
+					</tr>
+					<tr>
+						<td><code>img-right</code></td>
+						<td>display: block; margin: .8rem auto 1.6rem; text-align: center;</td>
+					</tr>
+					<tr>
+						<td><code>img-left</code></td>
+						<td>display: block; margin: .8rem auto 1.6rem; text-align: center;</td>
+					</tr>
+					<tr>
+						<td><code>img-center</code></td>
+						<td>display: block; margin: .8rem auto 1.6rem; text-align: center;</td>
+					</tr>
+				</table>
+			</div>
+			<div class="block">
+				<h2>Full width element</h2>
+				<p>Add this class to stretch your element to the full width of his parent.</p>
+				<table class="specs">
+					<tr>
+						<th>Class</th>
+						<th>Value</th>
+					</tr>
+					<tr>
+						<td><code>full-block</code></td>
+						<td>width: 100%; display: block;</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- End main -->
 
-			<!-- Main -->
-			<div class="b0_12 b4_14 b4_push_01">
-				
-				<div class="p-3x">
-					
-					<div class="block">
-						<h1>Utility classes</h1>
-						<p class="intro">Manipulate your HTML the easy way</p>
-						<p>We included some utility classes to make your life easier, also see <a href="utility_spacers.html">utility_spacers.scss</a>
-						</p>
-					</div>
-					<div class="block">
-						<h2>Text-alignment, variable per breakpoint</h2>
-						<table class="specs">
-							<tr>
-								<th>Class</th>
-								<th>Value</th>
-							</tr>
-							<tr>
-								<td><code>ta-left</code></td>
-								<td>text-align: left</td>
-							</tr>
-							<tr>
-								<td><code>ta-right</code></td>
-								<td>text-align: right</td>
-							</tr>
-							<tr>
-								<td><code>ta-center</code></td>
-								<td>text-align: center</td>
-							</tr>
-							<tr>
-								<td><code>ta-left-b{breakpoint}</code></td>
-								<td>text-align: left for that breakpoint and higher</td>
-							</tr>
-							<tr>
-								<td><code>ta-right-b{breakpoint}</code></td>
-								<td>text-align: right for that breakpoint and higher</td>
-							</tr>
-							<tr>
-								<td><code>ta-center-b{breakpoint}</code></td>
-								<td>text-align: center for that breakpoint and higher</td>
-							</tr>
-						</table>
-						<h4>Text-alignment examples</h4>
-						<code class="code-multi ta-center">
-							Align center
-						</code>
-						<pre class="brush: sass;">
-							<code class="ta-center"></code>
-						</pre>
-						<code class="code-multi ta-center ta-left-b3">
-							Align center, left breakpoint 3+
-						</code>
-						<pre class="brush: sass;">
-							<code class="a-center ta-left-b3"></code>
-						</pre>
-						<code class="code-multi ta-right-b5">
-							Align right breakpoint b5+
-						</code>
-						<pre class="brush: sass;">
-							<code class="ta-right-b5"></code>
-						</pre>
-					</div>
-					<div class="block">
-						<h2>Floating and clearing, variable per breakpoint</h2>
-						<table class="specs">
-							<tr>
-								<th>Class</th>
-								<th>Value</th>
-							</tr>
-							<tr>
-								<td><code>fl</code></td>
-								<td>float: left</td>
-							</tr>
-							<tr>
-								<td><code>fr</code></td>
-								<td>float: right</td>
-							</tr>
-							<tr>
-								<td><code>fn</code></td>
-								<td>float: none</td>
-							</tr>
-							<tr>
-								<td><code>fl-b{breakpoint}</code></td>
-								<td>float: left for that breakpoint and higher</td>
-							</tr>
-							<tr>
-								<td><code>fr-b{breakpoint}</code></td>
-								<td>float: right for that breakpoint and higher</td>
-							</tr>
-							<tr>
-								<td><code>fn-b{breakpoint}</code></td>
-								<td>float: none for that breakpoint and higher</td>
-							</tr>
-						<table class="specs">
-							<tr>
-								<th>Class</th>
-								<th>Value</th>
-							</tr>
-							<tr>
-								<td><code>cl</code></td>
-								<td>clear: left</td>
-							</tr>
-							<tr>
-								<td><code>cr</code></td>
-								<td>clear: right</td>
-							</tr>
-							<tr>
-								<td><code>cb</code></td>
-								<td>clear: both</td>
-							</tr>
-							<tr>
-								<td><code>cn</code></td>
-								<td>clear: none</td>
-							</tr>
-							<tr>
-								<td><code>cl-b{breakpoint}</code></td>
-								<td>clear: left for that breakpoint and higher</td>
-							</tr>
-							<tr>
-								<td><code>cr-b{breakpoint}</code></td>
-								<td>clear: right for that breakpoint and higher</td>
-							</tr>
-							<tr>
-								<td><code>cb-b{breakpoint}</code></td>
-								<td>clear: both for that breakpoint and higher</td>
-							</tr>
-							<tr>
-								<td><code>cn-b{breakpoint}</code></td>
-								<td>clear: none for that breakpoint and higher</td>
-							</tr>
-						</table>					
-					</div>
-					<div class="block">
-						<h2>Clearfix</h2>
-						<p>Placing the <code>cf</code> class on a container will clear the floating elements within.</p>
-						<table class="specs">
-							<tr>
-								<th>Class</th>
-								<th>Value</th>
-							</tr>
-							<tr>
-								<td><code>cf</code></td>
-								<td>.cf:before, .cf:after, ul.fields > li:before, ul.fields > li:after {content:"";display:table;}<br />
-.cf:after, .g:after, ul.fields > li:after {clear:both;}</td>
-							</tr>
-						</table>
-					</div>
-					<div class="block">
-						<h2>Border radius</h2>
-						<table class="specs">
-							<tr>
-								<th>Class</th>
-								<th>Value</th>
-							</tr>
-							<tr>
-								<td><code>radius</code></td>
-								<td>border-radius: $radius;</td>
-							</tr>
-						</table>
-					</div>
-					<div class="block">
-						<h2>Hide/show</h2>
-						<table class="specs">
-							<tr>
-								<th>Class</th>
-								<th>Value</th>
-							</tr>
-							<tr>
-								<td><code>hide</code></td>
-								<td>display: none;</td>
-							</tr>
-							<tr>
-								<td><code>show</code></td>
-								<td>display: block;</td>
-							</tr>
-						</table>
-					</div>
-					<div class="block">
-						<h2>Image-alignment</h2>
-						<p>Wrap your image in a <code>figure</code> element with these classes to float your images within chunks of text.</p>	
-						<table class="specs">
-							<tr>
-								<th>Class</th>
-								<th>Value</th>
-							</tr>
-							<tr>
-								<td><code>img-right</code></td>
-								<td>display: block; margin: .8rem auto 1.6rem; text-align: center;</td>
-							</tr>
-							<tr>
-								<td><code>img-left</code></td>
-								<td>display: block; margin: .8rem auto 1.6rem; text-align: center;</td>
-							</tr>
-							<tr>
-								<td><code>img-center</code></td>
-								<td>display: block; margin: .8rem auto 1.6rem; text-align: center;</td>
-							</tr>
-						</table>
-					</div>
-					<div class="block">
-						<h2>Full width element</h2>
-						<p>Add this class to stretch your element to the full width of his parent.</p>
-						<table class="specs">
-							<tr>
-								<th>Class</th>
-								<th>Value</th>
-							</tr>
-							<tr>
-								<td><code>full-block</code></td>
-								<td>width: 100%; display: block;</td>
-							</tr>
-						</table>
-					</div>
+{% include "inc/footer.html" %}
 
-						
-
-						<!-- Scripts for footer -->
-						<footer id="footer"></footer>
-						{% include "inc/footer.html" %}
-
-					</body>
-
-					</html>

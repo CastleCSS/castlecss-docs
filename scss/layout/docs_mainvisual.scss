@@ -45,6 +45,11 @@
 			text-decoration: none;
 			padding-bottom: 12px;
 
+			&.active {
+				color: $theme04;
+			}
+
+
 			&:hover {
 				text-decoration: underline;
 			}

@@ -2,37 +2,40 @@
 <header id="header" class="nav-container p-3x">
 	<div class="nav-label">menu</div>
 	<a class="nav-logo" href="index.html"><img src="img/logo-castlecss.png"></a>
+	{% set items = [
+		{ url: "/about.html", id: "about", title: "About CastleCSS", children: []},
+		{ url: "/installation.html", id: "installation", title: "Installation", children: []},
+		{ url: "/variables.html", id: "variables", title: "Variables", children: []},
+		{ url: "/grid.html", id: "grid", title: "Breakpoints & Grid", children: [
+			{url: "grid.html#basicexamples", id: "grid", title: "The basics"},
+			{url: "grid.html#breakpoints", id: "grid", title: "Breakpoints"},
+			{url: "grid.html#basicexamples", id: "grid", title: "Basic grid examples"},
+			{url: "grid.html#gutters", id: "grid", title: "Gutters"},
+			{url: "grid.html#directionalignment", id: "grid", title: "Direction and alignment"}
+		]},
+		{ url: "/utility.html", id: "utility", title: "Utility classes", children: []},
+		{ url: "/utility_spacers.html", id: "utility_spacers", title: "Utility spacers", children: []},
+		{ url: "/icons.html", id: "icons", title: "Icons", children: []},
+		{ url: "/buttons.html", id: "buttons", title: "Buttons", children: []},
+		{ url: "/notifications.html", id: "notifications", title: "Notifications / alerts", children: []},
+		{ url: "/mixins.html", id: "mixins", title: "Mixins", children: []}
+		
+	]  %}
 	<ul class="doc-menu list-unstyled">
-		<li><a href="about.html">About CastleCSS</a></li>
-		<li>
-			<a href="installation.html">Installation</a>
-		</li>
-		<li><a href="variables.html">Variables</a></li>
-		<li>
-			<a href="grid.html">Breakpoints &amp; Grid</a>
+	{% for item in items %}
+	  <li><a href="{{ item.url }}" {% if item.id == currentPageId %}class="active"{% endif %}>{{ item.title }}</a>
+		{% if item.children.length > 0 %}
 			<ul class="list-unstyled">
-				<li>
-					<a href="grid.html#basicexamples">The basics</a>
-				</li>
-				<li>
-					<a href="grid.html#breakpoints">Breakpoints</a>
-				</li>
-				<li>
-					<a href="grid.html#basicexamples">Basic grid examples</a>
-				</li>
-				<li>
-					<a href="grid.html#gutters">Gutters</a>
-				</li>
-				<li>
-					<a href="grid.html#directionalignment">Direction and alignment</a>
-				</li>
+			{% for child in item.children %}
+				<li><a href="{{ child.url }}">{{ child.title }}</a>
+			{% endfor %}
 			</ul>
-		</li>
-		<li><a href="utility.html">Utility classes</a></li>
-		<li><a href="utility_spacers.html">Utility spacers</a></li>
-		<li><a href="icons.html">Icons</a></li>
-		<li><a href="buttons.html">Buttons</a></li>
-		<li><a href="notifications.html">Notifications / alerts</a></li>
-		<li><a href="mixins.html">Mixins</a></li>
+		{% endif %}
+	  </li>
+	{% endfor %}
 	</ul>
+
+
+	
+
 </header>
