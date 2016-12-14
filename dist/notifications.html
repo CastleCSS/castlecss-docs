@@ -141,26 +141,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			$(function () {
 				navOpen();
 
-				// window.onscroll = function(e) {
-				//     offSetManager();
-				// }
+				window.onscroll = function(e) {
+			    	offSetManager();
+				}
 			});
 				
 			function offSetManager(){
 
 			    var yOffset = 110;
 			    var currYOffSet = window.pageYOffset;
+			    var menuHeight = $('.doc-menu').height();
+				var windowHeight = $(window).height();
 
-			    if(yOffset < currYOffSet) {
+			    if((yOffset < currYOffSet) && (menuHeight < windowHeight)) {
 			        $('.nav-wrap').addClass('fixed');
+			    } else if(yOffset > currYOffSet){
+		         	$('.nav-wrap').removeClass('fixed');
 			    }
-			    else {
-
-			    	if(currYOffSet < yOffset){
-			        	$('.nav-wrap').removeClass('fixed');
-			        }
-			    }
-
 			}
 
 			function navOpen() {
