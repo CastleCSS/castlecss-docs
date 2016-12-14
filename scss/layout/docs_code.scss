@@ -1,9 +1,8 @@
 code {
-	@include ellipsis;
 	display: inline;
 	padding: 1px;
 	background: #fff0c3;
-	border: 1px solid darken(#fff0c3, 10%);
+	border: 1px solid darken(#fff0c3, 10%); 
 }
 .code-multi {
 	display: block;
@@ -59,6 +58,12 @@ table {
 				background: lighten( $theme03, 20% );
 			}
 		}
+	}
+}
+
+@media only screen and ( min-width: $b2 ) and ( max-width: $b5 - 1 ) {
+	code {
+		@include ellipsis();
 	}
 }
 

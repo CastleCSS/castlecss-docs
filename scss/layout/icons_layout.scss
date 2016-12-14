@@ -1,4 +1,4 @@
-.icon {
+.docs-icon {
 	position: relative;
 	display: inline-block;
 	padding-bottom: 100%;
@@ -11,25 +11,12 @@
     	margin-right: -50%;
 	 	transform: translate(-50%, -50%);
 	 }
-}
 
-.icon-social {
-	@extend .icon;
-	border-radius: 50%; border: 1px solid $theme02;
-	font-size: 2.4rem;
-	background: $color01;
-	transition: all .2s ease-out;
-
-	&:hover {
-		border: 1px solid $theme01;
-		color: $theme01;
-	}
-}
-
-@media only screen and ( min-width: $b5 ) {
-	.icon-social {
-		padding-bottom: 80%;
-		width: 80%;
-	}
+	 + .docs-code {
+	 	display: block;
+	 	margin-bottom: $margin-default/2;
+	 	font-size: 12px;
+	 	word-wrap: break-word;
+	 }
 }
 
