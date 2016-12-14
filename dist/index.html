@@ -27,68 +27,69 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<!-- Side -->
 			<div class="b0_12 b4_08 b5_06 b6_04">
 <!-- End Google Tag Manager -->
-<header id="header" class="nav-container p-3x">
+<header id="header" class="nav-container">
 	<div class="nav-label">menu</div>
-	<a class="nav-logo" href="index.html"><img src="img/logo-castlecss.png"></a>
+	<a class="nav-logo  p-b4-3x" href="index.html"><img src="img/logo-castlecss.png"></a>
+	<div class="nav-wrap pl-3x pr-3x">
 
-	<ul class="doc-menu list-unstyled">
+		<ul class="doc-menu list-unstyled">
 
-	  <li><a href="/about.html" >About CastleCSS</a>
+		  <li><a href="/about.html" >About CastleCSS</a>
 
-	  </li>
+		  </li>
 
-	  <li><a href="/installation.html" >Installation</a>
+		  <li><a href="/installation.html" >Installation</a>
 
-	  </li>
+		  </li>
 
-	  <li><a href="/variables.html" >Variables</a>
+		  <li><a href="/variables.html" >Variables</a>
 
-	  </li>
+		  </li>
 
-	  <li><a href="/grid.html" >Breakpoints &amp; Grid</a>
+		  <li><a href="/grid.html" >Breakpoints &amp; Grid</a>
 
-			<ul class="list-unstyled">
+				<ul class="list-unstyled">
 
-				<li><a href="grid.html#basicexamples">The basics</a>
+					<li><a href="grid.html#basicexamples">The basics</a>
 
-				<li><a href="grid.html#breakpoints">Breakpoints</a>
+					<li><a href="grid.html#breakpoints">Breakpoints</a>
 
-				<li><a href="grid.html#basicexamples">Basic grid examples</a>
+					<li><a href="grid.html#basicexamples">Basic grid examples</a>
 
-				<li><a href="grid.html#gutters">Gutters</a>
+					<li><a href="grid.html#gutters">Gutters</a>
 
-				<li><a href="grid.html#directionalignment">Direction and alignment</a>
+					<li><a href="grid.html#directionalignment">Direction and alignment</a>
 
-			</ul>
+				</ul>
 
-	  </li>
+		  </li>
 
-	  <li><a href="/utility.html" >Utility classes</a>
+		  <li><a href="/utility.html" >Utility classes</a>
 
-	  </li>
+		  </li>
 
-	  <li><a href="/utility_spacers.html" >Utility spacers</a>
+		  <li><a href="/utility_spacers.html" >Utility spacers</a>
 
-	  </li>
+		  </li>
 
-	  <li><a href="/icons.html" >Icons</a>
+		  <li><a href="/icons.html" >Icons</a>
 
-	  </li>
+		  </li>
 
-	  <li><a href="/buttons.html" >Buttons</a>
+		  <li><a href="/buttons.html" >Buttons</a>
 
-	  </li>
+		  </li>
 
-	  <li><a href="/notifications.html" >Notifications / alerts</a>
+		  <li><a href="/notifications.html" >Notifications / alerts</a>
 
-	  </li>
+		  </li>
 
-	  <li><a href="/mixins.html" >Mixins</a>
+		  <li><a href="/mixins.html" >Mixins</a>
 
-	  </li>
+		  </li>
 
-	</ul>
-
+		</ul>
+	</div>
 
 	
 
@@ -120,7 +121,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<script>
 			$(function () {
 				navOpen();
+
+				// window.onscroll = function(e) {
+				//     offSetManager();
+				// }
 			});
+				
+			function offSetManager(){
+
+			    var yOffset = 110;
+			    var currYOffSet = window.pageYOffset;
+
+			    if(yOffset < currYOffSet) {
+			        $('.nav-wrap').addClass('fixed');
+			    }
+			    else {
+
+			    	if(currYOffSet < yOffset){
+			        	$('.nav-wrap').removeClass('fixed');
+			        }
+			    }
+
+			}
+
 			function navOpen() {
 				$('.nav-label, .open-documentation').on('click', function(e) {
 					$('.nav-container').toggleClass('nav-container-active');
