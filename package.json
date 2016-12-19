@@ -37,11 +37,11 @@
     "cssnano": "^3.7.3",
     "grunt": "^1.0.1",
     "grunt-contrib-watch": "~1.0.0",
-    "grunt-nunjucks-2-html": "^1.0.5",
+    "grunt-nunjucks-2-html": "^3.0.0",
     "grunt-postcss": "^0.8.0",
-    "grunt-sass": "^1.0.0",
+    "grunt-sass": "^2.0.0",
     "jit-grunt": "^0.10.0",
-    "nunjucks": "^2.4.2",
+    "nunjucks": "^3.0.0",
     "pixrem": "^3.0.0"
   },
   "bugs": {

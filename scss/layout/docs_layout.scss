@@ -1,3 +1,13 @@
 .btn {
 	white-space: nowrap;
 }
+
+	
+/* equal height for some blocks */
+.eq {
+    display: flex;
+
+	> * {
+		flex: 1;
+	}
+}

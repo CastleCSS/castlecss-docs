@@ -130,7 +130,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			</div>
 <h2 class="ta-center ta-left-b3">Example buttons with icons</h2> 
 <p class="alert">
-	Note: You need the castlecss-buttons and castlecss-icons packages or the <a href="https://github.com/CastleCSS/castlecss-boilerplate" target="_blank">castlecss-boilerplate</a> to combine icons and buttons.
+	Note: You need both the castlecss-buttons and castlecss-icons packages or the <a href="https://github.com/CastleCSS/castlecss-boilerplate" target="_blank">castlecss-boilerplate</a> to combine icons and buttons.
 </p>
 <div class="block p pt-2x" style="background: #eee;">
 	<div class="g mb-3x">
@@ -162,26 +162,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			$(function () {
 				navOpen();
 
-				// window.onscroll = function(e) {
-				//     offSetManager();
-				// }
+				window.onscroll = function(e) {
+			    	offSetManager();
+				}
 			});
 				
 			function offSetManager(){
 
 			    var yOffset = 110;
 			    var currYOffSet = window.pageYOffset;
+			    var menuHeight = $('.doc-menu').height();
+				var windowHeight = $(window).height();
 
-			    if(yOffset < currYOffSet) {
+			    if((yOffset < currYOffSet) && (menuHeight < windowHeight)) {
 			        $('.nav-wrap').addClass('fixed');
+			    } else if(yOffset > currYOffSet){
+		         	$('.nav-wrap').removeClass('fixed');
 			    }
-			    else {
-
-			    	if(currYOffSet < yOffset){
-			        	$('.nav-wrap').removeClass('fixed');
-			        }
-			    }
-
 			}
 
 			function navOpen() {
