@@ -236,14 +236,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					</li> 
 					<li class="b0_12 mt-2x"><h2>Custom select</h2></li>
 					<li class="b0_12 input-select">
-						<div class="select">
-							<select>
-								<option>First select</option>
-								<option>Option</option>
-								<option>Option</option>
-							</select>
-							<div class="select-arrow"></div>
-						</div>
+						<select>
+							<option>First select</option>
+							<option>Option</option>
+							<option>Option</option>
+						</select>
 					</li>
 				</ul>
 				<ul class="fields formlabel-bottom g"> 
@@ -265,36 +262,50 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 	<!-- TODO CastleModules van maken : data-castlemodule='castlecss-forms' -->
 	<script>
-		$('.js-forms').find('.form-field').each(function(){
-			var $this = $(this);
+		$(function() {
+			$('.js-forms').find('.form-field').each(function(){
+				var $this = $(this);
 
-			function setValue($field) {
-				// Check if inputs or textareas have a value
-				if( $field.val() == null )
-					return;
-				else if( $field.val().length > 0 )
-					$field.parents('.form-field').addClass('has-value');
-				else if( $field.val().length === 0 )
-					$field.parents('.form-field').removeClass('has-value');
-					// Check if select has an option selected with a value
-				else if( field[0].tagName.match('select') && $field.find('option:selected').val() )
-					$field.parents('.form-field').addClass('has-value');
-				else
-					$field.parents('.form-field').removeClass('has-value');
-			}	
-					
-			// Get all formfields			
-			var $formfields = $this.find('input, textarea, select');
-			
-			// Check if there is already a value
-			$formfields.each(function(){
-				setValue($(this));
-			}).focus(function(){
-				$(this).parents('.form-field').addClass('has-focus');
-			}).focusout(function(){
-				$(this).parents('.form-field').removeClass('has-focus');
-			}).on('keyup change', function(){
-				setValue($(this));
+				function setValue($field) {
+					// Check if inputs or textareas have a value
+					if( $field.val() == null )
+						return;
+					else if( $field.val().length > 0 )
+						$field.parents('.form-field').addClass('has-value');
+					else if( $field.val().length === 0 )
+						$field.parents('.form-field').removeClass('has-value');
+						// Check if select has an option selected with a value
+					else if( field[0].tagName.match('select') && $field.find('option:selected').val() )
+						$field.parents('.form-field').addClass('has-value');
+					else
+						$field.parents('.form-field').removeClass('has-value');
+				}	
+						
+				// Get all formfields			
+				var $formfields = $this.find('input, textarea, select');
+				
+				// Check if there is already a value
+				$formfields.each(function(){
+					setValue($(this));
+				}).focus(function(){
+					$(this).parents('.form-field').addClass('has-focus');
+				}).focusout(function(){
+					$(this).parents('.form-field').removeClass('has-focus');
+				}).on('keyup change', function(){
+					setValue($(this));
+				});
+			});
+		});
+
+		$(function() {
+			$('select').each(function() {
+				var $this = $(this);
+				
+				if ($this.parent('.select').length == 0) {
+					$this.wrap('<div class="select">');
+
+					$('.select').append('<div class="select-arrow">')
+				}
 			});
 		});
 
