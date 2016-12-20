@@ -7,3 +7,6 @@ Sourcecode for www.castlecss.com and the documentation for [CastleCSS](https://g
 ## How to install
 - Download or clone this package
 - Look in the dist/ folder or build if yourself with GruntJS in your terminal: ```npm install``` + ```grunt```
+
+## Roadmap CastleCSS
+You can find the roadmap in the [CastleCSS Meta Package](https://github.com/CastleCSS/castlecss/roadmap.md).

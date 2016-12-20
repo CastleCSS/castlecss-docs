@@ -1,6 +1,3 @@
 *.log
 thumbs.db
-
-# Allow castlecss-core in gitignore
 node_modules
-!node_modules/castlecss-core
