@@ -46,7 +46,7 @@ module.exports = function(grunt) {
 
 			watch: {
 				scss: {
-					files: 'scss/**/*.scss',
+					files: ['scss/**/*.scss', 'node_modules/**/*.scss' ],
 					tasks: ['sass', 'postcss'],
 					options: {
 						spawn: false,
@@ -64,6 +64,8 @@ module.exports = function(grunt) {
 				render: {
 					options: {
 						paths: ['views'],
+						trimBlock: true,
+						lstripBlocks: true,
 						data: grunt.file.readJSON('templates-data.json')
 					},
 					files: [

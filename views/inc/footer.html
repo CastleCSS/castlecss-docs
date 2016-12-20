@@ -1,23 +1,44 @@
-<!-- Scripts for documentation -->
-<footer id="footer">
+		<!-- Scripts for documentation -->
+		<footer id="footer">
 
-</footer>
-<script>
-	$(function () {
-		navOpen();
-	});
-	function navOpen() {
-		$('.nav-label, .open-documentation').on('click', function(e) {
-			$('.nav-container').toggleClass('nav-container-active');
-			e.preventDefault();
-		});
-	}
+		</footer>
+		<script>
+			$(function () {
+				navOpen();
 
-</script>
+				window.onscroll = function(e) {
+			    	offSetManager();
+				}
+			});
+				
+			function offSetManager(){
 
-<script src="js/shCore.js"></script>
-<script src="js/shBrushXml.js"></script>
-<script src="js/shBrushSass.js"></script>
-<script src="js/shBrushJScript.js"></script>
-<script type="text/javascript">SyntaxHighlighter.all();</script>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
+			    var yOffset = 110;
+			    var currYOffSet = window.pageYOffset;
+			    var menuHeight = $('.doc-menu').height();
+				var windowHeight = $(window).height();
+
+			    if((yOffset < currYOffSet) && (menuHeight < windowHeight)) {
+			        $('.nav-wrap').addClass('fixed');
+			    } else if(yOffset > currYOffSet){
+		         	$('.nav-wrap').removeClass('fixed');
+			    }
+			}
+
+			function navOpen() {
+				$('.nav-label, .open-documentation').on('click', function(e) {
+					$('.nav-container').toggleClass('nav-container-active');
+					e.preventDefault();
+				});
+			}
+
+		</script>
+
+		<script src="js/shCore.js"></script>
+		<script src="js/shBrushXml.js"></script>
+		<script src="js/shBrushSass.js"></script>
+		<script src="js/shBrushJScript.js"></script>
+		<script type="text/javascript">SyntaxHighlighter.all();</script>
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+	</body>
+</html>

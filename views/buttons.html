@@ -1,71 +1,37 @@
-<!DOCTYPE html>
-<html>
+{% set currentPageId = 'buttons' %}{% set pageTitle = 'Buttons - CastleCSS' %}{% include "inc/header.html" %}
 
-<head>
-	<title>Buttons - CastleCSS</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" />
-
-	<link rel="stylesheet" href="css/styles.min.css" />
-	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css " />
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
-
-</head>
-
-<body>
-	{% include "inc/analytics.html" %}
-	<div id="wrapper" class="wrapper">
-
-		<div class="g full-height">
-
-			<!-- Side -->
-			<div class="b0_12 b4_08 b5_06 b6_04">
-				{% include "inc/menu.html" %}
+	<!-- Main -->
+	<div class="b0_12 b4_14 b4_push_01">
+		<div class="p p-b3-3x">
+			<div class="block">
+				<h1>Buttons</h1>
+				<p class="intro">Get your visitors clicking</p>
+				<p class="alert">
+					Note: You need castlecss-buttons or the full package of CastleCSS for this.
+				</p>
+				<p>Feel free to use these buttons to get you started. Create your own buttons.scss to overwrite the standard buttons or edit your <a href="variables.html">variables document</a> for different colors/styles.</p>
 			</div>
-			<!-- End side -->
+			<div class="block p" style="background: #eee;">
+				<p><a href="#" class="btn">Button</a></p>
+				<p><a href="#" class="btn-theme01">Buttton theme01</a></p>
+				<p><a href="#" class="btn-theme02">Buttton theme02</a></p>
+				<p><a href="#" class="btn-theme03">Buttton theme03</a></p>
+				<p><a href="#" class="btn-theme04">Buttton theme04</a></p>
+				<p><a href="#" class="btn-theme05">Buttton theme05</a></p>
+				<p><a href="#" class="btn btn-full">Buttton full width</a></p>
+				<p>(Every theme-color possible)</p>
+				<pre class="brush: xml;">
+					<a href="#" class="btn"></a>
+					<a href="#" class="btn-theme01"></a>
+					<a href="#" class="btn-theme02"></a>
+					<a href="#" class="btn-theme03"></a>
+					<a href="#" class="btn-theme04"></a>
+					<a href="#" class="btn-theme05"></a>
+					<a href="#" class="btn btn-full"></a></pre>
+			</div>
+			{% include "inc/example_buttons.html" %}
+		</div>
+	</div>
+	<!-- End main -->
 
-			<!-- Main -->
-			<div class="b0_12 b4_14 b4_push_01">
-				
-				<div class="p-3x">
-					
-					<div class="block">
-						<h1>Buttons</h1>
-						<p class="intro">Get your visitors clicking</p>
-						<p class="alert">
-							Note: You need castlecss-buttons or the full package of CastleCSS for this.
-						</p>
-						<p>Feel free to use these buttons to get you started. Create your own buttons.scss to overwrite the standard buttons or edit your <a href="variables.html">variables document</a> for different colors/styles.</p>
-					</div>
-					<div class="block p" style="background: #eee;">
-						<p><a href="#" class="btn">Button</a></p>
-						<p><a href="#" class="btn-theme01">Buttton theme01</a></p>
-						<p><a href="#" class="btn-theme02">Buttton theme02</a></p>
-						<p><a href="#" class="btn-theme03">Buttton theme03</a></p>
-						<p><a href="#" class="btn-theme04">Buttton theme04</a></p>
-						<p><a href="#" class="btn-theme05">Buttton theme05</a></p>
-						<p><a href="#" class="btn btn-full">Buttton full width</a></p>
-						<p>(Every theme-color possible)</p>
-					<pre class="brush: xml;">
-						<a href="#" class="btn"></a>
-						<a href="#" class="btn-theme01"></a>
-						<a href="#" class="btn-theme02"></a>
-						<a href="#" class="btn-theme03"></a>
-						<a href="#" class="btn-theme04"></a>
-						<a href="#" class="btn-theme05"></a>
-						<a href="#" class="btn btn-full"></a>
-					</pre>
-					</div>
-					<div class="block">
-						
-					</div>
-
-
-
-					<!-- Scripts for footer -->
-					{% include "inc/footer.html" %}
-
-				</body>
-
-				</html>
+{% include "inc/footer.html" %}

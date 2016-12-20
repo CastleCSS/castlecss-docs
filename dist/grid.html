@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-	<title>Grid - CastleCSS</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" />
+	<head>
+		<title>Grid - CastleCSS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" />
+		<link rel="stylesheet" href="css/styles.min.css" />
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
+	</head>
 
-	<link rel="stylesheet" href="css/styles.min.css" />
-	<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.6.3/font-awesome.min.css " />
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
-
-</head>
-
-<body>
-	<!-- Google Tag Manager -->
+	<body>
+	
+<!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-N85PTX"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -22,782 +19,792 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-N85PTX');</script>
-
-	<div id="wrapper" class="wrapper">
+	
+	<div id="wrapper" class="wrapper ">
 
 		<div class="g full-height">
 
 			<!-- Side -->
 			<div class="b0_12 b4_08 b5_06 b6_04">
-				<!-- End Google Tag Manager -->
-<header id="header" class="nav-container p-3x">
+<!-- End Google Tag Manager -->
+<header id="header" class="nav-container">
 	<div class="nav-label">menu</div>
-	<a class="nav-logo" href="index.html"><img src="img/logo-castlecss.png"></a>
-	<ul class="doc-menu list-unstyled">
-		<li><a href="about.html">About CastleCSS</a></li>
-		<li>
-			<a href="installation.html">Installation</a>
-		</li>
-		<li><a href="variables.html">Variables</a></li>
-		<li>
-			<a href="grid.html">Breakpoints &amp; Grid</a>
-			<ul class="list-unstyled">
-				<li>
-					<a href="grid.html#basicexamples">The basics</a>
-				</li>
-				<li>
-					<a href="grid.html#breakpoints">Breakpoints</a>
-				</li>
-				<li>
-					<a href="grid.html#basicexamples">Basic grid examples</a>
-				</li>
-				<li>
-					<a href="grid.html#gutters">Gutters</a>
-				</li>
-				<li>
-					<a href="grid.html#directionalignment">Direction and alignment</a>
-				</li>
-			</ul>
-		</li>
-		<li><a href="utility.html">Utility classes</a></li>
-		<li><a href="utility_spacers.html">Utility spacers</a></li>
-		<li><a href="buttons.html">Buttons</a></li>
-		<li><a href="notifications.html">Notifications / alerts</a></li>
-		<li><a href="mixins.html">Mixins</a></li>
-	</ul>
+	<a class="nav-logo  p-b4-3x" href="index.html"><img src="img/logo-castlecss.png"></a>
+	<div class="nav-wrap pl-3x pr-3x">
+
+		<ul class="doc-menu list-unstyled">
+
+		  <li><a href="/about.html" >About CastleCSS</a>
+
+		  </li>
+
+		  <li><a href="/installation.html" >Installation</a>
+
+		  </li>
+
+		  <li><a href="/variables.html" >Variables</a>
+
+		  </li>
+
+		  <li><a href="/grid.html" class="active">Breakpoints &amp; Grid</a>
+
+				<ul class="list-unstyled">
+
+					<li><a href="grid.html#basicexamples">The basics</a>
+
+					<li><a href="grid.html#breakpoints">Breakpoints</a>
+
+					<li><a href="grid.html#basicexamples">Basic grid examples</a>
+
+					<li><a href="grid.html#gutters">Gutters</a>
+
+					<li><a href="grid.html#directionalignment">Direction and alignment</a>
+
+				</ul>
+
+		  </li>
+
+		  <li><a href="/utility.html" >Utility classes</a>
+
+		  </li>
+
+		  <li><a href="/utility_spacers.html" >Utility spacers</a>
+
+		  </li>
+
+		  <li><a href="/icons.html" >Icons</a>
+
+		  </li>
+
+		  <li><a href="/buttons.html" >Buttons</a>
+
+		  </li>
+
+		  <li><a href="/notifications.html" >Notifications / alerts</a>
+
+		  </li>
+
+		  <li><a href="/mixins.html" >Mixins</a>
+
+		  </li>
+
+		</ul>
+	</div>
+
+	
+
 </header>
 
 			</div>
 			<!-- End side -->
 
-			<!-- Main -->
-			<div class="b0_12 b4_14 b4_push_01">
-				<div class="p-3x">
-					<div class="block">
-						<h1>Breakpoints &amp; Grid</h1>
-						<p class="intro">Easy to use flexbox grid, using the CastleCSS breakpoint system.</p>
 
-						<h2 id="thebasics">The basics</h2>
-						<p >CastleCSS has a completely fluid and nestable flexbox grid, with 12 to 24 columns, depending on the breakpoint you are viewing. The column widths are predefined as fixed percentages and the gutter widths are variables that can be influenced per breakpoint.</p>
-						<p>To start a new grid in html you first create an element with the <code>g</code> class (which stands for grid).<br />
-							Only the direct children of this element will function as grid items.
-						</p>
-						<p>This is how you set the item width per breakpoint: <code>b{breakpoint}_{columnwidth}</code></p>
-						<p><strong>For example:</strong> This item <code>div class="b0_12 b3_18"</code> is 12 columns wide from breakpoint 0 and up, and 18 columns wide from breakpoint 3 and up.</p>
-						<p>By default a grid is fluid, but wrapping the <code>g</code> in an element with the class <code>container</code> enables a fixed width per breakpoint.</p>
+	<!-- Main -->
+	<div class="b0_12 b4_14 b4_push_01">
+		<div class="p p-b3-3x">
+			<div class="block">
+				<h1>Breakpoints &amp; Grid</h1>
+				<p class="intro">Easy to use flexbox grid, using the CastleCSS breakpoint system.</p>
+
+				<h2 id="thebasics">The basics</h2>
+				<p >CastleCSS has a completely fluid and nestable flexbox grid, with 12 to 24 columns, depending on the breakpoint you are viewing. The column widths are predefined as fixed percentages and the gutter widths are variables that can be influenced per breakpoint.</p>
+				<p>To start a new grid in html you first create an element with the <code>g</code> class (which stands for grid).<br />
+					Only the direct children of this element will function as grid items.
+				</p>
+				<p>This is how you set the item width per breakpoint: <code>b{breakpoint}_{columnwidth}</code></p>
+				<p><strong>For example:</strong> This item <code>div class="b0_12 b3_18"</code> is 12 columns wide from breakpoint 0 and up, and 18 columns wide from breakpoint 3 and up.</p>
+				<p>By default a grid is fluid, but wrapping the <code>g</code> in an element with the class <code>container</code> enables a fixed width per breakpoint.</p>
+			</div>
+			<div class="block">
+				<h2 id="breakpoints" class="head head2">Breakpoints</h2>
+				<p>Castlecss uses six breakpoints, which are derived from average device resolutions, by default.
+					Up untill breakpoint 3 the grid has 12 columns, but from breakpoint 3 and up it uses 24 columns for extra flexibility.
+				</p>
+				<p>Per breakpoint it's possible to:
+					<ul>
+						<li>Change the breakpoints themselves</li>
+						<li>Set gutter spacing from said breakpoint and up</li>
+						<li>Set the container width</li>
+					</ul>
+				</p>
+				<p><strong>Make these changes in you own variable file</strong> if you want to continue receiving CastleCSS updates.</p>
+				<div class="specs">
+					<table class="full">
+						<tr>
+							<th scope="col">Breakpoint</th>
+							<th scope="col">Viewport width</th>
+							<th class="ta-center" scope="col">Device</th>
+							<th scope="col">Class</th>
+							<th scope="col">Gutter</th>
+							<th scope="col">Container width</th>
+						</tr>
+						<tr>
+							<td>$b0</td>
+							<td>0 +</td>
+							<td class="ta-center"><i class="fa fa-2x fa-globe"></td>
+							<td><code>b0_01 t/m 12</code></td>
+							<td>12px</td>
+							<td>100%</td>
+						</tr>
+						<tr>
+							<td>$b1</td>
+							<td>320px +</td>
+							<td class="ta-center"><i class="fa fa-2x fa-mobile"></i></td>
+							<td><code>b1_01 t/m 12</code></td>
+							<td>12px</td>
+							<td>100%</td>
+						</tr>
+						<tr>
+							<td>$b2</td>
+							<td>480px +</td>
+							<td class="ta-center"><i class="fa fa-2x fa-mobile fa-rotate-90"></i></td>
+							<td><code>b2_01 t/m 12</code></td>
+							<td>12px</td>
+							<td>100%</td>
+						</tr>
+						<tr>
+							<td>$b3</td>
+							<td>768px +</td>
+							<td class="ta-center"><i class="fa fa-2x fa-tablet"></i></td>
+							<td><code>b3_01 t/m 24</code></td>
+							<td>12px</td>
+							<td>768px</td>
+						</tr>
+						<tr>
+							<td>$b4</td>
+							<td>1024px +</td>
+							<td class="ta-center"><i class="fa fa-2x fa-tablet fa-rotate-90"></i></td>
+							<td><code>b4_01 t/m 24</code></td>
+							<td>12px</td>
+							<td>1024px</td>
+						</tr>
+						<tr>
+							<td>$b5</td>
+							<td>1280px +</td>
+							<td class="ta-center"><i class="fa fa-2x fa-desktop"></i></td>
+							<td><code>b5_01 t/m 24</code></td>
+							<td>12px</td>
+							<td>1280px</td>
+						</tr>
+						<tr>
+							<td>$b6</td>
+							<td>1600px +</td>
+							<td class="ta-center"><i class="fa fa-2x fa-desktop"></i></td>
+							<td><code>b6_01 t/m 24</code></td>
+							<td>12px</td>
+							<td>1400px</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div id="basicexamples" class="block">
+				<h2>Basic grid examples</h2>
+				<div class="g">
+					<div class="b0_12"><div class="demo-block">b0_12</div></div>
+					<div class="b0_06 b3_12"><div class="demo-block">b0_06 b3_12</div></div>
+					<div class="b0_06 b3_12"><div class="demo-block">b0_06 b3_12</div></div>
+					<div class="b0_06 b3_06"><div class="demo-block">b0_06 b3_06</div></div>
+					<div class="b0_06 b3_18"><div class="demo-block">b0_06 b3_18</div></div>
+					<div class="b0_12 b3_06"><div class="demo-block">b0_12 b3_06</div></div>
+					<div class="b0_12 b3_06"><div class="demo-block">b0_12 b3_06</div></div>
+					<div class="b0_12 b3_06"><div class="demo-block">b0_12 b3_06</div></div>
+					<div class="b0_12 b3_06"><div class="demo-block">b0_12 b3_06</div></div>
+					<div class="b0_12 b3_03"><div class="demo-block">b0_12 b3_03</div></div>
+					<div class="b0_12 b3_03"><div class="demo-block">b0_12 b3_03</div></div>
+					<div class="b0_12 b3_03"><div class="demo-block">b0_12 b3_03</div></div>
+					<div class="b0_12 b3_03"><div class="demo-block">b0_12 b3_03</div></div>
+					<div class="b0_12 b3_06"><div class="demo-block">b0_12 b3_06</div></div>
+					<div class="b0_12 b3_06"><div class="demo-block">b0_12 b3_06</div></div>
+					<div><div class="demo-block">auto</div></div>
+				</div>
+				<pre class="brush: xml;">
+					<div class="g">
+						<div class="b0_12"></div>
+						<div class="b0_12 b3_12"></div>
+						<div class="b0_12 b3_12"></div>
+						<div class="b0_12 b3_06"></div>
+						<div class="b0_12 b3_18"></div>
+						<div class="b0_12 b3_06"></div>
+						<div class="b0_12 b3_06"></div>
+						<div class="b0_12 b3_06"></div>
+						<div class="b0_12 b3_06"></div>
+						<div class="b0_12 b3_03"></div>
+						<div class="b0_12 b3_03"></div>
+						<div class="b0_12 b3_03"></div>
+						<div class="b0_12 b3_03"></div>
+						<div class="b0_12 b3_06"></div>
+						<div class="b0_12 b3_06"></div>
+						<div>auto</div>
+					</div></pre>
+			</div>
+			<div class="block">
+				<h3>5 or 7 in a row (breakpoint 3 and up)</h3>
+				<div class="g">
+					<div class="b3_x5"><div class="demo-block">b3_x5</div></div>
+					<div class="b3_x5"><div class="demo-block">b3_x5</div></div>
+					<div class="b3_x5"><div class="demo-block">b3_x5</div></div>
+					<div class="b3_x5"><div class="demo-block">b3_x5</div></div>
+					<div class="b3_x5"><div class="demo-block">b3_x5</div></div>
+					<div class="b3_x7"><div class="demo-block">b3_x7</div></div>
+					<div class="b3_x7"><div class="demo-block">b3_x7</div></div>
+					<div class="b3_x7"><div class="demo-block">b3_x7</div></div>
+					<div class="b3_x7"><div class="demo-block">b3_x7</div></div>
+					<div class="b3_x7"><div class="demo-block">b3_x7</div></div>
+					<div class="b3_x7"><div class="demo-block">b3_x7</div></div>
+					<div class="b3_x7"><div class="demo-block">b3_x7</div></div>
+				</div>
+				<p>Even though 5 and 7 aren't sharable through a grid of 12 or 24, you might still want to be able to do this. That's why you can use the classes <code>x5</code> en <code>x7</code> on a grid item (breakpoint 3+)
+				</p>
+				<pre class="brush: xml;">
+					<div class="g">
+						<div class="b3_x5"></div>
+						<div class="b3_x5"></div>
+						<div class="b3_x5"></div>
+						<div class="b3_x5"></div>
+						<div class="b3_x5"></div>
+						<div class="b3_x7"></div>
+						<div class="b3_x7"></div>
+						<div class="b3_x7"></div>
+						<div class="b3_x7"></div>
+						<div class="b3_x7"></div>
+						<div class="b3_x7"></div>
+						<div class="b3_x7"></div>
+					</div></pre>
+			</div>
+			<div class="block">
+				<h3 class="head head3">Nested grids</h3>
+				<p>Nesting is easy. Just place a <code>g</code> inside a grid item.
+					<div class="alert">
+						Note: the only thing that's not possible is a <code>g</code> as a direct child of a <code>g</code>
 					</div>
-					<div class="block">
-						<h2 id="breakpoints" class="head head2">Breakpoints</h2>
-						<p>Castlecss uses six breakpoints, which are derived from average device resolutions, by default.
-							Up untill breakpoint 3 the grid has 12 columns, but from breakpoint 3 and up it uses 24 columns for extra flexibility.</p>
-
-						<p>Per breakpoint it's possible to:
-							<ul>
-								<li>Change the breakpoints themselves</li>
-								<li>Set gutter spacing from said breakpoint and up</li>
-								<li>Set the container width</li>
-							</ul>
-						</p>
-
-						<p><strong>Make these changes in you own variable file</strong> if you want to continue receiving CastleCSS updates.</p>
-						<div class="specs">
-							<table class="full">
-								<tr>
-									<th scope="col">Breakpoint</th>
-									<th scope="col">Viewport width</th>
-									<th class="ta-center" scope="col">Device</th>
-									<th scope="col">Class</th>
-									<th scope="col">Gutter</th>
-									<th scope="col">Container width</th>
-								</tr>
-								<tr>
-									<td>$b0</td>
-									<td>0 +</td>
-									<td class="ta-center"><i class="fa fa-2x fa-globe"></td>
-									<td><code>b0_01 t/m 12</code></td>
-									<td>12px</td>
-									<td>100%</td>
-								</tr>
-								<tr>
-									<td>$b1</td>
-									<td>320px +</td>
-									<td class="ta-center"><i class="fa fa-2x fa-mobile"></i></td>
-									<td><code>b1_01 t/m 12</code></td>
-									<td>12px</td>
-									<td>100%</td>
-								</tr>
-								<tr>
-									<td>$b2</td>
-									<td>480px +</td>
-									<td class="ta-center"><i class="fa fa-2x fa-mobile fa-rotate-90"></i></td>
-									<td><code>b2_01 t/m 12</code></td>
-									<td>12px</td>
-									<td>100%</td>
-								</tr>
-								<tr>
-									<td>$b3</td>
-									<td>768px +</td>
-									<td class="ta-center"><i class="fa fa-2x fa-tablet"></i></td>
-									<td><code>b3_01 t/m 24</code></td>
-									<td>12px</td>
-									<td>768px</td>
-								</tr>
-								<tr>
-									<td>$b4</td>
-									<td>1024px +</td>
-									<td class="ta-center"><i class="fa fa-2x fa-tablet fa-rotate-90"></i></td>
-									<td><code>b4_01 t/m 24</code></td>
-									<td>12px</td>
-									<td>1024px</td>
-								</tr>
-								<tr>
-									<td>$b5</td>
-									<td>1280px +</td>
-									<td class="ta-center"><i class="fa fa-2x fa-desktop"></i></td>
-									<td><code>b5_01 t/m 24</code></td>
-									<td>12px</td>
-									<td>1280px</td>
-								</tr>
-								<tr>
-									<td>$b6</td>
-									<td>1600px +</td>
-									<td class="ta-center"><i class="fa fa-2x fa-desktop"></i></td>
-									<td><code>b6_01 t/m 24</code></td>
-									<td>12px</td>
-									<td>1400px</td>
-								</tr>
-							</table>
-						</div>
-
-					</div>
-
-					<div id="basicexamples" class="block">
-						<h2>Basic grid examples</h2>
-						<div class="g">
-							<div class="b0_12"><div class="demo-block">b0_12</div></div>
-							<div class="b0_06 b3_12"><div class="demo-block">b0_06 b3_12</div></div>
-							<div class="b0_06 b3_12"><div class="demo-block">b0_06 b3_12</div></div>
-							<div class="b0_06 b3_06"><div class="demo-block">b0_06 b3_06</div></div>
-							<div class="b0_06 b3_18"><div class="demo-block">b0_06 b3_18</div></div>
-							<div class="b0_12 b3_06"><div class="demo-block">b0_12 b3_06</div></div>
-							<div class="b0_12 b3_06"><div class="demo-block">b0_12 b3_06</div></div>
-							<div class="b0_12 b3_06"><div class="demo-block">b0_12 b3_06</div></div>
-							<div class="b0_12 b3_06"><div class="demo-block">b0_12 b3_06</div></div>
-							<div class="b0_12 b3_03"><div class="demo-block">b0_12 b3_03</div></div>
-							<div class="b0_12 b3_03"><div class="demo-block">b0_12 b3_03</div></div>
-							<div class="b0_12 b3_03"><div class="demo-block">b0_12 b3_03</div></div>
-							<div class="b0_12 b3_03"><div class="demo-block">b0_12 b3_03</div></div>
-							<div class="b0_12 b3_06"><div class="demo-block">b0_12 b3_06</div></div>
-							<div class="b0_12 b3_06"><div class="demo-block">b0_12 b3_06</div></div>
-							<div><div class="demo-block">auto</div></div>
-						</div>
-						<pre class="brush: xml;">
+				</p>
+				<h4>Example of nested <grids></grids></h4>
+				<div class="demo-block">
+					<p>group 1/1</p>
+					<div class="g">
+						<div class="b0_12">
 							<div class="g">
-								<div class="b0_12"></div>
-								<div class="b0_12 b3_12"></div>
-								<div class="b0_12 b3_12"></div>
-								<div class="b0_12 b3_06"></div>
-								<div class="b0_12 b3_18"></div>
-								<div class="b0_12 b3_06"></div>
-								<div class="b0_12 b3_06"></div>
-								<div class="b0_12 b3_06"></div>
-								<div class="b0_12 b3_06"></div>
-								<div class="b0_12 b3_03"></div>
-								<div class="b0_12 b3_03"></div>
-								<div class="b0_12 b3_03"></div>
-								<div class="b0_12 b3_03"></div>
-								<div class="b0_12 b3_06"></div>
-								<div class="b0_12 b3_06"></div>
-								<div>auto</div>
-							</div>
-						</pre>
-
-					</div>
-
-					<div class="block">
-						<h3>5 or 7 in a row (breakpoint 3 and up)</h3>
-						<div class="g">
-							<div class="b3_x5"><div class="demo-block">b3_x5</div></div>
-							<div class="b3_x5"><div class="demo-block">b3_x5</div></div>
-							<div class="b3_x5"><div class="demo-block">b3_x5</div></div>
-							<div class="b3_x5"><div class="demo-block">b3_x5</div></div>
-							<div class="b3_x5"><div class="demo-block">b3_x5</div></div>
-							<div class="b3_x7"><div class="demo-block">b3_x7</div></div>
-							<div class="b3_x7"><div class="demo-block">b3_x7</div></div>
-							<div class="b3_x7"><div class="demo-block">b3_x7</div></div>
-							<div class="b3_x7"><div class="demo-block">b3_x7</div></div>
-							<div class="b3_x7"><div class="demo-block">b3_x7</div></div>
-							<div class="b3_x7"><div class="demo-block">b3_x7</div></div>
-							<div class="b3_x7"><div class="demo-block">b3_x7</div></div>
-						</div>
-
-						<p>Even though 5 and 7 aren't sharable through a grid of 12 or 24, you might still want to be able to do this. That's why you can use the classes <code>x5</code> en <code>x7</code> on a grid item (breakpoint 3+)
-						</p>
-						<pre class="brush: xml;">
-							<div class="g">
-								<div class="b3_x5"></div>
-								<div class="b3_x5"></div>
-								<div class="b3_x5"></div>
-								<div class="b3_x5"></div>
-								<div class="b3_x5"></div>
-								<div class="b3_x7"></div>
-								<div class="b3_x7"></div>
-								<div class="b3_x7"></div>
-								<div class="b3_x7"></div>
-								<div class="b3_x7"></div>
-								<div class="b3_x7"></div>
-								<div class="b3_x7"></div>
-							</div> </pre>
-
-						</div>
-						<div class="block">
-							<h3 class="head head3">Nested grids</h3>
-							<p>Nesting is easy. Just place a <code>g</code> inside a grid item.
-
-								<div class="alert">
-									Note: the only thing that's not possible is a <code>g</code> as a direct child of a <code>g</code>
-								</div>
-							</p>
-							<h4>Example of nested <grids></grids></h4>
-							<div class="demo-block">
-								<p>group 1/1</p>
-								<div class="g">
-									<div class="b0_12">
+								<div class="b0_12 b3_12">
+									<div class="demo-block">
+										<p>group 1/2</p>
 										<div class="g">
-											<div class="b0_12 b3_12">
-												<div class="demo-block">
-													<p>group 1/2</p>
-													<div class="g">
-														<div class="b0_06">
-															<div class="demo-block">1/2</div>
-														</div>
-														<div class="b0_06">
-															<div class="demo-block">1/2</div>
-														</div>
-													</div>
-												</div>
+											<div class="b0_06">
+												<div class="demo-block">1/2</div>
 											</div>
-											<div class="b0_12 b3_12">
-												<div class="demo-block">
-													<p>group 1/2</p>
-													<div class="g">
-														<div class="b0_06">
-															<div class="demo-block">1/2</div>
-														</div>
-														<div class="b0_06">
-															<div class="demo-block">1/2</div>
-														</div>
-													</div>
-												</div>
+											<div class="b0_06">
+												<div class="demo-block">1/2</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="b0_12 b3_12">
+									<div class="demo-block">
+										<p>group 1/2</p>
+										<div class="g">
+											<div class="b0_06">
+												<div class="demo-block">1/2</div>
+											</div>
+											<div class="b0_06">
+												<div class="demo-block">1/2</div>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<pre class="brush: xml;">
-								<div class="g">
-									<div class="b0_12">
-										<div class="g">
-											<div class="b0_12 b3_12">
-												<div class="g">
-													<div class="b0_06"></div>
-													<div class="b0_06"></div>
-												</div>
-											</div>
-											<div class="b0_12 b3_12">
-												<div class="g">
-													<div class="b0_06"></div>
-													<div class="b0_06"></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</pre>
-						</div>
-
-						<div id="order" class="block">
-							<h2>Order</h2>
-							<p>You can switch up the order of the items by giving is a class <code>order-{order}</code>.</p>
-							<table class="specs">
-								<tr>
-									<th>Class</th>
-									<th>Value</th>
-								</tr>
-								<tr>
-									<td>order-[0-12]</td>
-									<td>order: 0-12;</td>
-								</tr>
-							</table>
-						</div>
-
-
-						<div id="gutters" class="block">
-							<h2>Gutters</h2>
-							<p>The gutter is adjustable per breakpoint. For example; you can set a default gutter of 12px wide and a gutter of 30px wide at breakpoint 3. You can also use <code>gutter-large</code> or <code>gutter-small</code> if you want to use multiple gutter widths.</p>
-							<p>Default: <code>padding-left: $grid-gutter</code></p>
-
-							<div class="specs">
-								<table>
-									<tr>
-										<th>Breakpoint</th>
-										<th>Extra class</th>
-										<th>Gutter</th>
-										<th>CastleCSS Default</th>
-									</tr>
-									<tr>
-										<td>$b0</td>
-										<td>&nbsp;</td>
-										<td>$grid-gutter</td>
-										<td>12px</td>
-									</tr>
-									<tr>
-										<td>$b1</td>
-										<td>&nbsp;</td>
-										<td>$grid-gutter-b1</td>
-										<td>12px</td>
-									</tr>
-									<tr>
-										<td>$b2</td>
-										<td>&nbsp;</td>
-										<td>$grid-gutter-b2</td>
-										<td>12px</td>
-									</tr>
-									<tr>
-										<td>$b3</td>
-										<td>&nbsp;</td>
-										<td>$grid-gutter-b3</td>
-										<td>12px</td>
-									</tr>
-									<tr>
-										<td>$b4</td>
-										<td>&nbsp;</td>
-										<td>$grid-gutter-b4</td>
-										<td>12px</td>
-									</tr>
-									<tr>
-										<td>$b5</td>
-										<td>&nbsp;</td>
-										<td>$grid-gutter-b5</td>
-										<td>12px</td>
-									</tr>
-									<tr>
-										<td>$b6</td>
-										<td>&nbsp;</td>
-										<td>$grid-gutter-b6</td>
-										<td>12px</td>
-									</tr>
-									<tr>
-										<td>all</td>
-										<td><code>gutter-small</code></td>
-										<td>$grid-gutter/2</td>
-										<td>6px</td>
-									</tr>
-									<tr>
-										<td>all</td>
-										<td><code>gutter-large</code></td>
-										<td>$grid-gutter*2</td>
-										<td>24px</td>
-									</tr>
-									<tr>
-										<td>all</td>
-										<td><code>gutter-none</code></td>
-										<td>0</td>
-										<td>0</td>
-									</tr>
-								</table>
-							</div>
-							<h3>Gutter examples</h3>
-							<div class="g">
-								<div class="gi b0_12 b3_12">
-									<strong>Default gutter</strong>
-									<div class="g">
-										<div class="b0_06"><div class="demo-block">&nbsp;</div></div>
-										<div class="b0_06"><div class="demo-block">&nbsp;</div></div>
-									</div>
-									<pre class="brush: xml;">
-										<div class="g">
-											<div class="b0_06"></div>
-											<div class="b0_06"></div>
-										</div>
-
-									</pre>
-								</div>
-								<div class="gi b0_12 b3_12">
-									<strong>Large gutter</strong>
-									<div class="g gutter-large">
-										<div class="b0_06"><div class="demo-block">&nbsp;</div></div>
-										<div class="b0_06"><div class="demo-block">&nbsp;</div></div>
-									</div>
-									<pre class="brush: xml;">
-										<div class="g gutter-large">
-											<div class="b0_06"></div>
-											<div class="b0_06"></div>
-										</div>
-
-									</pre>
-								</div>
-								<div class="gi b0_12 b3_12">
-									<strong>Small gutter</strong>
-									<div class="g gutter-small">
-										<div class="b0_06"><div class="demo-block">&nbsp;</div></div>
-										<div class="b0_06"><div class="demo-block">&nbsp;</div></div>
-									</div>
-									<pre class="brush: xml;">
-										<div class="g gutter-small">
-											<div class="b0_06"></div>
-											<div class="b0_06"></div>
-										</div>
-									</pre>
-								</div>
-								<div class="gi b0_12 b3_12">
-									<strong>No gutter</strong>
-									<div class="g gutter-none">
-										<div class="b0_06"><div class="demo-block">&nbsp;</div></div>
-										<div class="b0_06"><div class="demo-block">&nbsp;</div></div>
-									</div>
-									<pre class="brush: xml;">
-										<div class="g gutter-none">
-											<div class="b0_06"></div>
-											<div class="b0_06"></div>
-										</div>
-									</pre>
-								</div>
-							</div>
-						</div>
-
-
-						<div id="directionalignment" class="block">
-							<h2>Direction and alignment</h2>
-							<div class="block">
-								<h3 class="head head3">Flex direction</h3>
-								<p>With the class <code>dir-{direction}</code> placed on a <code>g</code> you can adjust the <strong>main-axis</strong>, thus defining the direction flex items are placed in the flex container. </p>
-								<p>This affects justify-content, align-items and align-self.</p>
-								<p>Default: <code>flex-direction: row;</code></p>
-
-								<table>
-									<tr>
-										<th>Class</th>
-										<th>Value</th>
-									</tr>
-									<tr>
-										<td><code>dir-row</code></td>
-										<td>flex-direction: row;</td>
-									</tr>
-									<tr>
-										<td><code>dir-row-reverse</code></td>
-										<td>flex-direction: row-reverse;</td>
-									</tr>
-									<tr>
-										<td><code>dir-column</code></td>
-										<td>flex-direction: column;</td>
-									</tr>
-									<tr>
-										<td><code>dir-column-reverse</code></td>
-										<td>flex-direction: column-reverse;</td>
-									</tr>
-								</table>
-								<h4>Examples</h4>
-								<div class="g">
-									<div class="b0_12 b3_12"></div>
-								</div>
-								<div class="g auto dir-row-reverse">
-									<div class="b0_01"><div class="demo-block">1</div></div>
-									<div class="b0_01"><div class="demo-block">2</div></div>
-									<div class="b0_01"><div class="demo-block">3</div></div>
-									<div class="b0_01"><div class="demo-block">4</div></div>
-									<div class="b0_01"><div class="demo-block">5</div></div>
-								</div>
-								<pre class="brush: xml;">
-									<div class="g dir-row-reverse">
-										<div class="b0_01"></div>
-										<div class="b0_01"></div>
-										<div class="b0_01"></div>
-										<div class="b0_01"></div>
-										<div class="b0_01"></div>
-									</div>
-								</pre>
-								<div class="g dir-column">
-									<div class="b0_01"><div class="demo-block">1</div></div>
-									<div class="b0_01"><div class="demo-block">2</div></div>
-									<div class="b0_01"><div class="demo-block">3</div></div>
-									<div class="b0_01"><div class="demo-block">4</div></div>
-									<div class="b0_01"><div class="demo-block">5</div></div>
-								</div>
-								<pre class="brush: xml;">
-									<div class="g dir-column">
-										<div class="b0_01"></div>
-										<div class="b0_01"></div>
-										<div class="b0_01"></div>
-										<div class="b0_01"></div>
-										<div class="b0_01"></div>
-									</div>
-								</pre>
-							</div>
-							<div class="block">
-								<h3 class="head head3">Justify content</h3>
-								<p>With the <code>jc-</code> class as addition for <code>g</code> it's possible to align items on the <strong>primaire</strong> axis.</p>
-								<div class="specs">
-									<table>
-										<tr>
-											<th>Class</th>
-											<th>Value</th>
-										</tr>
-										<tr>
-											<td><code>jc-flex-start</code></td>
-											<td>justify-content: flex-start;</td>
-										</tr>
-										<tr>
-											<td><code>jc-flex-end</code></td>
-											<td>justify-content: flex-end;</td>
-										</tr>
-										<tr>
-											<td><code>jc-center</code></td>
-											<td>justify-content: center;</td>
-										</tr>
-										<tr>
-											<td><code>jc-space-around</code></td>
-											<td>justify-content: space-around;</td>
-										</tr>
-										<tr>
-											<td><code>jc-space-between</code></td>
-											<td>justify-content: space-between;</td>
-										</tr>
-									</table>
-								</div>
-								<div class="g jc-center">
-									<div class="b0_01"><div class="demo-block">1</div></div>
-									<div class="b0_01"><div class="demo-block">2</div></div>
-									<div class="b0_01"><div class="demo-block">3</div></div>
-									<div class="b0_01"><div class="demo-block">4</div></div>
-									<div class="b0_01"><div class="demo-block">5</div></div>
-								</div>
-								<pre class="brush: xml;">
-									<div class="g jc-center">
-										<div class="b0_01"></div>
-										<div class="b0_01"></div>
-										<div class="b0_01"></div>
-										<div class="b0_01"></div>
-										<div class="b0_01"></div>
-									</div>
-								</pre>
-							</div>
-
-							<div class="block">
-								<h3 class="head head3">Auto fill grid</h3>
-								<p>It's possible to let the grid figure out the widths for itself. When you don't know what the width will be but you want the grid to fill out the <code>auto</code> class is a nice addition to the grid (<code>g</code>).
-									<div>
-										<strong>Example</strong>
-									</div>
-									<div class="g auto">
-										<div><div class="demo-block">Grid item</div></div>
-										<div><div class="demo-block">Grid item</div></div>
-										<div><div class="demo-block">Grid item</div></div>
-										<div><div class="demo-block">Grid item</div></div>
-										<div><div class="demo-block">Grid item</div></div>
-										<div><div class="demo-block">Long grid item</div></div>
-										<div><div class="demo-block">Grid item</div></div>
-										<div><div class="demo-block">Grid item</div></div>
-										<div><div class="demo-block">Long grid item</div></div>
-										<div><div class="demo-block">A most super duper long, longer, longest grid item</div></div>
-										<div><div class="demo-block">Grid item</div></div>
-										<div><div class="demo-block">Grid item</div></div>
-										<div><div class="demo-block">Grid item</div></div>
-										<div><div class="demo-block">Grid item</div></div>
-									</div>
-									<pre class="brush: xml;">
-										<div class="g auto">
-											<div></div>
-											<div></div>
-											<div></div>
-											<div></div>
-											<div></div>
-										</div>
-									</pre>
-								</div>
-
-
-
-								<div class="block">
-									<h3 class="head head3">Flex wrap</h3>
-									<p>Add the class <code>wrap</code> or <code>nowrap</code> to a <code>g</code> element to overwrite flex wrapping.</p>
-									<p>Default: <code>flex-direction: wrap;</code></p>
-
-									<table class="specs">
-										<tr>
-											<th>Class</th>
-											<th>Value</th>
-										</tr>
-										<tr>
-											<td><code>wrap</code></td>
-											<td>flex-wrap: wrap;</td>
-										</tr>
-										<tr>
-											<td><code>nowrap</code></td>
-											<td>flex-wrap: nowrap;</td>
-										</tr>
-									</table>
-									<h5>Example with wrapping</h5>
-									<div class="g">
-										<div class="b0_06"><div class="demo-block">1/2</div></div>
-										<div class="b0_06"><div class="demo-block">1/2</div></div>
-										<div class="b0_06"><div class="demo-block">1/2</div></div>
-										<div class="b0_06"><div class="demo-block">1/2</div></div>
-										<div class="b0_06"><div class="demo-block">1/2</div></div>
-									</div>
-									<pre class="brush: xml;">
-										<div class="g">
-											<div class="b0_06">I should be 1/2</div>
-											<div class="b0_06">I should be 1/2</div>
-											<div class="b0_06">I should be 1/2</div>
-											<div class="b0_06">I should be 1/2</div>
-											<div class="b0_06">I should be 1/2</div>
-										</div>
-									</pre>
-									<h5>Example without wrapping</h5>
-									<div class="g nowrap">
-										<div class="b0_06"><div class="demo-block">I should be 1/2</div></div>
-										<div class="b0_06"><div class="demo-block">I should be 1/2</div></div>
-										<div class="b0_06"><div class="demo-block">I should be 1/2</div></div>
-										<div class="b0_06"><div class="demo-block">I should be 1/2</div></div>
-										<div class="b0_06"><div class="demo-block">I should be 1/2</div></div>
-									</div>
-									<pre class="brush: xml;">
-										<div class="g nowrap">
-											<div class="b0_06"></div>
-											<div class="b0_06"></div>
-											<div class="b0_06"></div>
-											<div class="b0_06"></div>
-											<div class="b0_06"></div>
-										</div>
-									</pre>
-									<div class="alert">
-										* When you use <code>nowrap</code> in IE10 the grid items won't stay withing the container. We don't recommend using this option if you need to support IE10.
-									</div>
-								</div>
-
-
-
-								<h3>Align self</h3>
-								<p>With the <code>as-</code> class addition to the <code>gi</code> class you can align grid items vertically to the <strong>secondary axis</strong> of the grid.</p>
-								<div class="specs">
-									<table>
-										<tr>
-											<th>Class</th>
-											<th>Value</th>
-										</tr>
-										<tr>
-											<td>as-flex-start</td>
-											<td>align-self: flex-start;</td>
-										</tr>
-										<tr>
-											<td>as-flex-end</td>
-											<td>align-self: flex-end;</td>
-										</tr>
-										<tr>
-											<td>as-center</td>
-											<td>align-self: center;</td>
-										</tr>
-										<tr>
-											<td>as-space-around</td>
-											<td>align-self: space-around;</td>
-										</tr>
-										<tr>
-											<td>as-space-between</td>
-											<td>align-self: space-between;</td>
-										</tr>
-									</table>
-								</div>
-								<h5>Example</h5>
-								<div class="g">
-									<div class="b0_01"><div class="demo-block">1<br />&nbsp;</div></div>
-									<div class="b0_01"><div class="demo-block">2<br />&nbsp;</div></div>
-									<div class="as-center b0_01"><div class="demo-block">&nbsp;</div></div>
-									<div class="b0_01"><div class="demo-block">4<br />&nbsp;</div></div>
-									<div class="b0_01"><div class="demo-block">5<br />&nbsp;</div></div>
-									<pre class="brush: xml;">
-										<div class="g">
-											<div class="b0_01"></div>
-											<div class="as-center b0_01"></div>
-											<div class="b0_01"></div>
-											<div class="b0_01"></div>
-											<div class="b0_01"></div>
-										</div>
-									</pre>
-								</div>
-							</div>
-
-							<div class="block">
-								<h3>Grid pushing</h3>
-								<p>You can "push" grid-items across the grid with push classes: <code>{breakpoint}-push-</code> classes.</p>
-								<p><strong>Example:</strong> <code>b3_push_01</code> (push 1 column from breakpoint 3 and up.</p>
-								<div class="specs">
-									<table>
-										<tr>
-											<td>b{breakpoint}-push[1-12]</td>
-											<td>Push column 1-12</td>
-										</tr>
-										<tr>
-											<td>b{breakpoint}-push[1-24]</td>
-											<td>Push column 1-24 breakpoint 3+</td>
-										</tr>
-									</table>
-								</div>
-								<h4>Push examples</h4>
-								<div class="g">
-									<div class="b0_03"><div class="demo-block">&nbsp;</div></div>
-									<div class="b0_03 b0_push_03"><div class="demo-block">b0_push_03</div></div>
-									<div class="b0_03"><div class="demo-block">&nbsp;</div></div>
-								</div>
-								<pre class="brush: xml;">
-									<div class="g">
-										<div class="b0_03"></div>
-										<div class="b0_03 b0_push_03"></div>
-										<div class="b0_03"></div>
-									</div>
-								</pre>
-								<div class="g">
-									<div class="b0_12 b3_06 b3_push_12"><div class="demo-block">b3_push_12</div></div>
-									<div class="b0_12 b3_06"><div class="demo-block">&nbsp;</div></div>
-								</div>
-								<pre class="brush: xml;">
-									<div class="g">
-										<div class="b0_12 b3_06 b3_push_12"></div>
-										<div class="b0_12 b3_06"></div>
-									</div>
-								</pre>
-							</div>
-
-
 						</div>
 					</div>
 				</div>
-				<!-- Scripts for footer -->
-				<!-- Scripts for documentation -->
-<footer id="footer">
+				<pre class="brush: xml;">
+					<div class="g">
+						<div class="b0_12">
+							<div class="g">
+								<div class="b0_12 b3_12">
+									<div class="g">
+										<div class="b0_06"></div>
+										<div class="b0_06"></div>
+									</div>
+								</div>
+								<div class="b0_12 b3_12">
+									<div class="g">
+										<div class="b0_06"></div>
+										<div class="b0_06"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div></pre>
+			</div>
+			<div id="order" class="block">
+				<h2>Order</h2>
+				<p>You can switch up the order of the items by giving is a class <code>order-{order}</code>.</p>
+				<table class="specs">
+					<tr>
+						<th>Class</th>
+						<th>Value</th>
+					</tr>
+					<tr>
+						<td>order-[0-12]</td>
+						<td>order: 0-12;</td>
+					</tr>
+				</table>
+			</div>
+			<div id="gutters" class="block">
+				<h2>Gutters</h2>
+				<p>The gutter is adjustable per breakpoint. For example; you can set a default gutter of 12px wide and a gutter of 30px wide at breakpoint 3. You can also use <code>gutter-large</code> or <code>gutter-small</code> if you want to use multiple gutter widths.</p>
+				<p>Default: <code>padding-left: $grid-gutter</code></p>
 
-</footer>
-<script>
-	$(function () {
-		navOpen();
-	});
-	function navOpen() {
-		$('.nav-label, .open-documentation').on('click', function(e) {
-			$('.nav-container').toggleClass('nav-container-active');
-			e.preventDefault();
-		});
-	}
+				<div class="specs">
+					<table>
+						<tr>
+							<th>Breakpoint</th>
+							<th>Extra class</th>
+							<th>Gutter</th>
+							<th>CastleCSS Default</th>
+						</tr>
+						<tr>
+							<td>$b0</td>
+							<td>&nbsp;</td>
+							<td>$grid-gutter</td>
+							<td>12px</td>
+						</tr>
+						<tr>
+							<td>$b1</td>
+							<td>&nbsp;</td>
+							<td>$grid-gutter-b1</td>
+							<td>12px</td>
+						</tr>
+						<tr>
+							<td>$b2</td>
+							<td>&nbsp;</td>
+							<td>$grid-gutter-b2</td>
+							<td>12px</td>
+						</tr>
+						<tr>
+							<td>$b3</td>
+							<td>&nbsp;</td>
+							<td>$grid-gutter-b3</td>
+							<td>12px</td>
+						</tr>
+						<tr>
+							<td>$b4</td>
+							<td>&nbsp;</td>
+							<td>$grid-gutter-b4</td>
+							<td>12px</td>
+						</tr>
+						<tr>
+							<td>$b5</td>
+							<td>&nbsp;</td>
+							<td>$grid-gutter-b5</td>
+							<td>12px</td>
+						</tr>
+						<tr>
+							<td>$b6</td>
+							<td>&nbsp;</td>
+							<td>$grid-gutter-b6</td>
+							<td>12px</td>
+						</tr>
+						<tr>
+							<td>all</td>
+							<td><code>gutter-small</code></td>
+							<td>$grid-gutter/2</td>
+							<td>6px</td>
+						</tr>
+						<tr>
+							<td>all</td>
+							<td><code>gutter-large</code></td>
+							<td>$grid-gutter*2</td>
+							<td>24px</td>
+						</tr>
+						<tr>
+							<td>all</td>
+							<td><code>gutter-none</code></td>
+							<td>0</td>
+							<td>0</td>
+						</tr>
+					</table>
+				</div>
+				<h3>Gutter examples</h3>
+				<div class="g">
+					<div class="gi b0_12 b3_12">
+						<strong>Default gutter</strong>
+						<div class="g">
+							<div class="b0_06"><div class="demo-block">&nbsp;</div></div>
+							<div class="b0_06"><div class="demo-block">&nbsp;</div></div>
+						</div>
+						<pre class="brush: xml;">
+							<div class="g">
+								<div class="b0_06"></div>
+								<div class="b0_06"></div>
+							</div></pre>
+					</div>
+					<div class="gi b0_12 b3_12">
+						<strong>Large gutter</strong>
+						<div class="g gutter-large">
+							<div class="b0_06"><div class="demo-block">&nbsp;</div></div>
+							<div class="b0_06"><div class="demo-block">&nbsp;</div></div>
+						</div>
+						<pre class="brush: xml;">
+							<div class="g gutter-large">
+								<div class="b0_06"></div>
+								<div class="b0_06"></div>
+							</div></pre>
+					</div>
+					<div class="gi b0_12 b3_12">
+						<strong>Small gutter</strong>
+						<div class="g gutter-small">
+							<div class="b0_06"><div class="demo-block">&nbsp;</div></div>
+							<div class="b0_06"><div class="demo-block">&nbsp;</div></div>
+						</div>
+						<pre class="brush: xml;">
+							<div class="g gutter-small">
+								<div class="b0_06"></div>
+								<div class="b0_06"></div>
+							</div></pre>
+					</div>
+					<div class="gi b0_12 b3_12">
+						<strong>No gutter</strong>
+						<div class="g gutter-none">
+							<div class="b0_06"><div class="demo-block">&nbsp;</div></div>
+							<div class="b0_06"><div class="demo-block">&nbsp;</div></div>
+						</div>
+						<pre class="brush: xml;">
+							<div class="g gutter-none">
+								<div class="b0_06"></div>
+								<div class="b0_06"></div>
+							</div></pre>
+					</div>
+				</div>
+			</div>
+			<div id="directionalignment" class="block">
+				<h2>Direction and alignment</h2>
+				<div class="block">
+					<h3 class="head head3">Flex direction</h3>
+					<p>With the class <code>dir-{direction}</code> placed on a <code>g</code> you can adjust the <strong>main-axis</strong>, thus defining the direction flex items are placed in the flex container. </p>
+					<p>This affects justify-content, align-items and align-self.</p>
+					<p>Default: <code>flex-direction: row;</code></p>
+					<table>
+						<tr>
+							<th>Class</th>
+							<th>Value</th>
+						</tr>
+						<tr>
+							<td><code>dir-row</code></td>
+							<td>flex-direction: row;</td>
+						</tr>
+						<tr>
+							<td><code>dir-row-reverse</code></td>
+							<td>flex-direction: row-reverse;</td>
+						</tr>
+						<tr>
+							<td><code>dir-column</code></td>
+							<td>flex-direction: column;</td>
+						</tr>
+						<tr>
+							<td><code>dir-column-reverse</code></td>
+							<td>flex-direction: column-reverse;</td>
+						</tr>
+					</table>
+					<h4>Examples</h4>
+					<div class="g">
+						<div class="b0_12 b3_12"></div>
+					</div>
+					<div class="g auto dir-row-reverse">
+						<div class="b0_01"><div class="demo-block">1</div></div>
+						<div class="b0_01"><div class="demo-block">2</div></div>
+						<div class="b0_01"><div class="demo-block">3</div></div>
+						<div class="b0_01"><div class="demo-block">4</div></div>
+						<div class="b0_01"><div class="demo-block">5</div></div>
+					</div>
+					<pre class="brush: xml;">
+						<div class="g dir-row-reverse">
+							<div class="b0_01"></div>
+							<div class="b0_01"></div>
+							<div class="b0_01"></div>
+							<div class="b0_01"></div>
+							<div class="b0_01"></div>
+						</div></pre>
+					<div class="g dir-column">
+						<div class="b0_01"><div class="demo-block">1</div></div>
+						<div class="b0_01"><div class="demo-block">2</div></div>
+						<div class="b0_01"><div class="demo-block">3</div></div>
+						<div class="b0_01"><div class="demo-block">4</div></div>
+						<div class="b0_01"><div class="demo-block">5</div></div>
+					</div>
+					<pre class="brush: xml;">
+						<div class="g dir-column">
+							<div class="b0_01"></div>
+							<div class="b0_01"></div>
+							<div class="b0_01"></div>
+							<div class="b0_01"></div>
+							<div class="b0_01"></div>
+						</div></pre>
+				</div>
+				<div class="block">
+					<h3 class="head head3">Justify content</h3>
+					<p>With the <code>jc-</code> class as addition for <code>g</code> it's possible to align items on the <strong>primaire</strong> axis.</p>
+					<div class="specs">
+						<table>
+							<tr>
+								<th>Class</th>
+								<th>Value</th>
+							</tr>
+							<tr>
+								<td><code>jc-flex-start</code></td>
+								<td>justify-content: flex-start;</td>
+							</tr>
+							<tr>
+								<td><code>jc-flex-end</code></td>
+								<td>justify-content: flex-end;</td>
+							</tr>
+							<tr>
+								<td><code>jc-center</code></td>
+								<td>justify-content: center;</td>
+							</tr>
+							<tr>
+								<td><code>jc-space-around</code></td>
+								<td>justify-content: space-around;</td>
+							</tr>
+							<tr>
+								<td><code>jc-space-between</code></td>
+								<td>justify-content: space-between;</td>
+							</tr>
+						</table>
+					</div>
+					<div class="g jc-center">
+						<div class="b0_01"><div class="demo-block">1</div></div>
+						<div class="b0_01"><div class="demo-block">2</div></div>
+						<div class="b0_01"><div class="demo-block">3</div></div>
+						<div class="b0_01"><div class="demo-block">4</div></div>
+						<div class="b0_01"><div class="demo-block">5</div></div>
+					</div>
+					<pre class="brush: xml;">
+						<div class="g jc-center">
+							<div class="b0_01"></div>
+							<div class="b0_01"></div>
+							<div class="b0_01"></div>
+							<div class="b0_01"></div>
+							<div class="b0_01"></div>
+						</div></pre>
+				</div>
+				<div class="block">
+					<h3 class="head head3">Auto fill grid</h3>
+					<p>It's possible to let the grid figure out the widths for itself. When you don't know what the width will be but you want the grid to fill out the <code>auto</code> class is a nice addition to the grid (<code>g</code>).
+					<div>
+						<strong>Example</strong>
+					</div>
+					<div class="g auto">
+						<div><div class="demo-block">Grid item</div></div>
+						<div><div class="demo-block">Grid item</div></div>
+						<div><div class="demo-block">Grid item</div></div>
+						<div><div class="demo-block">Grid item</div></div>
+						<div><div class="demo-block">Grid item</div></div>
+						<div><div class="demo-block">Long grid item</div></div>
+						<div><div class="demo-block">Grid item</div></div>
+						<div><div class="demo-block">Grid item</div></div>
+						<div><div class="demo-block">Long grid item</div></div>
+						<div><div class="demo-block">A most super duper long, longer, longest grid item</div></div>
+						<div><div class="demo-block">Grid item</div></div>
+						<div><div class="demo-block">Grid item</div></div>
+						<div><div class="demo-block">Grid item</div></div>
+						<div><div class="demo-block">Grid item</div></div>
+					</div>
+					<pre class="brush: xml;">
+						<div class="g auto">
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+							<div></div>
+						</div></pre>
+				</div>
+				<div class="block">
+					<h3 class="head head3">Flex wrap</h3>
+					<p>Add the class <code>wrap</code> or <code>nowrap</code> to a <code>g</code> element to overwrite flex wrapping.</p>
+					<p>Default: <code>flex-direction: wrap;</code></p>
+					<table class="specs">
+						<tr>
+							<th>Class</th>
+							<th>Value</th>
+						</tr>
+						<tr>
+							<td><code>wrap</code></td>
+							<td>flex-wrap: wrap;</td>
+						</tr>
+						<tr>
+							<td><code>nowrap</code></td>
+							<td>flex-wrap: nowrap;</td>
+						</tr>
+					</table>
+					<h5>Example with wrapping</h5>
+					<div class="g">
+						<div class="b0_06"><div class="demo-block">1/2</div></div>
+						<div class="b0_06"><div class="demo-block">1/2</div></div>
+						<div class="b0_06"><div class="demo-block">1/2</div></div>
+						<div class="b0_06"><div class="demo-block">1/2</div></div>
+						<div class="b0_06"><div class="demo-block">1/2</div></div>
+					</div>
+					<pre class="brush: xml;">
+						<div class="g">
+							<div class="b0_06">I should be 1/2</div>
+							<div class="b0_06">I should be 1/2</div>
+							<div class="b0_06">I should be 1/2</div>
+							<div class="b0_06">I should be 1/2</div>
+							<div class="b0_06">I should be 1/2</div>
+						</div></pre>
+					<h5>Example without wrapping</h5>
+					<div class="g nowrap">
+						<div class="b0_06"><div class="demo-block">I should be 1/2</div></div>
+						<div class="b0_06"><div class="demo-block">I should be 1/2</div></div>
+						<div class="b0_06"><div class="demo-block">I should be 1/2</div></div>
+						<div class="b0_06"><div class="demo-block">I should be 1/2</div></div>
+						<div class="b0_06"><div class="demo-block">I should be 1/2</div></div>
+					</div>
+					<pre class="brush: xml;">
+						<div class="g nowrap">
+							<div class="b0_06"></div>
+							<div class="b0_06"></div>
+							<div class="b0_06"></div>
+							<div class="b0_06"></div>
+							<div class="b0_06"></div>
+						</div></pre>
+					<div class="alert">
+						* When you use <code>nowrap</code> in IE10 the grid items won't stay withing the container. We don't recommend using this option if you need to support IE10.
+					</div>
+				</div>
 
-</script>
-
-<script src="js/shCore.js"></script>
-<script src="js/shBrushXml.js"></script>
-<script src="js/shBrushSass.js"></script>
-<script src="js/shBrushJScript.js"></script>
-<script type="text/javascript">SyntaxHighlighter.all();</script>
-<script async defer src="https://buttons.github.io/buttons.js"></script>
 
 
-			</body>
+				<h3>Align self</h3>
+				<p>With the <code>as-</code> class addition to the <code>gi</code> class you can align grid items vertically to the <strong>secondary axis</strong> of the grid.</p>
+				<div class="specs">
+					<table>
+						<tr>
+							<th>Class</th>
+							<th>Value</th>
+						</tr>
+						<tr>
+							<td>as-flex-start</td>
+							<td>align-self: flex-start;</td>
+						</tr>
+						<tr>
+							<td>as-flex-end</td>
+							<td>align-self: flex-end;</td>
+						</tr>
+						<tr>
+							<td>as-center</td>
+							<td>align-self: center;</td>
+						</tr>
+						<tr>
+							<td>as-space-around</td>
+							<td>align-self: space-around;</td>
+						</tr>
+						<tr>
+							<td>as-space-between</td>
+							<td>align-self: space-between;</td>
+						</tr>
+					</table>
+				</div>
+				<h5>Example</h5>
+				<div class="g">
+					<div class="b0_01"><div class="demo-block">1<br />&nbsp;</div></div>
+					<div class="b0_01"><div class="demo-block">2<br />&nbsp;</div></div>
+					<div class="as-center b0_01"><div class="demo-block">&nbsp;</div></div>
+					<div class="b0_01"><div class="demo-block">4<br />&nbsp;</div></div>
+					<div class="b0_01"><div class="demo-block">5<br />&nbsp;</div></div>
+					<pre class="brush: xml;">
+						<div class="g">
+							<div class="b0_01"></div>
+							<div class="as-center b0_01"></div>
+							<div class="b0_01"></div>
+							<div class="b0_01"></div>
+							<div class="b0_01"></div>
+						</div></pre>
+				</div>
+			</div>
+			<div class="block">
+				<h3>Grid pushing</h3>
+				<p>You can "push" grid-items across the grid with push classes: <code>{breakpoint}-push-</code> classes.</p>
+				<p><strong>Example:</strong> <code>b3_push_01</code> (push 1 column from breakpoint 3 and up.</p>
+				<div class="specs">
+					<table>
+						<tr>
+							<td>b{breakpoint}-push[1-12]</td>
+							<td>Push column 1-12</td>
+						</tr>
+						<tr>
+							<td>b{breakpoint}-push[1-24]</td>
+							<td>Push column 1-24 breakpoint 3+</td>
+						</tr>
+					</table>
+				</div>
+				<h4>Push examples</h4>
+				<div class="g">
+					<div class="b0_03"><div class="demo-block">&nbsp;</div></div>
+					<div class="b0_03 b0_push_03"><div class="demo-block">b0_push_03</div></div>
+					<div class="b0_03"><div class="demo-block">&nbsp;</div></div>
+				</div>
+				<pre class="brush: xml;">
+					<div class="g">
+						<div class="b0_03"></div>
+						<div class="b0_03 b0_push_03"></div>
+						<div class="b0_03"></div>
+					</div></pre>
+				<div class="g">
+					<div class="b0_12 b3_06 b3_push_12"><div class="demo-block">b3_push_12</div></div>
+					<div class="b0_12 b3_06"><div class="demo-block">&nbsp;</div></div>
+				</div>
+				<pre class="brush: xml;">
+					<div class="g">
+						<div class="b0_12 b3_06 b3_push_12"></div>
+						<div class="b0_12 b3_06"></div>
+					</div></pre>
+			</div>
+		</div>
+	</div>
+	<!-- End main -->
 
-			</html>
+		<!-- Scripts for documentation -->
+		<footer id="footer">
+
+		</footer>
+		<script>
+			$(function () {
+				navOpen();
+
+				window.onscroll = function(e) {
+			    	offSetManager();
+				}
+			});
+				
+			function offSetManager(){
+
+			    var yOffset = 110;
+			    var currYOffSet = window.pageYOffset;
+			    var menuHeight = $('.doc-menu').height();
+				var windowHeight = $(window).height();
+
+			    if((yOffset < currYOffSet) && (menuHeight < windowHeight)) {
+			        $('.nav-wrap').addClass('fixed');
+			    } else if(yOffset > currYOffSet){
+		         	$('.nav-wrap').removeClass('fixed');
+			    }
+			}
+
+			function navOpen() {
+				$('.nav-label, .open-documentation').on('click', function(e) {
+					$('.nav-container').toggleClass('nav-container-active');
+					e.preventDefault();
+				});
+			}
+
+		</script>
+
+		<script src="js/shCore.js"></script>
+		<script src="js/shBrushXml.js"></script>
+		<script src="js/shBrushSass.js"></script>
+		<script src="js/shBrushJScript.js"></script>
+		<script type="text/javascript">SyntaxHighlighter.all();</script>
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+	</body>
+</html>
+
