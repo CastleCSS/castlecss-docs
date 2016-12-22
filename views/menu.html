@@ -1,0 +1,68 @@
+{% set currentPageId = 'menu' %}{% set pageTitle = 'Menu - CastleCSS' %}{% include "inc/header.html" %}
+
+	<!-- Main -->
+	<div class="b0_12 b4_16 b5_18 b6_20">
+		<div class="g">
+			<div class="b0_12 b4_14 b4_push_01">
+				<div class="p p-b3-3x">
+					<div class="block">
+						<h1>Menu</h1>
+						<p class="intro">Hier nog iets</p>
+						<p>Feel free to use this menu to get you started.</p>
+					</div>
+				</div>
+			</div>
+			<div class="b0_12 b4_24 b5_24 b6_24">
+				<div class="p-b4">
+					<header class="castlecss-menu theme02 p">
+						<div class="castlecss-menu-wrap">
+							
+							<div class="blur"></div>
+
+							<div class="castlecss-menu-logo" itemscope="" itemtype="http://schema.org/Organization">
+								<a itemprop="url" href="/home.aspx">
+									<img itemprop="logo" data-resize="true" src="img/logo-castlecss.png" alt="CastleCSS Logo">
+								</a>
+							</div>
+							
+							<button class="castlecss-menu-nav-label hide-b4">
+								<i class="fa fa-bars castlecss-menu-bars" aria-hidden="true"></i>
+								<i class="fa fa-times castlecss-menu-close hide" aria-hidden="true"></i>
+							</button>
+
+							<nav itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement" class="castlecss-menu-main-nav cf">
+								<ul class="castlecss-menu-main-nav-wrap list-unstyled">
+									<li itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement" class="main-nav-item active"><a itemprop="url" href="/about.html"><span itemprop="name">About CastleCSS</span></a></li>
+									<li itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement" class="main-nav-item"><a itemprop="url" href="/icons.html"><span itemprop="name">Icons</span></a></li>
+									<li itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement" class="main-nav-item"><a itemprop="url" href="/grid.html"><span itemprop="name">Grid</span></a>
+										<div class="sub p-b4">
+											<ul>
+												<li itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement" class="main-nav-item active"><a itemprop="url" href="/grid.html#basicexamples"><span itemprop="name">About CastleCSS</span></a></li>
+												<li itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement" class="main-nav-item"><a itemprop="url" href="/grid.html#breakpoints"><span itemprop="name">Icons</span></a></li>
+												<li itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement" class="main-nav-item"><a itemprop="url" href="/grid.html#gutters"><span itemprop="name">Buttons</span></a></li>
+												<li itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement" class="main-nav-item"><a itemprop="url" href="/grid.html#directionalignment"><span itemprop="name">Grid</span></a>
+											</ul>
+										</div>
+									</li>
+									<li itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement" class="main-nav-item"><a itemprop="url" href="/buttons.html"><span itemprop="name">Buttons</span></a></li>
+								</ul>
+							</nav>
+							
+						</div>
+					</header>
+				</div>
+			</div>		
+		</div>
+	</div>
+	<script>
+		$(function(){
+
+			$('.castlecss-menu-nav-label').on('click', function(){
+
+				$('.castlecss-menu-wrap').toggleClass('castlecss-menu-active');
+			});
+		});
+	</script>
+	<!-- End main -->
+
+{% include "inc/footer.html" %}
