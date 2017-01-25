@@ -1,0 +1,103 @@
+{% set currentPageId = 'breadcrumbs' %}{% set pageTitle = 'Breadcrumbs - CastleCSS' %}{% include "inc/header.html" %}
+
+	<!-- Main -->
+	<div class="b0_12 b4_14 b4_push_01">
+		<div class="p p-b3-3x">
+			<div class="block">
+				<h1>Breadcrumbs</h1>
+				<p class="intro">Make sure your visitors never get lost</p>
+				<p class="alert">
+					Note: You need castlecss-breadcrumbs or the full package of CastleCSS for this.
+				</p>
+				<p>Feel free to use these breadcrumbs to get you started. Create your own breadcrumbs.scss to overwrite the standard breadcrumbs or edit your <a href="variables.html">variables document</a> for different colors/styles.</p>
+			</div>
+			
+			<div class="block p" style="background: #eee;">
+
+				<nav class="castlecss-breadcrumbs">
+					<ol class="breadcrumbs-wrap" itemtype="http://schema.org/BreadcrumbList">
+						<li class="breadcrumb breadcrumb-home" itemprop="itemListElement" itemscope  itemtype="http://schema.org/ListItem">
+							<a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+						</li>
+						<li class="breadcrumb"  itemprop="itemListElement" itemscope  itemtype="http://schema.org/ListItem">
+							<a href="/category/" itemprop="item"><span itemprop="name">Main category</span></a>
+						</li>  
+						<li class="breadcrumb" itemprop="itemListElement" itemscope  itemtype="http://schema.org/ListItem">
+							<a href="/category/sub-category" itemprop="item"><span itemprop="name">Sub category</span></a>
+						</li>  
+						<li class="breadcrumb" itemprop="itemListElement" itemscope  itemtype="http://schema.org/ListItem">
+							<a href="/category/sub-category/sub-category" itemprop="item"><span itemprop="name">Sub sub category</span></a>
+						</li>  
+						<li class="breadcrumb breadcrumb-current" itemprop="itemListElement" itemscope  itemtype="http://schema.org/ListItem">
+							<span itemprop="name">This page</span>
+						</li>
+					</ol>
+				</nav>
+
+			</div>
+
+			<pre class="brush: xml;">
+				<nav class="castlecss-breadcrumbs">
+					<ol class="breadcrumbs-wrap" itemtype="http://schema.org/BreadcrumbList">
+						<li class="breadcrumb breadcrumb-home" itemprop="itemListElement" itemscope  itemtype="http://schema.org/ListItem">
+							<a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+						</li>
+						<li class="breadcrumb"  itemprop="itemListElement" itemscope  itemtype="http://schema.org/ListItem">
+							<a href="/category/" itemprop="item"><span itemprop="name">Main category</span></a>
+						</li>  
+						<li class="breadcrumb" itemprop="itemListElement" itemscope  itemtype="http://schema.org/ListItem">
+							<a href="/category/sub-category" itemprop="item"><span itemprop="name">Sub category</span></a>
+						</li>  
+						<li class="breadcrumb" itemprop="itemListElement" itemscope  itemtype="http://schema.org/ListItem">
+							<a href="/category/sub-category/sub-category" itemprop="item"><span itemprop="name">Sub sub category</span></a>
+						</li>  
+						<li class="breadcrumb breadcrumb-current" itemprop="itemListElement" itemscope  itemtype="http://schema.org/ListItem">
+							<span itemprop="name">This page</span>
+						</li>
+					</ol>
+				</nav></pre>
+
+			<div class="block">
+				<h2>Options</h2>
+				<h3>Changing the breadcrumb separator</h3>
+				<p>
+					The default separator between the breadcrumbs is the double arrow <code>&raquo;</code>. <br />
+					If you want a different character as your separator for all crumbs, please overwrite the variable <code>$castlecss-breadcrumbs-separator</code>.
+				</p>
+				<p>
+					If you want a different charactor for a specific separator, please add the attribute <code>data-castlecss-breadcrumbs-separator</code> and give it the vaule of your separator.
+				</p>
+				<p>
+					<strong>Example:</strong> <code>data-castlecss-breadcrumbs-separator="/"</code> sets a / as separator
+				</p>
+			</div>
+			
+			<div class="block p" style="background: #eee;">
+				<nav class="castlecss-breadcrumbs">
+					<ol class="breadcrumbs-wrap" itemtype="http://schema.org/BreadcrumbList">
+						<li class="breadcrumb breadcrumb-home" data-castlecss-breadcrumbs-separator="/" itemprop="itemListElement" itemscope  itemtype="http://schema.org/ListItem">
+							<a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+						</li>
+						<li class="breadcrumb breadcrumb-current" itemprop="itemListElement" itemscope  itemtype="http://schema.org/ListItem">
+							<span itemprop="name">This page</span>
+						</li>
+					</ol>
+				</nav>
+
+			</div>
+			<pre class="brush: xml;">
+				<nav class="castlecss-breadcrumbs">
+					<ol class="breadcrumbs-wrap" itemtype="http://schema.org/BreadcrumbList">
+						<li class="breadcrumb breadcrumb-home" data-castlecss-breadcrumbs-separator="/" itemprop="itemListElement" itemscope  itemtype="http://schema.org/ListItem">
+							<a href="/" itemprop="item"><span itemprop="name">Home</span></a>
+						</li>
+						<li class="breadcrumb breadcrumb-current" itemprop="itemListElement" itemscope  itemtype="http://schema.org/ListItem">
+							<span itemprop="name">This page</span>
+						</li>
+					</ol>
+				</nav></pre>
+		</div>
+	</div>
+	<!-- End main -->
+
+{% include "inc/footer.html" %}
