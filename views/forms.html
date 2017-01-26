@@ -27,43 +27,41 @@
 						</div>
 						<div class="b0_12 b3_12">
 							<h3>Input with button</h3>
-							<ul class="fields g">
-								<li class="b0_12 ">
+							<form class="form">
+								<div class="fields">
 									<div class="form-field">
 										<label for="search">Search</label>
-										<div class="combined-item">
+										<div class="input-combined">
 											<input type="search" name="search" class="form-input" id="search">
 											<button	type="submit" class="btn btn-submit">Submit</button>
 										</div>
 									</div>
-								</li>
-							</ul>
+								</div>
+							</form>
 						</div>
 					</div>
 				</section>
 				<section class="inputs js-forms">
 					<h3>Label placement</h3>
-					<p>Add the classes <code>.formlabel-top</code> or <code>.formlabel-bottom</code> to your field to adjust the position of the label. This not only works with inputs, but with textareas as well!</p>
+					<p>Add the classes <code>.label-top</code> or <code>.label-bottom</code> to your field to adjust the position of the label. This not only works with inputs, but with textareas as well!</p>
 					<div class="g">
 						<div class="b0_12 b3_12">
 							<h5>Moves to top</h5>
-							<ul class="g fields formlabel-top">
-								<li class="b0_12">
-									<div class="form-field">
+							<form class="form">
+								<ul class="fields label-top">
+									<li class="form-field">
 										<label for="lable2a">Email</label>
 										<input class="text" type="text" name="Naam" id="lable2a" value="">
-									</div>
-								</li>
-							</ul>
+									</li>
+								</ul>
+							</form>
 						</div>
 						<div class="b0_12 b3_12">
 							<h5>Moves inside</h5>
-							<ul class="g fields formlabel-bottom">
-								<li class="b0_12">
-									<div class="form-field">
-										<label for="lable3a">Email</label>
-										<input class="text" type="text" name="Naam" id="lable3a" value="">
-									</div>
+							<ul class="fields label-bottom">
+								<li class="form-field">
+									<label for="lable3a">Email</label>
+									<input class="text" type="text" name="Naam" id="lable3a" value="">
 								</li>
 							</ul>
 						</div>
@@ -73,15 +71,13 @@
 					<h2>Textarea</h2>
 					<div class="g">
 						<div class="gi b0_12 b3_12">
-							<ul class="g fields formlabel-top">
-								<li class="b0_12 ">
-									<div class="form-field">
-										<label for="textarea">Example</label>
-										<textarea maxlength="30000" cols="50" rows="10" id="textarea" name="textarea"></textarea>
-									</div>
+							<ul class="fields label-top">
+								<li class="form-field">
+									<label for="textarea">Example</label>
+									<textarea maxlength="30000" cols="50" rows="10" id="textarea" name="textarea"></textarea>
 								</li>
 							</ul>
-							<div class="alert mb-2x">Remember the label placements mentioned above? The classes <code>.formlabel-bottom</code> and <code>.formlabel-top</code> also work well with textareas.</div>
+							<div class="alert mb-2x">Remember the label placements mentioned above? The classes <code>.label-bottom</code> and <code>.label-top</code> also work well with textareas.</div>
 						</div>
 					</div>
 				</section>
@@ -93,8 +89,8 @@
 					<div class="g">
 						<div class="b0_12 b3_12">
 							<b>Select your favorite fruit</b>
-							<ul class="g fields">
-								<li class="b0_12">
+							<ul class="fields">
+								<li class="form-field">
 									<label class="input-control input-checkbox">Orange
 										<input type="checkbox" />
 										<div class="input-indicator"></div>
@@ -116,8 +112,8 @@
 						</div>
 						<div class="b0_12 b3_12">
 							<b>Select your favorite fruit</b>
-							<ul class="g fields label-left">
-								<li class="b0_12">
+							<ul class="fields label-left">
+								<li class="form-field">
 									<label class="input-control input-checkbox">Orange
 										<input type="checkbox" />
 										<div class="input-indicator"></div>
@@ -162,10 +158,10 @@
 						<div class="b0_12 b3_12">
 							<h5>Horizontal radios</h5>
 							<p>Sed ligula eros, sollicitudin nec luctus ac, consectetur quis massa. Praesent nec dictum leo.</p>
-							<code>.form-inline</code>
-							<ul class="g fields">
-								<li class="b0_12">
-									<div class="form-field form-inline">
+							<code>.form-horizontal</code>
+							<form class="form form-horizontal">
+								<div class="fields">
+									<div class="form-field">
 										<label for="gender" class="label"><b>Gender</b></label>
 										<label class="input-control input-radio">Male
 											<input type="radio" name="radio2" checked="checked"/>
@@ -176,8 +172,8 @@
 											<div class="input-indicator"></div>
 										</label>
 									</div>
-								</li>
-							</ul>
+								</div>
+							</form>
 						</div>
 				</section>
 				<section class="select">
@@ -193,48 +189,50 @@
 						</li>
 					</ul>
 				</section>
-				<section class="inline-forms js-forms">
+				<section class="horizontal-forms js-forms">
 					<h2>Inline forms</h2>
 					<p>Sed ligula eros, sollicitudin nec luctus ac, consectetur quis massa. Praesent nec dictum leo.</p>
 					<h5>Input with add-on and button</h5>
-					<ul class="g fields formlabel-bottom">
-						<li class="b0_12 ">
+					<form class="form form-horizontal">
+						<div class="fields label-bottom">
 							<div class="form-field input-icon">
 								<label for="search">Product sku</label>
-								<div class="combined-item fa fa-star">
+								<div class="input-combined fa fa-star">
 									<input type="search" name="search" class="form-input" id="search">
 									<button	type="submit" class="btn btn-submit">Search</button>
 								</div>
 							</div>
-						</li>
-					</ul>
+						</div>
+					</form>
 
 					<h5>Horizontal checkboxes</h5>
-					<ul class="g fields form-inline">
-						<li class="b0_12">
-							<label class="input-control input-checkbox">Orange
-								<input type="checkbox">
-								<div class="input-indicator"></div>
-							</label>
-							<label class="input-control input-checkbox">Banana
-								<input type="checkbox">
-								<div class="input-indicator"></div>
-							</label>
-							<label class="input-control input-checkbox">Apple
-								<input type="checkbox">
-								<div class="input-indicator"></div>
-							</label>
-							<label class="input-control input-checkbox">Pear
-								<input type="checkbox">
-								<div class="input-indicator"></div>
-							</label>
-						</li>
-					</ul>
+					<form class="form form-horizontal">
+						<div class="fields">
+							<div class="form-field">
+								<label class="input-control input-checkbox">Orange
+									<input type="checkbox">
+									<div class="input-indicator"></div>
+								</label>
+								<label class="input-control input-checkbox">Banana
+									<input type="checkbox">
+									<div class="input-indicator"></div>
+								</label>
+								<label class="input-control input-checkbox">Apple
+									<input type="checkbox">
+									<div class="input-indicator"></div>
+								</label>
+								<label class="input-control input-checkbox">Pear
+									<input type="checkbox">
+									<div class="input-indicator"></div>
+								</label>
+							<div>
+						</div>
+					</form>
 
 					<h5>Horizontal radios</h5>
-					<ul class="g fields">
-						<li class="b0_12">
-							<div class="form-field form-inline">
+					<form class="form form-horizontal">
+						<div class="fields">
+							<div class="form-field">
 								<label class="input-control input-radio">Male
 									<input type="radio" name="radio2" checked="checked"/>
 									<div class="input-indicator"></div>
@@ -243,9 +241,9 @@
 									<input type="radio" name="radio2"/>
 									<div class="input-indicator"></div>
 								</label>
-							</div>
-						</li>
-					</ul>
+							<div>
+						</div>
+					</form>
 				</section>
 			</div>
 		</div>
