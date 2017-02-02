@@ -1,5 +1,5 @@
 {% set currentPageId = 'forms' %}{% set pageTitle = 'Forms - CastleCSS' %}{% include "inc/header.html" %}
-
+ 
 	<!-- Main -->
 	<div class="b0_12 b4_14 b4_push_01">
 		<div class="p p-b3-3x">
@@ -11,7 +11,7 @@
 
 					<div class="p-2x mb-2x" style="border: 1px solid #eee">
 						<form class="form">
-							<div class="fields">
+							<div class="form-fields">
 								<div class="form-field">
 									<label for="gender" class="label">Gender</label>
 									<label class="input-control input-radio">Male
@@ -24,7 +24,7 @@
 									</label>
 								</div>
 							</div>
-							<div class="fields">
+							<div class="form-fields">
 								<div class="form-field">
 									<label for="email">Email</label>
 									<input type="email" name="Email" id="email" value="">
@@ -38,7 +38,7 @@
 									<input type="file" id="file-input">
 								</div>
 							</div>
-							<div class="fields">
+							<div class="form-fields">
 								<div class="form-field">
 									<label class="input-control input-checkbox">I want to receive the newsletter
 										<input type="checkbox">
@@ -51,7 +51,7 @@
 
 					<pre class="brush: html">
 						<form class="form">
-							<div class="fields">
+							<div class="form-fields">
 								<div class="form-field">
 									<label for="gender" class="label">Gender</label>
 									<label class="input-control input-radio">Male
@@ -64,7 +64,7 @@
 									</label>
 								</div>
 							</div>
-							<div class="fields">
+							<div class="form-fields">
 								<div class="form-field">
 									<label for="email">Email</label>
 									<input type="email" name="Email" id="email" value="">
@@ -78,7 +78,7 @@
 									<input type="file" id="file-input">
 								</div>
 							</div>
-							<div class="fields">
+							<div class="form-fields">
 								<div class="form-field">
 									<label class="input-control input-checkbox">I want to receive the newsletter
 										<input type="checkbox">
@@ -98,7 +98,7 @@
 							<p>The <code>input</code> is wrapped in a div with the class <code>.formfield</code>.
 							<div class="p-2x pb-0" style="border: 1px solid #eee">
 								<form class="form">
-									<div class="fields">
+									<div class="form-fields">
 										<div class="form-field">
 											<label for="label">Full name</label>
 											<input type="text" name="Naam" id="label" value="">
@@ -108,7 +108,7 @@
 							</div>
 							<pre class="brush: html">
 								<form class="form">
-									<div class="fields">
+									<div class="form-fields">
 										<div class="form-field">
 											<label for="label">Full name</label>
 											<input type="text" name="Naam" id="label" value="">
@@ -122,7 +122,7 @@
 							<p>Wrap the <code>input</code> en <code>button</code> in a div with the class <code>.input-combined</code>
 							<div class="p-2x pb-0" style="border: 1px solid #eee">
 								<form class="form">
-									<div class="fields">
+									<div class="form-fields">
 										<div class="form-field">
 											<label for="search">Search</label>
 											<div class="input-combined">
@@ -135,7 +135,7 @@
 							</div>
 							<pre class="brush: html">
 								<form class="form">
-									<div class="fields">
+									<div class="form-fields">
 										<div class="form-field">
 											<label for="search">Search</label>
 											<div class="input-combined">
@@ -151,12 +151,12 @@
 				</section>
 				<section class="block inputs js-forms">
 					<h3>Label placement</h3>
-					<p>Add the classes <code>.label-top</code> or <code>.label-bottom</code> to your field to adjust the position of the label. This not only works with inputs, but with textareas as well!</p>
+					<p>Add the classes <code>.label-above</code>, <code>.label-top</code> or <code>.label-bottom</code> to your field to adjust the position of the label. This not only works with inputs, but with textareas as well!</p>
 					<div class="g">
-						<div class="b0_12 b3_12">
-							<h5>Moves to top</h5>
+						<div class="b0_12 b3_08">
+							<h5>Moves above the input</h5>
 							<form class="form">
-								<ul class="fields label-top">
+								<ul class="form-fields label-above">
 									<li class="form-field">
 										<label for="lable2a">Email</label>
 										<input type="text" name="Naam" id="lable2a" value="">
@@ -164,9 +164,18 @@
 								</ul>
 							</form>
 						</div>
-						<div class="b0_12 b3_12">
-							<h5>Moves inside</h5>
-							<ul class="fields label-bottom">
+						<div class="b0_12 b3_08">
+							<h5>Moves to top inside the input</h5>
+							<ul class="form-fields label-top">
+								<li class="form-field">
+									<label for="lable3a">Email</label>
+									<input type="text" name="Naam" id="lable3a" value="">
+								</li>
+							</ul>
+						</div>
+						<div class="b0_12 b3_08">
+							<h5>Moves to bottom inside the input</h5>
+							<ul class="form-fields label-bottom">
 								<li class="form-field">
 									<label for="lable3a">Email</label>
 									<input type="text" name="Naam" id="lable3a" value="">
@@ -179,13 +188,13 @@
 					<h2>Textarea</h2>
 					<div class="g">
 						<div class="gi b0_12">
-							<ul class="fields label-top">
-								<li class="form-field">
+							<ul class="form-fields label-top">
+								<li class="form-field input-textarea">
 									<label for="textarea">Example</label>
 									<textarea maxlength="30000" cols="50" rows="10" id="textarea" name="textarea"></textarea>
 								</li>
 							</ul>
-							<div class="alert mb-2x">Remember the label placements mentioned above? The classes <code>.label-bottom</code> and <code>.label-top</code> also work well with textareas.</div>
+							<div class="alert mb-2x">Remember the label placements mentioned above? The classes <code>.label-bottom</code>, <code>.label-top</code> and <code>.label-above</code> also work well with textareas. By default all labels are vertical-aligned in the middle. If you want to prevent this behaviour with textarea's you can add a parent class of <code>.input-textarea</code></div>
 						</div>
 					</div>
 				</section>
@@ -195,7 +204,7 @@
 					<div class="g">
 						<div class="b0_12">
 							<b>Select your favorite fruit</b>
-							<ul class="fields">
+							<ul class="form-fields">
 								<li class="form-field">
 									<label class="input-control input-checkbox">Orange
 										<input type="checkbox" />
@@ -216,7 +225,7 @@
 								</li>
 							</ul>
 							<pre class="brush: html">
-								<ul class="fields">
+								<ul class="form-fields">
 									<li class="form-field">
 										<label class="input-control input-checkbox">Orange
 											<input type="checkbox" />
@@ -242,7 +251,7 @@
 							<h3>Checkbox right of the label</h3>
 							<p>Add the class <code>.label-left</code> to a parent of the <code>.input-checkbox</code>.</p>
 							<b>Select your favorite fruit</b>
-							<ul class="fields label-left">
+							<ul class="form-fields label-left">
 								<li class="form-field">
 									<label class="input-control input-checkbox">Orange
 										<input type="checkbox" />
@@ -271,7 +280,7 @@
 						<div class="b0_12 b3_12">
 							<h5>Vertical radios</h5>
 							<form class="form">
-								<div class="fields">
+								<div class="form-fields">
 									<div class="form-field">
 										<label for="gender"><b>Gender</b></label>
 										<label class="input-control input-radio">Male
@@ -287,7 +296,7 @@
 							</form>
 							<pre class="brush: html">
 								<form class="form">
-									<div class="fields">
+									<div class="form-fields">
 										<div class="form-field">
 											<label for="gender"><b>Gender</b></label>
 											<label class="input-control input-radio">Male
@@ -307,7 +316,7 @@
 							<h5>Horizontal radios</h5>
 							<p>Radios can be horizontal as well. Add the class <code>.form-horizontal</code> to a parent of the field(s) you want to make horizontal, as shown in the example below.</p>
 							<form class="form form-horizontal">
-								<div class="fields">
+								<div class="form-fields">
 									<div class="form-field">
 										<label for="gender" class="label"><b>Gender</b></label>
 										<label class="input-control input-radio">Male
@@ -323,7 +332,7 @@
 							</form>
 							<pre class="brush: html">
 								<form class="form form-horizontal">
-									<div class="fields">
+									<div class="form-fields">
 										<div class="form-field">
 											<label for="gender" class="label"><b>Gender</b></label>
 											<label class="input-control input-radio">Male
@@ -344,7 +353,7 @@
 				<section class="block selects">
 					<h2>Select</h2>
 					<form class="form">
-						<div class="fields">
+						<div class="form-fields">
 							<div class="form-field">
 								<select>
 									<option>First select</option>
@@ -362,7 +371,7 @@
 					<div class="block">
 						<h5>Horizontal checkboxes</h5>
 						<form class="form form-horizontal">
-							<div class="fields">
+							<div class="form-fields">
 								<div class="form-field">
 									<label class="input-control input-checkbox">Orange
 										<input type="checkbox">
@@ -388,7 +397,7 @@
 					<div class="block">
 						<h5>Horizontal radios</h5>
 						<form class="form form-horizontal">
-							<div class="fields">
+							<div class="form-fields">
 								<div class="form-field">
 									<label class="input-control input-radio">Male
 										<input type="radio" name="radio2" checked="checked"/>
@@ -405,7 +414,7 @@
 
 					<h5>Input with add-on and button</h5>
 					<form class="form">
-						<div class="fields label-bottom">
+						<div class="form-fields label-top">
 							<div class="form-field">
 								<div class="input-combined">
 									<div class="input-icon fa fa-star">
@@ -419,7 +428,7 @@
 					</form>
 					<pre class="brush: html">
 						<form class="form form-horizontal">
-							<div class="fields label-bottom">
+							<div class="form-fields label-bottom">
 								<div class="form-field">
 									<div class="input-combined">
 										<div class="input-icon fa fa-star">
@@ -489,6 +498,14 @@
 				}
 			});
 		});
+
+		// http://www.zyxware.com/articles/3980/solved-file-input-browse-button-requiring-double-click-in-ie10
+		// Handle custom triggering of clicks for browse button in IE10 
+		if (navigator.userAgent.indexOf("MSIE") > 0) {
+			$("input[type='file']").mousedown(function() {
+				$(this).trigger('click');
+			})
+		}
 
 	</script>
 

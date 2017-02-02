@@ -12,6 +12,9 @@
 	Color 01 and 02 reservered for white and black
 */
 $color03: #eeeeee;
+$color04: #aaa;
+$color05: #ccc;
+$color06: #797979;
 
 /*
 	Theme colors
@@ -120,3 +123,7 @@ $font-size-default: 1.6rem;
 $line-height-default: 1.5;
 
 
+/* Form specific variables */
+$input-height: 48px;
+$input-border: 1px solid $color03;
+$input-transition: 0.1s ease-in-out;
