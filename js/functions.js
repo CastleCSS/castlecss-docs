@@ -1,7 +1,9 @@
 'use strict';
 
+// Require jQuery
 var $ = require('jquery');
 
+// Init events
 var InitEvents = function () {
 	navOpen();
 
@@ -10,6 +12,7 @@ var InitEvents = function () {
 	}
 };
 	
+// Sticky side menu for desktop
 function offSetManager(){
 
     var yOffset = 110;
@@ -24,6 +27,7 @@ function offSetManager(){
     }
 }
 
+// Open mobile nav menu
 function navOpen() {
 	$('.nav-label, .open-documentation').on('click', function(e) {
 		$('.nav-container').toggleClass('nav-container-active');
@@ -31,6 +35,7 @@ function navOpen() {
 	});
 }
 
+// Export module
 module.exports = {
 	InitEvents: InitEvents
 };
