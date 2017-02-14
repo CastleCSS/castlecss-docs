@@ -9,10 +9,9 @@
 	Base colors
 	Color 01 and 02 reservered for white and black
 */
-$color03: #eeeeee;
-$color04: #aaa;
-$color05: #ccc;
-$color06: #797979;
+$color01:  	#fff;
+$color02:  	#000;
+$color03: 	#eeeeee;
 
 /*
 	Theme colors
@@ -22,7 +21,6 @@ $theme02: 	#093142; 	// Royal blue
 $theme03:	#12637F;	// Falcon blue
 $theme04:	#FFC200;	// Royal yellow
 $theme05:	#FFFFFF;	// Destroyer white
-$theme06: 	#164558;
 
 /*
 	Notification colors
@@ -99,7 +97,7 @@ $grid-gutter-b3: 12px;
 $grid-gutter-b4: 12px;
 $grid-gutter-b5: 12px;
 $grid-gutter-b6: 12px;
- 
+
 /*
 	Default margin and padding
 */
@@ -110,13 +108,13 @@ $margin-default: 	12px;
 /*
 	Standard border-radius
 */
-$radius:	3px;
+$radius:	5px;
 
 /*
 	Fonts
 */
-$font-pri: 'Open Sans', Helvetica, Arial;
-$font-sec: 'Open Sans', Helvetica, Arial;
+$font-pri: Arial, Helvetica, sans-serif;
+$font-sec: Arial, Helvetica, sans-serif;
 $font-size-default: 1.6rem;
 $line-height-default: 1.5;
 
@@ -124,8 +122,20 @@ $line-height-default: 1.5;
 $breadcrumbs-separator: '\00bb';
 
 /* Form specific variables */
-$input-height: 48px;
+$input-height: 4.8rem;
+
+$input-label-color: #aaa;
+$input-label-color-focus: #aaa;
+
 $input-border-color: #eee;
 $input-border-color-focus: #eee;
+
+$input-control-color: #eee;
+$input-control-color-focus: $theme01;
+
 $input-border: 1px solid $input-border-color;
+
 $input-transition: 0.1s ease-in-out;
+
+$input-icon-color: #eee;
+$input-icon-bg-color: #797979;
