@@ -24,11 +24,12 @@
   "license": "MIT",
   "homepage": "https://www.castlecss.com",
   "dependencies": {
+    "castlecss-breadcrumbs": "^1.1.0",
     "castlecss-buttons": "^0.5.0",
     "castlecss-core": "^2.1.0",
     "castlecss-icons": "^1.0.2",
     "castlecss-notifications": "^1.0.0",
-	"jquery": "^3.1.1"
+    "jquery": "^3.1.1"
   },
   "repository": {
     "type": "git",
