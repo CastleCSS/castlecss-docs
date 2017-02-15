@@ -60,6 +60,7 @@ module.exports = function(grunt) {
 					},
 				}
 			},
+				
 			nunjucks: {
 				render: {
 					options: {
