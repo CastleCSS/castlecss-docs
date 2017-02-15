@@ -1,6 +1,6 @@
 {
   "name": "castlecss-docs",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Documentation website for CastleCSS",
   "main": "index.js",
   "scripts": {
@@ -26,9 +26,10 @@
   "dependencies": {
     "castlecss-breadcrumbs": "^1.1.0",
     "castlecss-buttons": "^0.5.0",
-    "castlecss-core": "^2.1.0",
+    "castlecss-core": "^2.3.0",
     "castlecss-icons": "^1.0.2",
     "castlecss-notifications": "^1.0.0",
+    "castlecss-forms": "^1.0.2",    
     "jquery": "^3.1.1"
   },
   "repository": {
@@ -36,8 +37,8 @@
     "url": "git+https://github.com/CastleCSS/castlecss-docs.git"
   },
   "devDependencies": {
-    "autoprefixer": "^6.3.6",
-    "cssnano": "^3.7.3",
+    "autoprefixer": "^6.7.3",
+    "cssnano": "^3.10.0",
     "grunt": "^1.0.1",
     "grunt-contrib-watch": "~1.0.0",
     "grunt-nunjucks-2-html": "^3.0.0",
@@ -45,7 +46,7 @@
     "grunt-sass": "^2.0.0",
     "jit-grunt": "^0.10.0",
     "nunjucks": "^3.0.0",
-    "pixrem": "^3.0.0",
+    "pixrem": "^3.0.2",
     "webpack": "^2.2.1"
   },
   "bugs": {
