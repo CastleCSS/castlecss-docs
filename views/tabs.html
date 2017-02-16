@@ -10,28 +10,28 @@
 			<div class="block pt tb">
 				<h2>Example</h2>
 
-				<div class="tabs">
+				<div class="tabs" data-castlecss-tab-container>
 					<ul class="tabs-header">
-						<li class="tabs-title">
-							<a href="#example1tab1">Tab title 1</a>
+						<li class="tabs-title" data-castlecss-tab-header="tab1">
+							<a href="#">Tab title 1</a>
 						</li>
-						<li class="tabs-title">
-							<a href="#example1tab2">Tab title 2</a>
+						<li class="tabs-title" data-castlecss-tab-header="tab2">
+							<a href="#" >Tab title 2</a>
 						</li>
-						<li class="tabs-title">
-							<a href="#example1tab3">Tab title 3</a>
+						<li class="tabs-title" data-castlecss-tab-header="tab3">
+							<a href="#" >Tab title 3</a>
 						</li>
 					</ul>
 					<div class="tabs-content">
-						<div class="tab-panel" id="example1tab1">
+						<div class="tab-panel is-active" data-castlecss-tab-panel="tab1">
 							<h2>Tab 1</h2>
 							<p>This is the first tab</p>
 						</div>
-						<div class="tab-panel" id="example1tab2">
+						<div class="tab-panel" data-castlecss-tab-panel="tab2">
 							<h2>Tab 2</h2>
 							<p>This is the second tab</p>
 						</div>
-						<div class="tab-panel" id="example1tab3">
+						<div class="tab-panel" data-castlecss-tab-panel="tab3">
 							<h2>Tab 3</h2>
 							<p>This is the third tab</p>
 						</div>
@@ -44,21 +44,71 @@
 				<h2>Options</h2>
 				<h3>Full width tabs</h3>
 				<p>
-					On screens wider than 768px the tabs are shown inline. With CastleCSS Tabs it is also possible to make the tabs 100% width. To do so change the <code>tabs-header</code> to <code>tabs-header tabs-header-full</code>
+					tabs are default shown inline. With CastleCSS Tabs it is also possible to make the tabs 100% width. To do so change the <code>tabs-header</code> to <code>tabs-header tabs-header-full</code>
 				</p>
 				<h4>Example full width tabs</h4>
-				<div class="tabs">
+				<div class="tabs" data-castlecss-tab-container>
 					<ul class="tabs-header tabs-header-full">
-						<li class="tabs-title">
-							<a href="#tab1">Tab title 1</a>
+						<li class="tabs-title" data-castlecss-tab-header="tab1">
+							<a href="#">Tab title 1</a>
 						</li>
-						<li class="tabs-title">
-							<a href="#tab2">Tab title 2</a>
+						<li class="tabs-title" data-castlecss-tab-header="tab2">
+							<a href="#">Tab title 2</a>
 						</li>
-						<li class="tabs-title">
-							<a href="#tab3">Tab title 3</a>
+						<li class="tabs-title" data-castlecss-tab-header="tab3">
+							<a href="#">Tab title 3</a>
 						</li>
 					</ul>
+					<div class="tabs-content">
+						<div class="tab-panel is-active" data-castlecss-tab-panel="tab1">
+							<h2>Tab 1</h2>
+							<p>This is the first tab</p>
+						</div>
+						<div class="tab-panel" data-castlecss-tab-panel="tab2">
+							<h2>Tab 2</h2>
+							<p>This is the second tab</p>
+						</div>
+						<div class="tab-panel" data-castlecss-tab-panel="tab3">
+							<h2>Tab 3</h2>
+							<p>This is the third tab</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block mt-2x">
+				<h3>Mobile accordions</h3>
+				<p>
+					It is possible to show the tabs as accordions on screens to 1024px wide. To do so change the <code>tabs</code> to <code>tabs tabs-accordion</code>
+				</p>
+				<h4>Example accordions</h4>
+				<div class="alert-warning mb hide show-b4">make your screen less wide</div>
+				<div class="tabs tabs-accordion" data-castlecss-tab-container>
+					<ul class="tabs-header tabs-header-full">
+
+						<li class="tabs-title" data-castlecss-tab-header="tab1">
+							<a href="#">Tab title 1</a>
+						</li>
+						<li class="tabs-title" data-castlecss-tab-header="tab2">
+							<a href="#">Tab title 2</a>
+						</li>
+						<li class="tabs-title" data-castlecss-tab-header="tab3">
+							<a href="#">Tab title 3</a>
+						</li>
+					</ul>
+					<div class="tabs-content">
+						<div class="tab-panel is-active" data-castlecss-tab-panel="tab1">
+							<h2>Tab 1</h2>
+							<p>This is the first tab</p>
+						</div>
+						<div class="tab-panel" data-castlecss-tab-panel="tab2">
+							<h2>Tab 2</h2>
+							<p>This is the second tab</p>
+						</div>
+						<div class="tab-panel" data-castlecss-tab-panel="tab3">
+							<h2>Tab 3</h2>
+							<p>This is the third tab</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
