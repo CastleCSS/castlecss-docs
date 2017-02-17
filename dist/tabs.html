@@ -113,7 +113,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		<div class="p p-b3-3x">
 			<div class="block">
 				<h1>Tabs</h1>
-				<p class="intro">CastleCSS tabs</p>
+				<p class="intro">Organize all the content within your page</p>
+				<p class="alert">Note: You need castlecss-tabs or the <a href="https://github.com/CastleCSS/castlecss-boilerplate" target="_blank">castlecss-boilerplate</a> for this.</p>
+				<p>Feel free to use these tabs to get you started. Create your own tabs.scss to overwrite the standard tabs.</p>
 			</div>
 			<div class="block pt tb">
 				<h2>Example</h2>
@@ -146,6 +148,41 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					</div>
 				</div>
 
+			</div>
+			<div class="mb-2x">
+				<pre class="brush: xml;">
+					<div class="tabs" data-castlecss-tab-container>
+						<ul class="tabs-header">
+							<li class="tabs-title" data-castlecss-tab-header="tab1">
+								<a href="#">Tab title 1</a>
+							</li>
+							<li class="tabs-title" data-castlecss-tab-header="tab2">
+								<a href="#" >Tab title 2</a>
+							</li>
+							<li class="tabs-title" data-castlecss-tab-header="tab3">
+								<a href="#" >Tab title 3</a>
+							</li>
+						</ul>
+						<div class="tabs-content">
+							<div class="tab-panel is-active" data-castlecss-tab-panel="tab1">
+								<h2>Tab 1</h2>
+								<p>This is the first tab</p>
+							</div>
+							<div class="tab-panel" data-castlecss-tab-panel="tab2">
+								<h2>Tab 2</h2>
+								<p>This is the second tab</p>
+							</div>
+							<div class="tab-panel" data-castlecss-tab-panel="tab3">
+								<h2>Tab 3</h2>
+								<p>This is the third tab</p>
+							</div>
+						</div>
+					</div>
+				</pre>
+			</div>
+			<div class="alert mt-2x">
+				<h2>How it works</h2>
+				<p>Every tab-header is connected to a tab-panel. To open the correct tab-panel when the user clicks on a tab-header, we use two attributes: Each tab has an attribute <code>data-castlecss-tab-header</code> with a value. The value of this attibute should match the value of the attribute <code>data-castlecss-tab-panel</code> on the tab-panel.
 			</div>
 
 			<div class="block mt-2x">
@@ -183,13 +220,33 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					</div>
 				</div>
 			</div>
+			<div class="mb-2x">
+				<pre class="brush: xml;">
+					<div class="tabs" data-castlecss-tab-container>
+						<ul class="tabs-header tabs-header-full">
+							<li class="tabs-title" data-castlecss-tab-header="tab1">
+								<a href="#">Tab title 1</a>
+							</li>
+							<li class="tabs-title" data-castlecss-tab-header="tab2">
+								<a href="#">Tab title 2</a>
+							</li>
+							<li class="tabs-title" data-castlecss-tab-header="tab3">
+								<a href="#">Tab title 3</a>
+							</li>
+						</ul>
+						<div class="tabs-content">
+							...
+						</div>
+					</div>
+				</pre>
+			</div>
 			<div class="block mt-2x">
 				<h3>Mobile accordions</h3>
 				<p>
 					It is possible to show the tabs as accordions on screens to 1024px wide. To do so change the <code>tabs</code> to <code>tabs tabs-accordion</code>
 				</p>
 				<h4>Example accordions</h4>
-				<div class="alert-warning mb hide show-b4">make your screen less wide</div>
+				<div class="alert-warning mb hide show-b4">To view the accordion make your screen less wide</div>
 				<div class="tabs tabs-accordion" data-castlecss-tab-container>
 					<ul class="tabs-header tabs-header-full">
 
@@ -218,6 +275,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						</div>
 					</div>
 				</div>
+			</div>
+			<div class="mb-2x">
+				<pre class="brush: xml;">
+					<div class="tabs tabs-accordion" data-castlecss-tab-container>
+						<ul class="tabs-header tabs-header-full">
+							...
+						</ul>
+						<div class="tabs-content">
+							...
+						</div>
+					</div>
+				</pre>
 			</div>
 		</div>
 	</div>
