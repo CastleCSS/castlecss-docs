@@ -6,4 +6,7 @@ var $ = require('jquery');
 // Include your modules
 var Tabs = require('castlecss-tabs').Tabs;
 
-$(Tabs);
+$(function()
+{
+	Tabs();
+});
