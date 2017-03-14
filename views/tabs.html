@@ -14,14 +14,14 @@
 
 				<div class="tabs" data-castlecss-tab-container>
 					<ul class="tabs-header">
-						<li class="tabs-title" data-castlecss-tab-header="tab1">
-							<a href="#">Tab title 1</a>
+						<li class="tabs-title is-active" data-castlecss-tab-header="tab1">
+							<a class="tab-link" href="#">Tab title 1</a>
 						</li>
 						<li class="tabs-title" data-castlecss-tab-header="tab2">
-							<a href="#" >Tab title 2</a>
+							<a class="tab-link" href="#">Tab title 2</a>
 						</li>
 						<li class="tabs-title" data-castlecss-tab-header="tab3">
-							<a href="#" >Tab title 3</a>
+							<a class="tab-link" href="#">Tab title 3</a>
 						</li>
 					</ul>
 					<div class="tabs-content">
@@ -45,14 +45,14 @@
 				<pre class="brush: xml;">
 					<div class="tabs" data-castlecss-tab-container>
 						<ul class="tabs-header">
-							<li class="tabs-title" data-castlecss-tab-header="tab1">
-								<a href="#">Tab title 1</a>
+							<li class="tabs-title is-active" data-castlecss-tab-header="tab1">
+								<a class="tab-link" href="#">Tab title 1</a>
 							</li>
 							<li class="tabs-title" data-castlecss-tab-header="tab2">
-								<a href="#" >Tab title 2</a>
+								<a class="tab-link" href="#">Tab title 2</a>
 							</li>
 							<li class="tabs-title" data-castlecss-tab-header="tab3">
-								<a href="#" >Tab title 3</a>
+								<a class="tab-link" href="#">Tab title 3</a>
 							</li>
 						</ul>
 						<div class="tabs-content">
@@ -81,23 +81,23 @@
 				<h2>Options</h2>
 				<h3>Full width tabs</h3>
 				<p>
-					tabs are default shown inline. With CastleCSS Tabs it is also possible to make the tabs 100% width. To do so change the <code>tabs-header</code> to <code>tabs-header tabs-header-full</code>
+					tabs are default shown inline. With CastleCSS Tabs it is also possible to make the tabs 100% width. To do so change the <code>tabs-header</code> to <code>tabs-header-full</code>
 				</p>
 				<h4>Example full width tabs</h4>
 				<div class="tabs" data-castlecss-tab-container>
-					<ul class="tabs-header tabs-header-full">
+					<ul class="tabs-header-full">
 						<li class="tabs-title" data-castlecss-tab-header="tab1">
-							<a href="#">Tab title 1</a>
+							<a class="tab-link" href="#">Tab title 1</a>
 						</li>
 						<li class="tabs-title" data-castlecss-tab-header="tab2">
-							<a href="#">Tab title 2</a>
+							<a class="tab-link" href="#">Tab title 2</a>
 						</li>
-						<li class="tabs-title" data-castlecss-tab-header="tab3">
-							<a href="#">Tab title 3</a>
+						<li class="tabs-title is-active" data-castlecss-tab-header="tab3">
+							<a class="tab-link" href="#">Tab title 3</a>
 						</li>
 					</ul>
 					<div class="tabs-content">
-						<div class="tab-panel is-active" data-castlecss-tab-panel="tab1">
+						<div class="tab-panel" data-castlecss-tab-panel="tab1">
 							<h2>Tab 1</h2>
 							<p>This is the first tab</p>
 						</div>
@@ -105,7 +105,7 @@
 							<h2>Tab 2</h2>
 							<p>This is the second tab</p>
 						</div>
-						<div class="tab-panel" data-castlecss-tab-panel="tab3">
+						<div class="tab-panel is-active" data-castlecss-tab-panel="tab3">
 							<h2>Tab 3</h2>
 							<p>This is the third tab</p>
 						</div>
@@ -115,15 +115,15 @@
 			<div class="mb-2x">
 				<pre class="brush: xml;">
 					<div class="tabs" data-castlecss-tab-container>
-						<ul class="tabs-header tabs-header-full">
+						<ul class="tabs-header-full">
 							<li class="tabs-title" data-castlecss-tab-header="tab1">
-								<a href="#">Tab title 1</a>
+								<a class="tab-link" href="#">Tab title 1</a>
 							</li>
 							<li class="tabs-title" data-castlecss-tab-header="tab2">
-								<a href="#">Tab title 2</a>
+								<a class="tab-link" href="#">Tab title 2</a>
 							</li>
-							<li class="tabs-title" data-castlecss-tab-header="tab3">
-								<a href="#">Tab title 3</a>
+							<li class="tabs-title is-active" data-castlecss-tab-header="tab3">
+								<a class="tab-link" href="#">Tab title 3</a>
 							</li>
 						</ul>
 						<div class="tabs-content">
@@ -133,31 +133,48 @@
 				</pre>
 			</div>
 			<div class="block mt-2x">
-				<h3>Mobile accordions</h3>
+				<h3>Accordions</h3>
 				<p>
-					It is possible to show the tabs as accordions on screens to 1024px wide. To do so change the <code>tabs</code> to <code>tabs tabs-accordion</code>
+					Sometimes it is desirable to present the tabs as accordions. CastleCSS-tabs supports this feature.
 				</p>
-				<h4>Example accordions</h4>
-				<div class="alert-warning mb hide show-b4">To view the accordion make your screen less wide</div>
-				<div class="tabs tabs-accordion" data-castlecss-tab-container>
-					<ul class="tabs-header tabs-header-full">
+				<p>
+					To present the tabs as accordions, change the <code>tabs</code> to <code>tabs tabs-accordion</code>. Now the tabs whill be shown as accordions. <br />
+				</p>
+					It is also possible to present the tabs as accordions on smaller screens only. You can manage from which breakpoint you want to switch the design of the tabs. <br />
+					Replace the class <code>tabs-accordion</code> with the class <code>tabs-accordion-b3</code> to toggle the design on the third breakpoint: (< third breakpoint: accordions, >= third breakpoint: tabs)
+				</p>
+				<p>For each breakpoint there is class: <code>tabs-accordion-b1</code>, <code>tabs-accordion-b2</code>, ... , <code>tabs-accordion-b6</code> 
+				</p>
+				<h4>Example accordion (.tabs-accordion-b3) </h4>
+				<div class="alert-warning mb hide show-b3">To view the accordion make your screen less wide</div>
+				<div class="tabs-accordion-b3" data-castlecss-tab-container>
+					<ul class="tabs-header-full">
 
 						<li class="tabs-title" data-castlecss-tab-header="tab1">
-							<a href="#">Tab title 1</a>
+							<a class="tab-link" href="#">
+								Tab title 12 with  a long title
+								<i class="fa fa-chevron-down fr" aria-hidden="true"></i>
+							</a>
 						</li>
-						<li class="tabs-title" data-castlecss-tab-header="tab2">
-							<a href="#">Tab title 2</a>
+						<li class="tabs-title is-active" data-castlecss-tab-header="tab2">
+							<a class="tab-link" href="#">
+								Tab title 2
+								<i class="fa fa-chevron-down fr" aria-hidden="true"></i>
+							</a>
 						</li>
 						<li class="tabs-title" data-castlecss-tab-header="tab3">
-							<a href="#">Tab title 3</a>
+							<a class="tab-link" href="#">
+								Tab title 3
+								<i class="fa fa-chevron-down fr" aria-hidden="true"></i>
+							</a>
 						</li>
 					</ul>
 					<div class="tabs-content">
-						<div class="tab-panel is-active" data-castlecss-tab-panel="tab1">
+						<div class="tab-panel" data-castlecss-tab-panel="tab1">
 							<h2>Tab 1</h2>
 							<p>This is the first tab</p>
 						</div>
-						<div class="tab-panel" data-castlecss-tab-panel="tab2">
+						<div class="tab-panel is-active" data-castlecss-tab-panel="tab2">
 							<h2>Tab 2</h2>
 							<p>This is the second tab</p>
 						</div>
@@ -170,14 +187,43 @@
 			</div>
 			<div class="mb-2x">
 				<pre class="brush: xml;">
-					<div class="tabs tabs-accordion" data-castlecss-tab-container>
-						<ul class="tabs-header tabs-header-full">
-							...
-						</ul>
-						<div class="tabs-content">
-							...
+				<div class="tabs-accordion-b3" data-castlecss-tab-container>
+					<ul class="tabs-header-full">
+
+						<li class="tabs-title" data-castlecss-tab-header="tab1">
+							<a class="tab-link" href="#">
+								Tab title 12 with  a long title
+								<i class="fa fa-chevron-down fr" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li class="tabs-title is-active" data-castlecss-tab-header="tab2">
+							<a class="tab-link" href="#">
+								Tab title 2
+								<i class="fa fa-chevron-down fr" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li class="tabs-title" data-castlecss-tab-header="tab3">
+							<a class="tab-link" href="#">
+								Tab title 3
+								<i class="fa fa-chevron-down fr" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>
+					<div class="tabs-content">
+						<div class="tab-panel" data-castlecss-tab-panel="tab1">
+							<h2>Tab 1</h2>
+							<p>This is the first tab</p>
+						</div>
+						<div class="tab-panel is-active" data-castlecss-tab-panel="tab2">
+							<h2>Tab 2</h2>
+							<p>This is the second tab</p>
+						</div>
+						<div class="tab-panel" data-castlecss-tab-panel="tab3">
+							<h2>Tab 3</h2>
+							<p>This is the third tab</p>
 						</div>
 					</div>
+				</div>
 				</pre>
 			</div>
 		</div>
