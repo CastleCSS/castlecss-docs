@@ -1,6 +1,6 @@
 {
   "name": "castlecss-docs",
-  "version": "1.1.0",
+  "version": "1.2.1",
   "description": "Documentation website for CastleCSS",
   "main": "index.js",
   "scripts": {
@@ -24,11 +24,12 @@
   "license": "MIT",
   "homepage": "https://www.castlecss.com",
   "dependencies": {
+    "castlecss-breadcrumbs": "^1.1.0",
     "castlecss-buttons": "^0.5.0",
     "castlecss-core": "^2.3.0",
     "castlecss-icons": "^1.0.2",
     "castlecss-notifications": "^1.0.1",
-    "jquery": "^3.1.1"
+    "castlecss-forms": "^1.0.2"    
   },
   "repository": {
     "type": "git",
@@ -36,7 +37,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.7.6",
-    "cssnano": "^3.10.0",
+	"cssnano": "^3.10.0",
     "grunt": "^1.0.1",
     "grunt-contrib-watch": "~1.0.0",
     "grunt-nunjucks-2-html": "^3.0.0",

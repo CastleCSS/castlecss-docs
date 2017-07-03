@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>Forms - CastleCSS</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1" />
+		<link rel="stylesheet" href="css/styles.min.css" />
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
+		<script src="js/scripts.min.js" type="text/javascript"></script>
+		
+	</head>
+
+	<body>
+	<!-- Google Tag Manager -->
+	<noscript>
+		<iframe src="//www.googletagmanager.com/ns.html?id=GTM-N85PTX" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<script>
+		(function (w, d, s, l, i) {
+		w[l] = w[l] || []; w[l].push({
+			'gtm.start':
+			new Date().getTime(), event: 'gtm.js'	
+	}); var f = d.getElementsByTagName(s)[0],
+			j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+				'//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-N85PTX');
+	</script>
+		
+	<div id="wrapper" class="wrapper ">
+
+		<div class="g full-height">
+
+			<!-- Side -->
+			<div class="b0_12 b4_08 b5_06 b6_04">
+<!-- End Google Tag Manager -->
+<header id="header" class="nav-container">
+	<div class="nav-label">menu</div>
+	<a class="nav-logo  p-b4-3x" href="index.html"><img src="img/logo-castlecss.png"></a>
+	<div class="nav-wrap pl-3x pr-3x">
+
+		<ul class="doc-menu list-unstyled">
+
+		  <li><a href="/about.html" >About CastleCSS</a>
+
+		  </li>
+
+		  <li><a href="/installation.html" >Installation</a>
+
+		  </li>
+
+		  <li><a href="/variables.html" >Variables</a>
+
+		  </li>
+
+		  <li><a href="/grid.html" >Breakpoints &amp; Grid</a>
+
+				<ul class="list-unstyled">
+
+					<li><a href="grid.html#basicexamples">The basics</a>
+
+					<li><a href="grid.html#breakpoints">Breakpoints</a>
+
+					<li><a href="grid.html#basicexamples">Basic grid examples</a>
+
+					<li><a href="grid.html#gutters">Gutters</a>
+
+					<li><a href="grid.html#directionalignment">Direction and alignment</a>
+
+				</ul>
+
+		  </li>
+
+		  <li><a href="/utility.html" >Utility classes</a>
+
+		  </li>
+
+		  <li><a href="/utility_spacers.html" >Utility spacers</a>
+
+		  </li>
+
+		  <li><a href="/icons.html" >Icons</a>
+
+		  </li>
+
+		  <li><a href="/forms.html" class="active">Forms</a>
+
+		  </li>
+
+		  <li><a href="/buttons.html" >Buttons</a>
+
+		  </li>
+
+		  <li><a href="/notifications.html" >Notifications / alerts</a>
+
+		  </li>
+
+		  <li><a href="/breadcrumbs.html" >Breadcrumbs</a>
+
+		  </li>
+
+		  <li><a href="/tabs.html" >Tabs</a>
+
+		  </li>
+
+		  <li><a href="/mixins.html" >Mixins</a>
+
+		  </li>
+
+		</ul>
+	</div>
+
+	
+
+</header>
+
+			</div>
+			<!-- End side -->
+
+ 
+	<!-- Main -->
+	<div class="b0_12 b4_14 b4_push_01">
+		<div class="p p-b3-3x">
+			<section class="block">
+				<h1>Forms</h1>
+				<section class="block form-example">
+					<h2>Basic example</h2>
+					<p>This form example contains the default form elements with the recommend HTML structure.</p>
+
+					<div class="p-2x mb-2x" style="border: 1px solid #eee">
+						<form class="form">
+							<div class="form-fields">
+								<div class="form-field" data-castlecss-field>
+									<label for="gender" class="label">Gender</label>
+									<label class="input-control input-radio">Male
+										<input type="radio" name="radio1" checked="checked">
+										<span class="input-indicator"></span>
+									</label>
+									<label class="input-control input-radio">Female
+										<input type="radio" name="radio1">
+										<span class="input-indicator"></span>
+									</label>
+								</div>
+							</div>
+							<div class="form-fields">
+								<div class="form-field" data-castlecss-field>
+									<label for="email">Email</label>
+									<input type="email" name="Email" id="email" value="">
+								</div>
+								<div class="form-field" data-castlecss-field>
+									<label for="password">Password</label>
+									<input type="password" name="Password" id="password" value="">
+								</div>
+								<div class="form-field" data-castlecss-field>
+									<label for="file-input">Upload your file</label>
+									<input type="file" id="file-input">
+								</div>
+							</div>
+							<div class="form-fields">
+								<div class="form-field" data-castlecss-field>
+									<label class="input-control input-checkbox">I want to receive the newsletter
+										<input type="checkbox">
+										<span class="input-indicator"></span>
+									</label>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<pre class="brush: html">
+						<form class="form">
+							<div class="form-fields">
+								<div class="form-field" data-castlecss-field>
+									<label for="gender" class="label">Gender</label>
+									<label class="input-control input-radio">Male
+										<input type="radio" name="radio1" checked="checked">
+										<span class="input-indicator"></span>
+									</label>
+									<label class="input-control input-radio">Female
+										<input type="radio" name="radio1">
+										<span class="input-indicator"></span>
+									</label>
+								</div>
+							</div>
+							<div class="form-fields">
+								<div class="form-field" data-castlecss-field>
+									<label for="email">Email</label>
+									<input type="email" name="Email" id="email" value="">
+								</div>
+								<div class="form-field" data-castlecss-field>
+									<label for="password">Password</label>
+									<input type="password" name="Password" id="password" value="">
+								</div>
+								<div class="form-field" data-castlecss-field>
+									<label for="file-input">Upload your file</label>
+									<input type="file" id="file-input">
+								</div>
+							</div>
+							<div class="form-fields">
+								<div class="form-field" data-castlecss-field>
+									<label class="input-control input-checkbox">I want to receive the newsletter
+										<input type="checkbox">
+										<span class="input-indicator"></span>
+									</label>
+								</div>
+							</div>
+						</form>
+					</pre>
+				</section>
+
+				<section class="block inputs">
+					<h2>Input</h2>
+					<div class="g">
+						<div class="b0_12 b3_12">
+							<h3>Standard input</h3>
+							<p>The <code>input</code> is wrapped in a div with the class <code>.formfield</code>.
+							<div class="p-2x pb-0" style="border: 1px solid #eee">
+								<form class="form">
+									<div class="form-fields">
+										<div class="form-field" data-castlecss-field>
+											<label for="label">Full name</label>
+											<input type="text" name="Naam" id="label" value="">
+										</div>
+									</div>
+								</form>
+							</div>
+							<pre class="brush: html">
+								<form class="form">
+									<div class="form-fields">
+										<div class="form-field" data-castlecss-field>
+											<label for="label">Full name</label>
+											<input type="text" name="Naam" id="label" value="">
+										</div>
+									</div>
+								</form>
+							</pre>
+						</div>
+						<div class="b0_12 b3_12">
+							<h3>Input with button</h3>
+							<p>Wrap the <code>input</code> en <code>button</code> in a div with the class <code>.input-combined</code>
+							<div class="p-2x pb-0" style="border: 1px solid #eee">
+								<form class="form">
+									<div class="form-fields">
+										<div class="form-field" data-castlecss-field>
+											<label for="search">Search</label>
+											<div class="input-combined">
+												<input type="search" name="search" class="form-input" id="search">
+												<button	type="submit" class="btn btn-submit">Submit</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<pre class="brush: html">
+								<form class="form">
+									<div class="form-fields">
+										<div class="form-field" data-castlecss-field>
+											<label for="search">Search</label>
+											<div class="input-combined">
+												<input type="search" name="search" class="form-input" id="search">
+												<button	type="submit" class="btn btn-submit">Submit</button>
+											</div>
+										</div>
+									</div>
+								</form>
+							</pre>
+						</div>
+					</div>
+				</section>
+				<section class="block inputs js-forms">
+					<h3>Label placement</h3>
+					<p>Add the classes <code>.label-above</code>, <code>.label-top</code> or <code>.label-bottom</code> to your field to adjust the position of the label. This not only works with inputs, but with textareas as well!</p>
+					<div class="g">
+						<div class="b0_12 b3_08">
+							<h5>Moves above the input</h5>
+							<form class="form">
+								<ul class="form-fields label-above">
+									<li class="form-field" data-castlecss-field>
+										<label for="lable2a">Email</label>
+										<input type="text" name="Naam" id="lable2a" value="">
+									</li>
+								</ul>
+							</form>
+						</div>
+						<div class="b0_12 b3_08">
+							<h5>Moves to top inside the input</h5>
+							<ul class="form-fields label-top">
+								<li class="form-field" data-castlecss-field>
+									<label for="lable3a">Email</label>
+									<input type="text" name="Naam" id="lable3a" value="">
+								</li>
+							</ul>
+						</div>
+						<div class="b0_12 b3_08">
+							<h5>Moves to bottom inside the input</h5>
+							<ul class="form-fields label-bottom">
+								<li class="form-field" data-castlecss-field>
+									<label for="lable3a">Email</label>
+									<input type="text" name="Naam" id="lable3a" value="">
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="block textareas js-forms">
+					<h2>Textarea</h2>
+					<div class="g">
+						<div class="gi b0_12">
+							<ul class="form-fields label-top">
+								<li class="form-field input-textarea" data-castlecss-field>
+									<label for="textarea">Example</label>
+									<textarea maxlength="30000" cols="50" rows="10" id="textarea" name="textarea"></textarea>
+								</li>
+							</ul>
+							<div class="alert mb-2x">Remember the label placements mentioned above? The classes <code>.label-bottom</code>, <code>.label-top</code> and <code>.label-above</code> also work well with textareas. By default all labels are vertical-aligned in the middle. If you want to prevent this behaviour with textarea's you can add a parent class of <code>.input-textarea</code></div>
+						</div>
+					</div>
+				</section>
+				<section class="block checkboxes">
+					<h2>Checkbox</h2>
+					<h3>Standard checkbox</h3>
+					<div class="g">
+						<div class="b0_12">
+							<b>Select your favorite fruit</b>
+							<ul class="form-fields">
+								<li class="form-field" data-castlecss-field>
+									<label class="input-control input-checkbox">Orange
+										<input type="checkbox" />
+										<span class="input-indicator"></span>
+									</label>
+									<label class="input-control input-checkbox">Banana
+										<input type="checkbox"  />
+										<span class="input-indicator"></span>
+									</label>
+									<label class="input-control input-checkbox">Apple
+										<input type="checkbox" />
+										<span class="input-indicator"></span>
+									</label>
+									<label class="input-control input-checkbox">Pear
+										<input type="checkbox" />
+										<span class="input-indicator"></span>
+									</label>
+								</li>
+							</ul>
+							<pre class="brush: html">
+								<ul class="form-fields" >
+									<li class="form-field" data-castlecss-field>
+										<label class="input-control input-checkbox">Orange
+											<input type="checkbox" />
+											<span class="input-indicator"></span>
+										</label>
+										<label class="input-control input-checkbox">Banana
+											<input type="checkbox"  />
+											<span class="input-indicator"></span>
+										</label>
+										<label class="input-control input-checkbox">Apple
+											<input type="checkbox" />
+											<span class="input-indicator"></span>
+										</label>
+										<label class="input-control input-checkbox">Pear
+											<input type="checkbox" />
+											<span class="input-indicator"></span>
+										</label>
+									</li>
+								</ul>
+							</pre>
+						</div>
+						<div class="b0_12">
+							<h3>Checkbox right of the label</h3>
+							<p>Add the class <code>.label-left</code> to a parent of the <code>.input-checkbox</code>.</p>
+							<b>Select your favorite fruit</b>
+							<ul class="form-fields label-left">
+								<li class="form-field" data-castlecss-field>
+									<label class="input-control input-checkbox">Orange
+										<input type="checkbox" />
+										<span class="input-indicator"></span>
+									</label>
+									<label class="input-control input-checkbox">Banana
+										<input type="checkbox"  />
+										<span class="input-indicator"></span>
+									</label>
+									<label class="input-control input-checkbox">Apple
+										<input type="checkbox" />
+										<span class="input-indicator"></span>
+									</label>
+									<label class="input-control input-checkbox">Pear
+										<input type="checkbox" />
+										<span class="input-indicator"></span>
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="block radios">
+					<h2>Radio</h2>
+					<div class="g">
+						<div class="b0_12 b3_12">
+							<h5>Vertical radios</h5>
+							<form class="form">
+								<div class="form-fields" >
+									<div class="form-field" data-castlecss-field>
+										<label for="gender"><b>Gender</b></label>
+										<label class="input-control input-radio">Male
+											<input type="radio" name="radio"/>
+											<span class="input-indicator"></span>
+										</label>
+										<label class="input-control input-radio">Female
+											<input type="radio" name="radio"/>
+											<span class="input-indicator"></span>
+										</label>
+									</div>
+								</div>
+							</form>
+							<pre class="brush: html">
+								<form class="form">
+									<div class="form-fields">
+										<div class="form-field" data-castlecss-field>
+											<label for="gender"><b>Gender</b></label>
+											<label class="input-control input-radio">Male
+												<input type="radio" name="radio"/>
+												<span class="input-indicator"></span>
+											</label>
+											<label class="input-control input-radio">Female
+												<input type="radio" name="radio"/>
+												<span class="input-indicator"></span>
+											</label>
+										</div>
+									</div>
+								</form>
+							</pre>
+						</div>
+						<div class="b0_12 b3_12">
+							<h5>Horizontal radios</h5>
+							<p>Radios can be horizontal as well. Add the class <code>.form-horizontal</code> to a parent of the field(s) you want to make horizontal, as shown in the example below.</p>
+							<form class="form form-horizontal">
+								<div class="form-fields">
+									<div class="form-field" data-castlecss-field>
+										<label for="gender" class="label"><b>Gender</b></label>
+										<label class="input-control input-radio">Male
+											<input type="radio" name="radio2" checked="checked"/>
+											<span class="input-indicator"></span>
+										</label>
+										<label class="input-control input-radio">Female
+											<input type="radio" name="radio2"/>
+											<span class="input-indicator"></span>
+										</label>
+									</div>
+								</div>
+							</form>
+							<pre class="brush: html">
+								<form class="form form-horizontal">
+									<div class="form-fields">
+										<div class="form-field" data-castlecss-field>
+											<label for="gender" class="label"><b>Gender</b></label>
+											<label class="input-control input-radio">Male
+												<input type="radio" name="radio2" checked="checked"/>
+												<span class="input-indicator"></span>
+											</label>
+											<label class="input-control input-radio">Female
+												<input type="radio" name="radio2"/>
+												<span class="input-indicator"></span>
+											</label>
+										</div>
+									</div>
+								</form>
+							</pre>
+						</div>
+					</div>
+				</section>
+				<section class="block selects">
+					<h2>Select</h2>
+					<form class="form">
+						<div class="form-fields">
+							<div class="form-field">
+								<select data-castlecss-select>
+									<option>First select</option>
+									<option>Option</option>
+									<option>Option</option>
+								</select>
+							</div>
+						</div>
+					</form>
+				</section>
+				<section class="block horizontal-forms js-forms">
+					<h2>Inline forms</h2>
+					<p>Add <code>.form-horizontal</code> to your form, field or label. The elements will be left-aligned.</p>
+
+					<div class="block">
+						<h5>Horizontal checkboxes</h5>
+						<form class="form form-horizontal">
+							<div class="form-fields">
+								<div class="form-field" data-castlecss-field>
+									<label class="input-control input-checkbox">Orange
+										<input type="checkbox">
+										<span class="input-indicator"></span>
+									</label>
+									<label class="input-control input-checkbox">Banana
+										<input type="checkbox">
+										<span class="input-indicator"></span>
+									</label>
+									<label class="input-control input-checkbox">Apple
+										<input type="checkbox">
+										<span class="input-indicator"></span>
+									</label>
+									<label class="input-control input-checkbox">Pear
+										<input type="checkbox">
+										<span class="input-indicator"></span>
+									</label>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<div class="block">
+						<h5>Horizontal radios</h5>
+						<form class="form form-horizontal">
+							<div class="form-fields">
+								<div class="form-field" data-castlecss-field>
+									<label class="input-control input-radio">Male
+										<input type="radio" name="radio2" checked="checked"/>
+										<span class="input-indicator"></span>
+									</label>
+									<label class="input-control input-radio">Female
+										<input type="radio" name="radio2"/>
+										<span class="input-indicator"></span>
+									</label>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<h5>Input with add-on and button</h5>
+					<form class="form">
+						<div class="form-fields label-top">
+							<div class="form-field" data-castlecss-field>
+								<div class="input-combined">
+									<div class="input-icon fa fa-star">
+										<input type="search" name="product-sku" id="product-sku" class="form-input">
+										<button	type="submit" class="btn btn-submit">Search</button>
+									</div>
+								</div>
+								<label for="product-sku">Product sku</label>
+							</div>
+						</div>
+					</form>
+					<pre class="brush: html">
+						<form class="form form-horizontal">
+							<div class="form-fields label-bottom">
+								<div class="form-field" data-castlecss-field>
+									<div class="input-combined">
+										<div class="input-icon fa fa-star">
+											<input type="search" name="search" class="form-input" id="search">
+											<button	type="submit" class="btn btn-submit">Search</button>
+										</div>
+									</div>
+									<label for="search">Product sku</label>
+								</div>
+							</div>
+						</form>
+					</pre>
+				</section>
+			</section>
+		</div>
+	</div>
+	<!-- End main -->
+
+		<!-- Scripts for documentation -->
+		<footer id="footer">
+
+		</footer>
+
+		<script src="js/shCore.js"></script>
+		<script src="js/shBrushXml.js"></script>
+		<script src="js/shBrushSass.js"></script>
+		<script src="js/shBrushJScript.js"></script>
+		<script type="text/javascript">SyntaxHighlighter.all();</script>
+		<script async defer src="https://buttons.github.io/buttons.js"></script>
+	</body>
+</html>
+
