@@ -29,7 +29,7 @@
     "castlecss-core": "^2.3.0",
     "castlecss-icons": "^1.0.2",
     "castlecss-notifications": "^1.0.1",
-    "castlecss-forms": "^1.0.2"    
+    "castlecss-forms": "^1.0.2"
   },
   "repository": {
     "type": "git",
@@ -37,7 +37,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.7.6",
-	"cssnano": "^3.10.0",
+    "cssnano": "^3.10.0",
     "grunt": "^1.0.1",
     "grunt-contrib-watch": "~1.0.0",
     "grunt-nunjucks-2-html": "^3.0.0",
