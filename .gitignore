@@ -2,3 +2,5 @@
 thumbs.db
 node_modules
 node_modules/
+dist/*.html
+/dist/*.html
