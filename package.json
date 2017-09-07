@@ -4,7 +4,11 @@
   "description": "Documentation website for CastleCSS",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "create_css": "grunt create_css",
+    "create_html": "grunt create_html",
+    "create_js": "webpack",
+    "create_all": "npm run create_css & npm run create_html & npm run create_js & wait"
   },
   "keywords": [
     "documentation",
@@ -36,17 +40,17 @@
     "url": "git+https://github.com/CastleCSS/castlecss-docs.git"
   },
   "devDependencies": {
-    "autoprefixer": "^7.1.3",
+    "autoprefixer": "^7.1.4",
     "cssnano": "^3.10.0",
     "grunt": "^1.0.1",
-    "grunt-contrib-watch": "~1.0.0",
-    "grunt-nunjucks-2-html": "^3.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-nunjucks-2-html": "^2.1.0",
     "grunt-postcss": "^0.8.0",
     "grunt-sass": "^2.0.0",
     "jit-grunt": "^0.10.0",
     "nunjucks": "^3.0.1",
     "pixrem": "^4.0.1",
-    "webpack": "^3.5.5"
+    "webpack": "^3.5.6"
   },
   "bugs": {
     "url": "https://github.com/CastleCSS/castlecss-docs/issues"
