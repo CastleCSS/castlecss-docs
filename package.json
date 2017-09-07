@@ -8,7 +8,8 @@
     "create_css": "grunt create_css",
     "create_html": "grunt create_html",
     "create_js": "webpack",
-    "create_all": "npm run create_css & npm run create_html & npm run create_js & wait"
+    "create_all": "npm run create_css & npm run create_html & npm run create_js & wait",
+    "start": "npm run create_js & grunt"
   },
   "keywords": [
     "documentation",
@@ -43,6 +44,7 @@
     "autoprefixer": "^7.1.4",
     "cssnano": "^3.10.0",
     "grunt": "^1.0.1",
+    "grunt-browser-sync": "^2.2.0",
     "grunt-contrib-watch": "^1.0.0",
     "grunt-nunjucks-2-html": "^2.1.0",
     "grunt-postcss": "^0.8.0",

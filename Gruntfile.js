@@ -80,6 +80,21 @@ module.exports = function(grunt) {
 				]
 			}
 		},
+		browserSync: {
+			dev: {
+				bsFiles: {
+					src : [
+						'./dist/**/*.css',
+						'./dist/**/*.html',
+					]
+				},
+				options: {
+                    watchTask: true,
+                    server: './dist/'
+                }
+			}
+			
+		}
 
 
 		});
@@ -93,10 +108,11 @@ module.exports = function(grunt) {
 grunt.registerTask('default', 'run');
 grunt.registerTask('run',
 	[
-	'nunjucks',
-	'sass',
-	'postcss',
-	'watch'
+		'nunjucks',
+		'sass',
+		'postcss',
+		'browserSync',
+		'watch'
 	]
 	);
 grunt.registerTask('create_css',
