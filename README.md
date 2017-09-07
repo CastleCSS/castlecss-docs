@@ -6,7 +6,8 @@ Sourcecode for www.castlecss.com and the documentation for [CastleCSS](https://g
 
 ## How to install
 - Download or clone this package
-- Build the project with: ```npm install``` + ```webpack``` + ```grunt```
+- Install the project: ```npm install``
+- Build the project with: ```npm run build_all```
 - You can now see the project in dist folder, open a .html page in your browser
 
 ## Roadmap
