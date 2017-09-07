@@ -40,46 +40,46 @@ module.exports = function(grunt) {
 					require('autoprefixer')({ browsers: 'iOS >= 7, last 2 versions, ie > 7' }),
 					// minify the result
 					require('cssnano')()
-					]
-				},
+				]
 			},
+		},
 
-			watch: {
-				scss: {
-					files: ['scss/**/*.scss', 'node_modules/**/*.scss' ],
-					tasks: ['sass', 'postcss'],
-					options: {
-						spawn: false,
-					},
+		watch: {
+			scss: {
+				files: ['scss/**/*.scss', 'node_modules/**/*.scss' ],
+				tasks: ['sass', 'postcss'],
+				options: {
+					spawn: false,
 				},
-				nunjucks: {
-					files: 'views/**/*.html',
-					tasks: ['nunjucks'],
-					options: {
-						spawn: false,
-					},
-				}
 			},
-				
 			nunjucks: {
-				render: {
-					options: {
-						paths: ['views'],
-						trimBlock: true,
-						lstripBlocks: true,
-						data: grunt.file.readJSON('templates-data.json')
-					},
-					files: [
-					{
-						expand: true,
-						cwd: "views/",
-						src: "*.html",
-						dest: "dist/",
-						ext: ".html"
-					}
-					]
+				files: 'views/**/*.html',
+				tasks: ['nunjucks'],
+				options: {
+					spawn: false,
+				},
+			}
+		},
+				
+		nunjucks: {
+			render: {
+				options: {
+					paths: ['views'],
+					trimBlock: true,
+					lstripBlocks: true,
+					data: grunt.file.readJSON('templates-data.json')
+				},
+				files: [
+				{
+					expand: true,
+					cwd: "views/",
+					src: "*.html",
+					dest: "dist/",
+					ext: ".html"
 				}
-			},
+				]
+			}
+		},
 
 
 		});
