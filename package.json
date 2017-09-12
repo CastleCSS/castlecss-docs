@@ -8,7 +8,7 @@
     "create_css": "grunt create_css",
     "create_html": "grunt create_html",
     "create_js": "webpack",
-    "create_all": "npm run create_css & npm run create_html & npm run create_js & wait",
+    "create_all": "npm run create_css & npm run create_html & npm run create_js",
     "start": "npm run create_js & grunt"
   },
   "keywords": [
