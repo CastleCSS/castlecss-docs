@@ -15,7 +15,7 @@ This will automatically start a browserSync server.<br />
 The project will watch for changes in your scss and html files in your /views and /scss folder and automatically reload
 
 ## Build and run manually
-- Build the project: ```npm run build_all```
+- Build the project: ```npm run create_all```
 
 You can now see the project in dist folder, open a .html page in your browser
 
