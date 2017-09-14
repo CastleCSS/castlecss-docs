@@ -15,14 +15,15 @@ options:
 files:
   include: 'scss/**/*.s+(a|c)ss'
   ignore:
-    - 'sass/vendor/**/*.*'
+    - 'sass/layout/docs_code.scss'
 # Rule Configuration
 rules:
+  max-depth: 2
   extends-before-mixins: 2
   extends-before-declarations: 2
   placeholder-in-extend: 2
   mixins-before-declarations:
-    - 2
+    - 0
     -
       exclude:
         - breakpoint
@@ -30,8 +31,8 @@ rules:
 
   no-warn: 1
   no-debug: 1
-  no-ids: 2
-  no-important: 2
+  no-ids: 1
+  no-important: 1
   hex-notation:
     - 2
     -
@@ -46,15 +47,33 @@ rules:
       order:
         - content
         - display
+        - flex-direction
+        - align-items
+        - justify-content
+        - overflow
+        - overflow-x
+        - overflow-y
         - margin
+        - margin-top
+        - margin-right
+        - margin-bottom
+        - margin-left
         - padding
+        - padding-top
+        - padding-right
+        - padding-bottom
+        - padding-left
+        - min-width
         - width
+        - min-height
         - height
+        - vertical-align
         - white-space
         - font
         - font-style
         - font-size
         - font-weight
+        - text-align
         - text-transform
         - font-decoration
         - color
@@ -64,7 +83,7 @@ rules:
         - border-radius
       ignore-custom-properties: true
   variable-for-property:
-    - 2
+    - 0
     -
       properties:
         - margin
