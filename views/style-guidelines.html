@@ -1,0 +1,56 @@
+{% set currentPageId = 'about' %}{% set pageTitle = 'About - CastleCSS' %}{% include "inc/header.html" %}
+
+	<!-- Main -->
+	<div class="b0_12 b4_14 b4_push_01">
+		<div class="p p-b3-3x">
+			<div class="block">
+				<h1>Style guidelines</h1>
+				<p class="intro">The way to structured SCSS</p>
+			</div>
+			<div class="block">
+				<h2>Sass-lint</h2>
+				<p>For style verifiation we use <a href="https://github.com/sasstools/sass-lint" target="_blank">sass-lint</a>. This ensures us to give you guidelines and warnings about writing mistakes in order, whitespace, nesting, etc</p>
+				<p>We have included a sass-lint.yml in the packages and it's connected to the package-json.</p>
+				<p>Example in Visual Studio Code:<br />
+					<img src="img/output-example.png" class="full-img" alt="">
+				</p>
+			</div>
+			<div class="block">
+				<h3>See it directly in your editor</h3>
+				<p>Sass-lint has a plugin for almost every editor, this means you just have to download it and you will see the output:</p>
+				<ul>
+					<li><a href="https://atom.io/packages/linter-sass-lint" target="_blank">Atom</a></li>
+					<li><a href="https://github.com/skovhus/SublimeLinter-contrib-sass-lint" target="_blank">Sublime Text</a></li>
+					<li><a href="https://github.com/petetnt/brackets-sass-lint" target="_blank">Brackets</a></li>
+					<li><a href="https://github.com/idok/sass-lint-plugin" target="_blank">IntelliJ IDEA, RubyMine, WebStorm, PhpStorm, PyCharm</a></li>
+					<li><a href="https://marketplace.visualstudio.com/items?itemName=glen-84.sass-lint" target="_blank">Visual Studio Code</a></li>
+					<li><a href="https://github.com/gcorne/vim-sass-lint" target="_blank">Vim</a></li>
+				</ul>
+			</div>
+			<div class="block">
+				<pre class="brush: css;">
+					 ######################### ## CastleCSS SCSS Lint File ######################### # Linter Options options: # Don't merge
+					default rules merge-default-rules: false # Set the formatter to 'html' formatter: html # Output file instead of logging results
+					output-file: 'linters/sass-lint.html' # Raise an error if more than 50 warnings are generated max-warnings: 50 # File Options
+					files: include: 'scss/**/*.s+(a|c)ss' ignore: - 'scss/**/.css' # Rule Configuration rules: extends-before-mixins: 2 class-name-format:
+					- 2 - convention: 'hyphenatedlowercase' declarations-before-nesting: true extends-before-declarations: 2 force-element-nesting:
+					true force-pseudo-nesting: true function-name-format: - 2 - convention: 'hyphenatedlowercase' hex-length: 'short' no-color-keywords:
+					true hex-notation: - 2 - style: lowercase empty-line-between-blocks: - 1 - include: true - allow-single-line-rulesets: false
+					placeholder-in-extend: 2 leading-zero: false - 1 nesting-depth: - 1 - max-depth: 3 mixin-name-format: - 2 - convention: 'hyphenatedlowercase'
+					mixins-before-declarations: - 2 - exclude: - breakpoint - mq no-warn: 1 no-debug: 1 no-ids: 1 space-after-colon: - 2 - include:
+					true space-after-comma: - 2 - include: true space-before-brace: - 2 - include: true space-before-colon: - 2 - include: false
+					space-after-bang: false trailing-semicolon: - 2 - include: true url-quotes: - 2 shorthand-values: - 2 - allowed-shorthands:
+					- 1 - 2 no-important: 2 no-invalid-hex: 2 no-trailing-whitespace: 1 placeholder-name-format: - 2 - convention: 'hyphenatedlowercase'
+					indentation: - 2 - size: tab property-sort-order: - 1 - order: - content - display - position - z-index - top - right - bottom
+					- left - flex-direction - align-items - justify-content - overflow - overflow-x - overflow-y - margin - margin-top - margin-right
+					- margin-bottom - margin-left - padding - padding-top - padding-right - padding-bottom - padding-left - min-width - width
+					- min-height - height - vertical-align - white-space - font - font-style - font-size - font-weight - text-align - text-transform
+					- font-decoration - color - background-color - background - transition - border-radius ignore-custom-properties: true variable-for-property:
+					- 2 - properties: - zero-unit: - 2
+				</pre>
+			</div>
+		</div>
+	</div>
+	<!-- End main -->
+
+{% include "inc/footer.html" %}
