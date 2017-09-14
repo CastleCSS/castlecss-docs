@@ -15,7 +15,7 @@ options:
 files:
   include: 'scss/**/*.s+(a|c)ss'
   ignore:
-    - 'scss/vendor/**/*.*'
+    - 'scss/**/.css'
 # Rule Configuration
 rules:
   extends-before-mixins: 2
@@ -96,13 +96,13 @@ rules:
     -
       order:
         - content
+        - display
         - position
         - z-index
         - top
         - right
         - bottom
         - left
-        - display
         - flex-direction
         - align-items
         - justify-content
