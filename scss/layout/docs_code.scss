@@ -2,16 +2,23 @@ code {
 	display: inline;
 	padding: 1px;
 	background: #fff0c3;
-	border: 1px solid darken(#fff0c3, 10%); 
+	border: 1px solid darken(#fff0c3, 10%);
 }
-.code-multi {
+
+%code-multi {
 	display: block;
 	padding: 5px;
 }
+
+.code-multi {
+	@extend %code-multi;
+}
+
 .code-structure {
-	@extend .code-multi;
+	@extend %code-multi;
 	line-height: 1;
 }
+
 .specs {
 	overflow-x: auto;
 	-webkit-overflow-scrolling: touch;
@@ -30,12 +37,14 @@ table {
 
 .demo-block {
 	display: block;
-	background: #d2f2ff;
-	color: rgba(30, 149, 191, 1);
 	margin-bottom: $margin-default;
 	padding: $padding-default;
+	//sass-lint:disable-all
 	@include ellipsis;
+	//sass-lint:enable-all
 	text-align: center;
+	color: rgba(30, 149, 191, 1);
+	background: #d2f2ff;
 	border-radius: $radius;
 
 	.demo-block {
@@ -51,6 +60,7 @@ table {
 	&.two {
 		background: $theme03;
 
+		// sass-lint:disable-all
 		.demo-block.two {
 			background: lighten( $theme03, 10% );
 
@@ -58,6 +68,7 @@ table {
 				background: lighten( $theme03, 20% );
 			}
 		}
+		// sass-lint:enable-all
 	}
 }
 
@@ -76,14 +87,14 @@ table {
  *
  * @version
  * 3.0.83 (July 02 2010)
- * 
+ *
  * @copyright
  * Copyright (C) 2004-2010 Alex Gorbatchev.
  *
  * @license
  * Dual licensed under the MIT and GPL licenses.
  */
- // sasslint:disable-all
+// sass-lint:disable-all
  .syntaxhighlighter a,
  .syntaxhighlighter div,
  .syntaxhighlighter code,
