@@ -3,6 +3,7 @@
   "version": "1.3.0",
   "description": "Documentation website for CastleCSS",
   "main": "index.js",
+  "sasslintConfig": "sass-lint.yml",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "create_css": "grunt create_css",
