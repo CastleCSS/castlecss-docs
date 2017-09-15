@@ -131,15 +131,15 @@ rules:
         - font-weight
         - text-align
         - text-transform
-        - font-decoration
+        - text-decoration
         - color
-        - background-color
         - background
+        - background-color
         - transition
         - border-radius
       ignore-custom-properties: true
   variable-for-property:
-    - 2
+    - 0
     -
       properties:
         -
