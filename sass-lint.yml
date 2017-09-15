@@ -15,8 +15,8 @@ options:
 files:
   include: 'scss/**/*.s+(a|c)ss'
   ignore:
-    - 'scss/**/.css'
-# Rule Configuration
+    # - 'node_modules/**/*.scss'
+#Rule Configuration
 rules:
   extends-before-mixins: 2
   class-name-format:
