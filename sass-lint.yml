@@ -139,9 +139,10 @@ rules:
         - color
         - background
         - background-color
+        - border
+        - border-radius
         - box-shadow
         - transition
-        - border-radius
       ignore-custom-properties: true
   variable-for-property:
     - 0
