@@ -15,8 +15,8 @@ options:
 files:
   include: 'scss/**/*.s+(a|c)ss'
   ignore:
-    - 'scss/**/.css'
-# Rule Configuration
+    # - 'node_modules/**/*.scss'
+#Rule Configuration
 rules:
   extends-before-mixins: 2
   class-name-format:
@@ -98,6 +98,7 @@ rules:
         - content
         - display
         - position
+        - float
         - z-index
         - top
         - right
@@ -121,25 +122,29 @@ rules:
         - padding-left
         - min-width
         - width
+        - max-width
         - min-height
         - height
+        - max-height
         - vertical-align
         - white-space
         - font
         - font-style
         - font-size
+        - line-height
         - font-weight
         - text-align
         - text-transform
-        - font-decoration
+        - text-decoration
         - color
-        - background-color
         - background
+        - background-color
+        - box-shadow
         - transition
         - border-radius
       ignore-custom-properties: true
   variable-for-property:
-    - 2
+    - 0
     -
       properties:
         -
