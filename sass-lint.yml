@@ -15,7 +15,7 @@ options:
 files:
   include: 'scss/**/*.s+(a|c)ss'
   ignore:
-    # - 'node_modules/**/*.scss'
+    - 'node_modules/**/*.scss'
 #Rule Configuration
 rules:
   extends-before-mixins: 2
@@ -140,6 +140,11 @@ rules:
         - background
         - background-color
         - border
+        - border-top
+        - border-right
+        - border-bottom
+        - border-left
+        - border-color
         - border-radius
         - box-shadow
         - transition
