@@ -9,7 +9,7 @@
 	Base colors
 	Color 01 and 02 reservered for white and black
 */
-$color03: #eeeeee;
+$color03: #eee;
 $color04: #aaa;
 $color05: #ccc;
 $color06: #797979;
@@ -17,11 +17,11 @@ $color06: #797979;
 /*
 	Theme colors
 */
-$theme01: 	#1B94BF;	// Knight blue
+$theme01: 	#1b94bf;	// Knight blue
 $theme02: 	#093142; 	// Royal blue
-$theme03:	#12637F;	// Falcon blue
-$theme04:	#FFC200;	// Royal yellow
-$theme05:	#FFFFFF;	// Destroyer white
+$theme03:	#12637f;	// Falcon blue
+$theme04:	#ffc200;	// Royal yellow
+$theme05:	#fff;		// Destroyer white
 $theme06: 	#164558;
 
 /*
@@ -31,7 +31,7 @@ $alert:		#c0dbff;
 $warning:	#ffe283;
 $negative:	#feb3b3;
 $positive:	#c3e5cd;
-$disabled:	#CDCDC1;
+$disabled:	#cdcdc1;
 
 /*
 	Breakpoints
@@ -99,7 +99,7 @@ $grid-gutter-b3: 12px;
 $grid-gutter-b4: 12px;
 $grid-gutter-b5: 12px;
 $grid-gutter-b6: 12px;
- 
+
 /*
 	Default margin and padding
 */

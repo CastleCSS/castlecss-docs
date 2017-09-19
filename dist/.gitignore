@@ -1,0 +1,7 @@
+*.html
+**/*.html
+**/*.css
+**/*.map
+**/scripts.dist.js
+**/scripts.min.js
+linters

@@ -6,7 +6,18 @@ Sourcecode for www.castlecss.com and the documentation for [CastleCSS](https://g
 
 ## How to install
 - Download or clone this package
-- Look in the dist/ folder or build if yourself with GruntJS in your terminal: ```npm install``` + ```grunt```
+- Install the project: ```npm install```
+
+## Build and run automatically
+- Start the project with: ```npm run start```
+
+This will automatically start a browserSync server.<br />
+The project will watch for changes in your scss and html files in your /views and /scss folder and automatically reload
+
+## Build and run manually
+- Build the project: ```npm run create_all```
+
+You can now see the project in dist folder, open a .html page in your browser
 
 ## Roadmap
 We're currently working hard on making the CastleCSS expansions and improvements. CastleCSS is made to serve as lightweight basis for tailor made software but we do want to give you the option to install a few modules to make your life easier.

@@ -1,0 +1,160 @@
+#########################
+## CastleCSS SCSS Lint File
+#########################
+# Linter Options
+options:
+  # Don't merge default rules
+  merge-default-rules: false
+  # Set the formatter to 'html'
+  formatter: html
+  # Output file instead of logging results
+  output-file: 'linters/sass-lint.html'
+  # Raise an error if more than 50 warnings are generated
+  max-warnings: 50
+# File Options
+files:
+  include: 'scss/**/*.s+(a|c)ss'
+  ignore:
+    - 'node_modules/**/*.scss'
+#Rule Configuration
+rules:
+  extends-before-mixins: 2
+  class-name-format:
+    - 2
+    - convention: 'hyphenatedlowercase'
+  declarations-before-nesting: true
+  extends-before-declarations: 2
+  force-element-nesting: true
+  force-pseudo-nesting: true
+  function-name-format:
+    - 2
+    - convention: 'hyphenatedlowercase'
+  hex-length: 'short'
+  brace-style:
+    - style: 'stroustrup'
+  no-color-keywords: true
+  hex-notation:
+    - 2
+    -
+      style: lowercase
+  empty-line-between-blocks:
+    - 1
+    - include: true
+    - allow-single-line-rulesets: false
+  placeholder-in-extend: 2
+  leading-zero: false
+    - 1
+  nesting-depth:
+    - 1
+    - max-depth: 3
+  mixin-name-format:
+    - 2
+    - convention: 'hyphenatedlowercase'
+  mixins-before-declarations:
+    - 2
+    -
+      exclude:
+        - breakpoint
+        - mq
+
+  no-warn: 1
+  no-debug: 1
+  no-ids: 1
+  space-after-colon:
+    - 2
+    - include: true
+  space-after-comma:
+    - 2
+    - include: true
+  space-before-brace:
+    - 2
+    - include: true
+  space-before-colon:
+    - 2
+    - include: false
+  space-after-bang: false
+  trailing-semicolon:
+    - 2
+    - include: true
+  url-quotes:
+    - 2
+  shorthand-values:
+    - 2
+    - allowed-shorthands:
+        - 1
+        - 2
+  no-important: 2
+  no-invalid-hex: 2
+  no-trailing-whitespace: 1
+  placeholder-name-format:
+    - 2
+    - convention: 'hyphenatedlowercase'
+  indentation:
+    - 2
+    -
+      size: tab
+  property-sort-order:
+    - 1
+    -
+      order:
+        - content
+        - display
+        - position
+        - float
+        - z-index
+        - top
+        - right
+        - bottom
+        - left
+        - flex-direction
+        - align-items
+        - justify-content
+        - overflow
+        - overflow-x
+        - overflow-y
+        - margin
+        - margin-top
+        - margin-right
+        - margin-bottom
+        - margin-left
+        - padding
+        - padding-top
+        - padding-right
+        - padding-bottom
+        - padding-left
+        - min-width
+        - width
+        - max-width
+        - min-height
+        - height
+        - max-height
+        - vertical-align
+        - white-space
+        - font
+        - font-style
+        - font-size
+        - line-height
+        - font-weight
+        - text-align
+        - text-transform
+        - text-decoration
+        - color
+        - background
+        - background-color
+        - border
+        - border-top
+        - border-right
+        - border-bottom
+        - border-left
+        - border-color
+        - border-radius
+        - box-shadow
+        - transition
+      ignore-custom-properties: true
+  variable-for-property:
+    - 0
+    -
+      properties:
+        -
+  zero-unit:
+    - 2
