@@ -30,6 +30,8 @@ rules:
     - 2
     - convention: 'hyphenatedlowercase'
   hex-length: 'short'
+  brace-style:
+    - style: 'stroustrup'
   no-color-keywords: true
   hex-notation:
     - 2
