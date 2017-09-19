@@ -41,8 +41,8 @@
 .nav-container {
 	position: relative;
 	overflow: hidden;
-	background-color: $theme06;
 	line-height: 1.7;
+	background-color: $theme06;
 
 	ul {
 		transition: max-height .4s ease-out;
@@ -50,8 +50,8 @@
 		a {
 			display: block;
 			padding-bottom: 12px;
-			color: $color01;
 			text-decoration: none;
+			color: $color01;
 
 			&.active {
 				color: $theme04;
@@ -125,7 +125,8 @@
 
 			img {
 				display: block;
-				height: 100%; max-width: none;
+				max-width: none;
+				height: 100%;
 			}
 		}
 
