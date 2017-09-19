@@ -4,3 +4,4 @@
 **/*.map
 **/scripts.dist.js
 **/scripts.min.js
+linters
