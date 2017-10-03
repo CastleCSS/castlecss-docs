@@ -185,12 +185,30 @@
 					<h2>Textarea</h2>
 					<div class="g">
 						<div class="gi b0_12">
-							<ul class="form-fields label-top">
-								<li class="form-field input-textarea" data-castlecss-field>
+							<ul class="form-fields">
+								<li class="form-field form-textarea" data-castlecss-field>
 									<label for="textarea">Example</label>
 									<textarea maxlength="30000" cols="50" rows="10" id="textarea" name="textarea"></textarea>
 								</li>
+								<li class="form-field form-textarea label-top" data-castlecss-field>
+									<label for="textarea2">Example with label-top</label>
+									<textarea maxlength="30000" cols="50" rows="10" id="textarea2" name="textarea2"></textarea>
+								</li>
 							</ul>
+							<pre class="brush: html">
+							<form class="form form-horizontal">
+								<ul class="form-fields">
+									<li class="form-field form-textarea" data-castlecss-field>
+										<label for="textarea">Example</label>
+										<textarea maxlength="30000" cols="50" rows="10" id="textarea" name="textarea"></textarea>
+									</li>
+									<li class="form-field form-textarea label-top" data-castlecss-field>
+										<label for="textarea2">Example with label-top</label>
+										<textarea maxlength="30000" cols="50" rows="10" id="textarea2" name="textarea2"></textarea>
+									</li>
+								</ul>
+							</form>
+						</pre>
 							<div class="alert mb-2x">Remember the label placements mentioned above? The classes <code>.label-bottom</code>, <code>.label-top</code> and <code>.label-above</code> also work well with textareas. By default all labels are vertical-aligned in the middle. If you want to prevent this behaviour with textarea's you can add a parent class of <code>.input-textarea</code></div>
 						</div>
 					</div>
