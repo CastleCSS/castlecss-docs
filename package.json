@@ -1,6 +1,6 @@
 {
   "name": "castlecss-docs",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Documentation website for CastleCSS",
   "main": "index.js",
   "sasslintConfig": "sass-lint.yml",
