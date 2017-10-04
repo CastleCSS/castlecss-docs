@@ -16,6 +16,9 @@ The project will watch for changes in your scss and html files in your /views an
 
 ## Build and run manually
 - Build the project: ```npm run create_all```
+- Only build CSS: ```npm run create_css```
+- Only build HTML: ```npm run create_html```
+- Only build JS: ```npm run create_js```
 
 You can now see the project in dist folder, open a .html page in your browser
 
