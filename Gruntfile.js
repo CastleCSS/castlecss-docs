@@ -24,12 +24,11 @@ module.exports = function(grunt) {
 		postcss: {
 			dist: {
 				src: 'dist/css/styles.min.css'
-
 			},
 			options: {
 				// Rewrite and save sourcemap as seperate file
 				map: {
-					annotation: 'styles/'
+					inline: false
 				},
 				processors: [
 					// add fallbacks for rem units
@@ -60,7 +59,7 @@ module.exports = function(grunt) {
 				},
 			}
 		},
-				
+
 		nunjucks: {
 			render: {
 				options: {
@@ -93,7 +92,7 @@ module.exports = function(grunt) {
                     server: './dist/'
                 }
 			}
-			
+
 		}
 
 
