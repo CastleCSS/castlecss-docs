@@ -13,11 +13,14 @@
     "start": "npm run create_js & grunt"
   },
   "keywords": [
+    "front-end",
+    "responsive",
+    "scss",
+    "sass",
+    "web",
     "documentation",
     "castlecss",
     "castle",
-    "css",
-    "scss",
     "framework",
     "building",
     "blocks",
@@ -30,31 +33,31 @@
   "license": "MIT",
   "homepage": "https://www.castlecss.com",
   "dependencies": {
+    "autoprefixer": "^7.1.5",
     "castlecss-breadcrumbs": "^1.1.1",
     "castlecss-buttons": "^1.0.1",
     "castlecss-core": "^2.5.0",
-    "castlecss-forms": "^1.0.9",
+    "castlecss-forms": "^1.0.11",
     "castlecss-icons": "^1.0.2",
-    "castlecss-notifications": "^1.0.1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CastleCSS/castlecss-docs.git"
-  },
-  "devDependencies": {
-    "autoprefixer": "^7.1.4",
+    "castlecss-notifications": "^1.0.1",
     "cssnano": "^3.10.0",
     "grunt": "^1.0.1",
-    "grunt-browser-sync": "^2.2.0",
-    "grunt-contrib-watch": "^1.0.0",
     "grunt-nunjucks-2-html": "^2.1.0",
     "grunt-postcss": "^0.9.0",
     "grunt-sass": "^2.0.0",
     "jit-grunt": "^0.10.0",
     "nunjucks": "^3.0.1",
     "pixrem": "^4.0.1",
-    "sass-lint": "^1.11.1",
     "webpack": "^3.6.0"
+  },
+  "devDependencies": {
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "sass-lint": "^1.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CastleCSS/castlecss-docs.git"
   },
   "bugs": {
     "url": "https://github.com/CastleCSS/castlecss-docs/issues"
