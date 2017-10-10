@@ -3,6 +3,11 @@ html {
 	overflow-y: scroll;
 }
 
+.wrapper,
+.full-height {
+	min-height: 100vh;
+}
+
 a {
 	color: $theme02;
 }
