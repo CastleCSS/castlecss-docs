@@ -1,0 +1,88 @@
+{% set currentPageId = 'stickers' %}{% set pageTitle = 'Stickers - CastleCSS' %}{% include "inc/header.html" %}
+
+<!-- Main -->
+<div class="b0_12 b4_14 b4_push_01">
+	<div class="p p-b3-3x">
+		<div class="block">
+			<h1>Stickers</h1>
+			<p class="intro">Make your message stand out</p>
+			<p class="alert">
+				Note: You need castlecss-stickers or the
+				<a href="https://github.com/CastleCSS/castlecss-boilerplate" target="_blank">castlecss-boilerplate</a> for this.
+			</p>
+			<p>Feel free to use these stickers to get you started. Create your own stickers.scss to overwrite the standard stickers
+				or edit your variables.scss
+				<a href="variables.html">variables document</a> for different colors/styles.
+			</p>
+			<ul>
+				<li><a href="#notifications">Stickers with notification / alert colors</a></li>
+				<li><a href="#themes">Stickers with theme colors</a></li>
+				<li><a href="#large">Large stickers</a></li>
+				<li><a href="#options">Options</a></li>
+			</ul>
+
+		</div>
+
+		<div id="notifications" class="block pt pb">
+			<h2>Stickers with notification / alert colors</h2>
+			<p>These stickers have the alert / notification colors you have defined in your variables.</p>
+			<span class="sticker">Sticker</span>
+			<span class="sticker-positive">Positive Sticker</span>
+			<span class="sticker-negative">Negative Sticker</span>
+			<span class="sticker-alert">Alert Sticker</span>
+			<span class="sticker-warning">Warning Sticker</span>
+		</div>
+		<pre class="brush: html">
+			<span class="sticker">Sticker</span>
+			<span class="sticker-positive">Positive Sticker</span>
+			<span class="sticker-negative">Negative Sticker</span>
+			<span class="sticker-alert">Alert Sticker</span>
+			<span class="sticker-warning">Warning Sticker</span></pre>
+
+		<div id="themes" class="block pt pb">
+			<h2>Stickers with theme colors</h2>
+			<p>These stickers have the theme colors you have defined in your variables.</p>
+			<span class="sticker-theme01">Theme 01</span>
+			<span class="sticker-theme02">Theme 02</span>
+			<span class="sticker-theme03">Theme 03</span>
+			<span class="sticker-theme04">Theme 04</span>
+		</div>
+		<div class="block p bgcolor-theme02">
+			<span class="sticker-theme05">Theme 05</span>
+		</div>
+		<pre class="brush: html">
+			<span class="sticker-theme01">Theme 01</span>
+			<span class="sticker-theme02">Theme 02</span>
+			<span class="sticker-theme03">Theme 03</span>
+			<span class="sticker-theme04">Theme 04</span>
+			<span class="sticker-theme05">Theme 05</span></pre>
+
+		<div id="large" class="block pt pb">
+			<h2>Large stickers</h2>
+			<p>Extra class for making stickers larger.</p>
+			<span class="sticker sticker-large">Large Sticker</span>
+			<span class="sticker-theme01 sticker-large">Large Sticker Theme01</span>
+		</div>
+		<pre class="brush: html">
+			<span class="sticker sticker-large">Large Sticker</span>
+			<span class="sticker-theme01 sticker-large">Large Sticker Theme01</span>
+		</pre>
+		<div id="options" class="pt pb">
+			<h2>Options for your variables</h2>
+			Add or copy these styles to your project or download the
+			<a href="/installation.html">boilerplate</a>, the variables are already added there.
+			<pre class="brush: sass">
+				// Default sticker styles
+				$sticker-font-size: 1.4rem;
+				$sticker-font-size-large: 1.6rem;
+				$sticker-bgcolor: $color03;
+				$sticker-color: $color02;
+				$sticker-transform: none;
+				$sticker-weight: normal;
+				$sticker-radius: $radius;</pre>
+		</div>
+	</div>
+</div>
+<!-- End main -->
+
+{% include "inc/footer.html" %}
