@@ -1,17 +1,19 @@
-/* 	core variable files */
+/* 	CastleCSS Core variable files */
 @import "node_modules/castlecss-core/sass/variables";
+
 /* 	Your own variables */
 @import "variables";
 
-/* 	rest of core files */
+/* 	Rest of CastleCSS files */
 @import "node_modules/castlecss-core/sass/main";
 @import "node_modules/castlecss-buttons/sass/main";
 @import "node_modules/castlecss-notifications/sass/main";
 @import "node_modules/castlecss-icons/sass/main";
 @import "node_modules/castlecss-forms/sass/main";
 @import "node_modules/castlecss-breadcrumbs/sass/main";
+@import "node_modules/castlecss-stickers/sass/main";
 
-/* 	Your own variables */
+/* 	Defaults */
 @import "base/defaults";
 
 /* Docs styling */

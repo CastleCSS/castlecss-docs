@@ -26,12 +26,13 @@ $theme06: 	#164558;
 
 /*
 	Notification colors
+	https://github.com/CastleCSS/castlecss-notifications
 */
 $alert:		#c0dbff;
 $warning:	#ffe283;
 $negative:	#feb3b3;
 $positive:	#c3e5cd;
-$disabled:	#cdcdc1;
+$disabled:	#CDCDC1;
 
 /*
 	Breakpoints
@@ -42,7 +43,7 @@ $b2: 480px;
 $b3: 768px;
 $b4: 1024px;
 $b5: 1280px;
-$b6: 1600px;
+$b6: 1680px;
 
 /*
 	Mapping for breakpoint loops
@@ -65,10 +66,10 @@ $amount-breakpoints: length($breakpoint-map);
 $container: 100%;
 $container-b1: 100%;
 $container-b2: 100%;
-$container-b3: 744px;
-$container-b4: 996px;
-$container-b5: 1224px;
-$container-b6: 1400px;
+$container-b3: 752px;
+$container-b4: 992px;
+$container-b5: 1208px;
+$container-b6: 1592px;
 
 /*
 	Container map
@@ -95,10 +96,23 @@ $flexbox-grid:	 true;
 $grid-gutter:	 12px;
 $grid-gutter-b1: 12px;
 $grid-gutter-b2: 12px;
-$grid-gutter-b3: 12px;
-$grid-gutter-b4: 12px;
-$grid-gutter-b5: 12px;
-$grid-gutter-b6: 12px;
+$grid-gutter-b3: 16px;
+$grid-gutter-b4: 16px;
+$grid-gutter-b5: 16px;
+$grid-gutter-b6: 16px;
+
+/*
+	Gutter map
+	Must be the same amount of gutters and $gutter-map as above
+*/
+$gutter-map: (
+	1: $grid-gutter-b1,
+	2: $grid-gutter-b2,
+	3: $grid-gutter-b3,
+	4: $grid-gutter-b4,
+	5: $grid-gutter-b5,
+	6: $grid-gutter-b6,
+);
 
 /*
 	Default margin and padding
@@ -110,7 +124,7 @@ $margin-default: 	12px;
 /*
 	Standard border-radius
 */
-$radius:	3px;
+$radius:	5px;
 
 /*
 	Fonts
@@ -120,10 +134,14 @@ $font-sec: 'Open Sans', Helvetica, Arial;
 $font-size-default: 1.6rem;
 $line-height-default: 1.5;
 
-/* Breadcrumbs seperator */
+/*	Breadcrumbs seperator
+	https://github.com/CastleCSS/castlecss-buttons
+*/
 $breadcrumbs-separator: '\00bb';
 
-/* Form specific variables */
+/*	Form specific variables
+	https://github.com/CastleCSS/castlecss-forms
+*/
 
 /* Standard Inputs */
 $input-height: 4.8rem;
@@ -152,3 +170,14 @@ $input-transition: .1s all ease-in-out;
 /* Icons */
 $input-icon-color: #eee;
 $input-icon-bg-color: #797979;
+
+/*	Default sticker styles
+	https://github.com/CastleCSS/castlecss-stickers
+*/
+$sticker-font-size: 1.4rem;
+$sticker-font-size-large: 1.6rem;
+$sticker-bgcolor: $color03;
+$sticker-color: $color02;
+$sticker-text-transform: none;
+$sticker-weight: normal;
+$sticker-radius: $radius;
