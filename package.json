@@ -40,7 +40,6 @@
     "castlecss-forms": "^1.0.11",
     "castlecss-icons": "^1.0.2",
     "castlecss-notifications": "^1.0.1",
-    "castlecss-sticers": "file:../castlecss-stickers/castlecss-stickers-1.0.0.tgz",
     "castlecss-stickers": "^1.0.0",
     "cssnano": "^3.10.0",
     "grunt": "^1.0.1",
